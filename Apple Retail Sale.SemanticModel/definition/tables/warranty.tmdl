@@ -1,0 +1,61 @@
+table warranty
+	lineageTag: f9eb3308-9b92-4d67-a598-a174efefb435
+
+	column Claim_ID
+		dataType: string
+		lineageTag: 68852557-758a-4ac1-9c65-a96dd0494ed8
+		summarizeBy: none
+		sourceColumn: Claim_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Claim_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b391ecf5-39dd-4ad5-89d9-86672b021f21
+		summarizeBy: none
+		sourceColumn: Claim_Date
+
+		variation Variation
+			isDefault
+			relationship: c51247a1-683d-4949-a344-1f37a677673e
+			defaultHierarchy: LocalDateTable_a00715d5-4890-41e1-8107-e5564ee9646e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Sale_ID
+		dataType: string
+		lineageTag: 05b4db85-1942-4110-91e2-fd83d4d659b6
+		summarizeBy: none
+		sourceColumn: Sale_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Repair_Status
+		dataType: string
+		lineageTag: a02adb39-94b0-4446-9cd1-c140f13b2e48
+		summarizeBy: none
+		sourceColumn: Repair_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition warranty = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("D:\Trainings\DEPI\Project\DEPI-Project\Raw Data\warranty.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"claim_id", type text}, {"claim_date", type date}, {"sale_id", type text}, {"repair_status", type text}}),
+				    #"Cleaned IDs (Trim)" = Table.TransformColumns(#"Changed Type",{{"sale_id", Text.Trim, type text}, {"claim_id", Text.Trim, type text}}),
+				    #"Renamed Some Columns" = Table.RenameColumns(#"Cleaned IDs (Trim)",{{"claim_id", "Claim_ID"}, {"claim_date", "Claim_Date"}, {"sale_id", "Sale_ID"}, {"repair_status", "Repair_Status"}}),
+				    #"Cleaned 'Repair_Status' (Trim)" = Table.TransformColumns(#"Renamed Some Columns",{{"Repair_Status", Text.Trim, type text}}),
+				    #"Cleaned 'Repair_Status' (Capitalized)" = Table.TransformColumns(#"Cleaned 'Repair_Status' (Trim)",{{"Repair_Status", Text.Proper, type text}})
+				in
+				    #"Cleaned 'Repair_Status' (Capitalized)"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
