@@ -1,0 +1,15 @@
+relationship fadf5063-69db-46fc-b78c-e55f47c228ba
+	joinOnDateBehavior: datePartOnly
+	fromColumn: sales.Sale_Date
+	toColumn: LocalDateTable_8c839ac4-6845-45c4-b2cf-a1483fe05435.Date
+
+relationship 5cdd31da-52ea-4e05-91ff-6ddf1c210a1d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: sales.Launch_Date
+	toColumn: LocalDateTable_be714883-66f5-4c1a-8ffd-18ee6357700f.Date
+
+relationship c51247a1-683d-4949-a344-1f37a677673e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: warranty.Claim_Date
+	toColumn: LocalDateTable_a00715d5-4890-41e1-8107-e5564ee9646e.Date
+
