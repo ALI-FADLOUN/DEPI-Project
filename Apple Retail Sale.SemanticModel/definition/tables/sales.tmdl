@@ -1,0 +1,225 @@
+table sales
+	lineageTag: be291d41-3f67-4938-9835-f40e279c1b15
+
+	column Sale_ID
+		dataType: string
+		lineageTag: c922dda5-b7de-451d-86e7-c7435df57e77
+		summarizeBy: none
+		sourceColumn: Sale_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sale_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 23441c45-f4f6-4ab7-b06b-adb13f9e014c
+		summarizeBy: none
+		sourceColumn: Sale_Date
+
+		variation Variation
+			isDefault
+			relationship: fadf5063-69db-46fc-b78c-e55f47c228ba
+			defaultHierarchy: LocalDateTable_8c839ac4-6845-45c4-b2cf-a1483fe05435.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Store_ID
+		dataType: string
+		lineageTag: e6ca4e80-5068-4863-ace6-0b4e0395675e
+		summarizeBy: none
+		sourceColumn: Store_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_ID
+		dataType: string
+		lineageTag: 5377c588-7df2-469b-8cc1-20a923aeab5c
+		summarizeBy: none
+		sourceColumn: Product_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 3bc1da96-faed-444b-851f-43c1cf021919
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Store_Name
+		dataType: string
+		lineageTag: 331caf8c-536c-43b7-8960-f78b143d17d3
+		summarizeBy: none
+		sourceColumn: Store_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 6d6e2a40-d734-4a5a-8f12-e7326bbfa682
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 55b27aa5-7b8e-4c60-b0bb-1ba139bc1e2d
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_Name
+		dataType: string
+		lineageTag: 1f4f6851-86d6-4b00-b25b-3faf64664caf
+		summarizeBy: none
+		sourceColumn: Product_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category_ID
+		dataType: string
+		lineageTag: fd4e6e80-ec64-48aa-b7ff-b812acf6c90f
+		summarizeBy: none
+		sourceColumn: Category_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Launch_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d42ebe1b-7d00-4935-b7ea-34f3a27b93e3
+		summarizeBy: none
+		sourceColumn: Launch_Date
+
+		variation Variation
+			isDefault
+			relationship: 5cdd31da-52ea-4e05-91ff-6ddf1c210a1d
+			defaultHierarchy: LocalDateTable_be714883-66f5-4c1a-8ffd-18ee6357700f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Unit_Price
+		dataType: int64
+		formatString: 0
+		lineageTag: e6f4c0e0-0dfc-4a02-8c56-0f0732e24e3c
+		summarizeBy: sum
+		sourceColumn: Unit_Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category_Name
+		dataType: string
+		lineageTag: fd2655d5-cb27-445a-a629-6690b3979a0e
+		summarizeBy: none
+		sourceColumn: Category_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("D:\Trainings\DEPI\Project\DEPI-Project\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"sale_id", type text}, {"sale_date", type text}, {"store_id", type text}, {"product_id", type text}, {"quantity", Int64.Type}, {"Store_Name", type text}, {"City", type text}, {"Country", type text}, {"Product_Name", type text}, {"Category_ID", type text}, {"Launch_Date", type date}, {"Price", Int64.Type}, {"category_name", type text}}),
+				    #"Renamed Some Columns" = Table.RenameColumns(#"Changed Type",{{"sale_id", "Sale_ID"}, {"sale_date", "Sale_Date"}, {"store_id", "Store_ID"}, {"product_id", "Product_ID"}, {"quantity", "Quantity"}, {"category_name", "Category_Name"}, {"Price", "Unit_Price"}}),
+				    #"Changed 'Sale_Date' Type" = Table.TransformColumnTypes(#"Renamed Some Columns", {{"Sale_Date", type date}}, "en-AE"),
+				    #"Cleaned 'Catergory_Name' (Trim)" = Table.TransformColumns(#"Changed 'Sale_Date' Type",{{"Category_Name", Text.Trim, type text}}),
+				    #"Cleaned 'Category_Name' (Capitalized)" = Table.TransformColumns(#"Cleaned 'Catergory_Name' (Trim)",{{"Category_Name", Text.Proper, type text}}),
+				    #"Cleaned 'Product_Name' (Trim)" = Table.TransformColumns(#"Cleaned 'Category_Name' (Capitalized)",{{"Product_Name", Text.Trim, type text}}),
+				    #"Lowercased 'Product_Name' for Cleaning" = Table.TransformColumns(#"Cleaned 'Product_Name' (Trim)",{{"Product_Name", Text.Lower, type text}}),
+				    #"Cleaned 'Product_Name' (Fix ""appel"")" = Table.ReplaceValue(#"Lowercased 'Product_Name' for Cleaning","appel","apple",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""t+v"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""appel"")","t+v","tv+",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""por"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""t+v"")","por","pro",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""aiprods"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""por"")","aiprods","airpods",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix "" )"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""aiprods"")"," )",")",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""geneartion"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix "" )"")","genreation","generation",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""pecnil"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""geneartion"")","pecnil","pencil",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""beat s"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""pecnil"")","beat s","beats ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""silicnoe"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""beat s"")","silicnoe","silicone",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix "" rpo"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""silicnoe"")"," rpo"," pro",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""boo k"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix "" rpo"")","boo k","book ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""129."")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""boo k"")","129.","12.9",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""otuch"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""129."")","otuch","touch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""m ouse"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""otuch"")","m ouse"," mouse",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""obok"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""m ouse"")","obok","book",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""lightnnig"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""obok"")","lightnnig","lightning",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""pda"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""lightnnig"")","pda","pad",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""s e"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""pda"")","s e"," se",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""imni"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""s e"")","imni","mini",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""5t h"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""imni"")","5t h","5th ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""nich"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""5t h"")","nich","inch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""1 2 "")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""nich"")","1 2 "," 12 ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""boko"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""1 2 "")","boko","book",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""icolud"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""boko"")","icolud","icloud",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""mnii"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""icolud"")","mnii","mini",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""wacth"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""mnii"")","wacth","watch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""( "")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""wacth"")","( "," (",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""geenration"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""( "")","geenration","generation",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""ohme"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""geenration"")","ohme","home",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""ofr"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""ohme"")","ofr","for",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""w atch"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""ofr"")","w atch"," watch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""watc h"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""w atch"")","watc h","watch ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""chagrer"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""watc h"")","chagrer","charger",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""chrager"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""chagrer"")","chrager","charger",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""retian"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""chrager"")","retian","retina",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""paple"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""retian"")","paple","apple",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""2("")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""paple"")","2(","(2",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""m(2)"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""2("")","m(2)","(m2)",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""tsudio"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""m(2)"")","tsudio","studio",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""samrt"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""tsudio"")","samrt","smart",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""a ir"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""samrt"")","a ir"," air",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""beast"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""a ir"")","beast","beats",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""leahter"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""beast"")","leahter","leather",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""ihpone"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""leahter"")","ihpone","iphone",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""hompeod"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""ihpone"")","hompeod","homepod",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""stduio"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""hompeod"")","stduio","studio",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Product_Name' (Fix ""icnh"")" = Table.ReplaceValue(#"Cleaned 'Product_Name' (Fix ""stduio"")","icnh","inch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Capitalized)" = Table.TransformColumns(#"Cleaned 'Product_Name' (Fix ""icnh"")",{{"Product_Name", Text.Proper, type text}}),
+				    #"Decorated 'Product_Name' (Fix ""Airpods"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Capitalized)","Airpods","AirPods",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Iphone"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Airpods"")","Iphone","iPhone",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""For"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Iphone"")","For","for",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Ipad"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""For"")","Ipad","iPad",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Imac"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Ipad"")","Imac","iMac",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""With"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Imac"")","With","with",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""1St"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""With"")","1St","1st",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""2Nd"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""1St"")","2Nd","2nd",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""3Rd"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""2Nd"")","3Rd","3rd",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Th "")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""3Rd"")","Th ","th ",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Airtag"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Th "")","Airtag","AirTag",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Tv"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Airtag"")","Tv","TV",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix "" Hd"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Tv"")"," Hd"," HD",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Macbook"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix "" Hd"")","Macbook","MacBook",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""-Inch"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Macbook"")","-Inch","-inch",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix "" Se"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""-Inch"")"," Se"," SE",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""SEries"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix "" Se"")","SEries","Series",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Icloud"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""SEries"")","Icloud","iCloud",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Mini"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Icloud"")","Mini","mini",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Usb"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Mini"")","Usb","USB",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Homepod"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Usb"")","Homepod","HomePod",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Magsafe"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Homepod"")","Magsafe","MagSafe",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Decorated 'Product_Name' (Fix ""Id"")" = Table.ReplaceValue(#"Decorated 'Product_Name' (Fix ""Magsafe"")"," Id"," ID",Replacer.ReplaceText,{"Product_Name"}),
+				    #"Cleaned 'Country' (Capitalized)" = Table.TransformColumns(#"Decorated 'Product_Name' (Fix ""Id"")",{{"Country", Text.Proper, type text}}),
+				    #"Cleaned 'Country' (Trim)" = Table.TransformColumns(#"Cleaned 'Country' (Capitalized)",{{"Country", Text.Trim, type text}}),
+				    #"Decorated 'Country' (fix ""Uae"")" = Table.ReplaceValue(#"Cleaned 'Country' (Trim)","Uae","UAE",Replacer.ReplaceText,{"Country"}),
+				    #"Cleaned 'City' (Trim)" = Table.TransformColumns(#"Decorated 'Country' (fix ""Uae"")",{{"City", Text.Trim, type text}}),
+				    #"Cleaned 'City' (Capitalized)" = Table.TransformColumns(#"Cleaned 'City' (Trim)",{{"City", Text.Proper, type text}}),
+				    #"Cleaned 'Store_Name' (Trim)" = Table.TransformColumns(#"Cleaned 'City' (Capitalized)",{{"Store_Name", Text.Trim, type text}}),
+				    #"Cleaned 'Store_Name' (Capitalized)" = Table.TransformColumns(#"Cleaned 'Store_Name' (Trim)",{{"Store_Name", Text.Proper, type text}}),
+				    #"Cleaned IDs (Trim)" = Table.TransformColumns(#"Cleaned 'Store_Name' (Capitalized)",{{"Sale_ID", Text.Trim, type text}, {"Store_ID", Text.Trim, type text}, {"Product_ID", Text.Trim, type text}, {"Category_ID", Text.Trim, type text}}),
+				    #"Removed Duplicates" = Table.Distinct(#"Cleaned IDs (Trim)")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
