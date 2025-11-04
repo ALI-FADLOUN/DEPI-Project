@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["sales","warranty"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table sales
+ref table DateTableTemplate_c82e7a73-b6df-492d-b2fb-77a6b457b562
+ref table LocalDateTable_8c839ac4-6845-45c4-b2cf-a1483fe05435
+ref table LocalDateTable_be714883-66f5-4c1a-8ffd-18ee6357700f
+ref table warranty
+ref table LocalDateTable_a00715d5-4890-41e1-8107-e5564ee9646e
+
+ref cultureInfo en-US
+
