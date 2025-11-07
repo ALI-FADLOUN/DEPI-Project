@@ -123,8 +123,6 @@ table sales
 
 		annotation SummarizationSetBy = Automatic
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 	column Sales = sales[Unit_Price] * sales[Quantity]
 		formatString: 0
 		lineageTag: 9f3c922e-7c61-4756-8ae2-c147ec50cfd2
@@ -132,10 +130,6 @@ table sales
 
 		annotation SummarizationSetBy = Automatic
 
-=======
->>>>>>> 0b411869975d951c1eac6ea841b78fd8410acd82
-=======
->>>>>>> 0ad0656b9e986af9865161d74c3b27bfa663358e
 	partition sales = m
 		mode: import
 		source =

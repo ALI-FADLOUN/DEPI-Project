@@ -1,5 +1,1 @@
 Raw[[:space:]]Data/sales.csv filter=lfs diff=lfs merge=lfs -text
-<<<<<<< HEAD
-*.csv filter=lfs diff=lfs merge=lfs -text
-=======
->>>>>>> 0ad0656b9e986af9865161d74c3b27bfa663358e
