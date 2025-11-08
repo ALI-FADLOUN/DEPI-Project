@@ -123,6 +123,13 @@ table sales
 
 		annotation SummarizationSetBy = Automatic
 
+	column Sales = sales[Unit_Price] * sales[Quantity]
+		formatString: 0
+		lineageTag: 9f3c922e-7c61-4756-8ae2-c147ec50cfd2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition sales = m
 		mode: import
 		source =
