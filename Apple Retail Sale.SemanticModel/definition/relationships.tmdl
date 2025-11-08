@@ -13,3 +13,9 @@ relationship c51247a1-683d-4949-a344-1f37a677673e
 	fromColumn: warranty.Claim_Date
 	toColumn: LocalDateTable_a00715d5-4890-41e1-8107-e5564ee9646e.Date
 
+relationship 5b0eb44e-371d-f54c-3d46-582296f72936
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: sales.Sale_ID
+	toColumn: warranty.Sale_ID
+
