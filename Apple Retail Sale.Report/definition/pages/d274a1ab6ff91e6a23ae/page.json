@@ -8,7 +8,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "787a7f1a071740d3bf2a",
+        "name": "6d78a0c34085c3208145",
         "field": {
           "Column": {
             "Expression": {
@@ -16,7 +16,7 @@
                 "Entity": "sales"
               }
             },
-            "Property": "Category_Name"
+            "Property": "Corrected_Categories"
           }
         },
         "type": "Categorical",
@@ -41,7 +41,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "Category_Name"
+                        "Property": "Corrected_Categories"
                       }
                     }
                   ],

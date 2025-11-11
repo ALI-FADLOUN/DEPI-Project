@@ -1,190 +1,47 @@
-table sales
-	lineageTag: be291d41-3f67-4938-9835-f40e279c1b15
-
-	measure 'Running Total' =
-			CALCULATE(
-			    SUM(sales[Sales]),
-			    FILTER(
-			        ALL(Running_Date[Date]),
-			        Running_Date[Date] <= MAX(sales[Sale_Date])
-			    )
-			)
-		formatString: 0
-		lineageTag: 28ec9166-7a90-4881-8067-df4aa20ca6e0
-
-	measure 'Cumulative Revenue' =
-			
-			VAR CuurentTotalRevenue = [Total Revenue sum]
-			RETURN
-			    CALCULATE(
-			        [Total Revenue sum],
-			        FILTER(
-			            ALL(Products[Product_Name]),
-			            [Total Revenue sum] >= CuurentTotalRevenue
-			        )
-			    )
-		formatString: 0
-		lineageTag: 8c8dfc96-07ba-4319-af3b-c99d8165c324
-
-	measure 'Total Revenue All Products' =
-			
-			CALCULATE(
-			    SUM(sales[Sales]),
-			    ALL(Products)
-			)
-		formatString: 0
-		lineageTag: 7a780806-38d2-4f02-abe2-7b89f19b03fc
-
-	measure 'Pareto Perc.' = DIVIDE([Cumulative Revenue], [Total Revenue All Products])
-		lineageTag: 9414e63f-bd81-4fc2-bdb4-46636a3b4fb9
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Total Revenue sum' = SUM(sales[Sales])
-		formatString: 0
-		lineageTag: 09cb3406-8b36-4656-b665-1931574e29b3
-
-	column Sale_ID
-		dataType: string
-		lineageTag: c922dda5-b7de-451d-86e7-c7435df57e77
-		summarizeBy: none
-		sourceColumn: Sale_ID
-
-		annotation SummarizationSetBy = Automatic
-
-	column Sale_Date
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: 23441c45-f4f6-4ab7-b06b-adb13f9e014c
-		summarizeBy: none
-		sourceColumn: Sale_Date
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column Store_ID
-		dataType: string
-		lineageTag: e6ca4e80-5068-4863-ace6-0b4e0395675e
-		summarizeBy: none
-		sourceColumn: Store_ID
-
-		annotation SummarizationSetBy = Automatic
+table Products
+	lineageTag: df795cfc-7b5d-4cb9-8f29-53fcf0bef7c3
 
 	column Product_ID
 		dataType: string
-		lineageTag: 5377c588-7df2-469b-8cc1-20a923aeab5c
+		lineageTag: ed86cbfe-d65a-4b98-9eb8-e93973ae426b
 		summarizeBy: none
 		sourceColumn: Product_ID
 
 		annotation SummarizationSetBy = Automatic
 
-	column Quantity
-		dataType: int64
-		formatString: 0
-		lineageTag: 3bc1da96-faed-444b-851f-43c1cf021919
-		summarizeBy: sum
-		sourceColumn: Quantity
-
-		annotation SummarizationSetBy = Automatic
-
-	column Store_Name
-		dataType: string
-		lineageTag: 331caf8c-536c-43b7-8960-f78b143d17d3
-		summarizeBy: none
-		sourceColumn: Store_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column City
-		dataType: string
-		lineageTag: 6d6e2a40-d734-4a5a-8f12-e7326bbfa682
-		summarizeBy: none
-		sourceColumn: City
-
-		annotation SummarizationSetBy = Automatic
-
-	column Country
-		dataType: string
-		lineageTag: 55b27aa5-7b8e-4c60-b0bb-1ba139bc1e2d
-		summarizeBy: none
-		sourceColumn: Country
-
-		annotation SummarizationSetBy = Automatic
-
 	column Product_Name
 		dataType: string
-		lineageTag: 1f4f6851-86d6-4b00-b25b-3faf64664caf
+		lineageTag: 267d5b1c-b11f-40aa-84fc-f0cb652174fe
 		summarizeBy: none
 		sourceColumn: Product_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column Category_ID
-		dataType: string
-		lineageTag: fd4e6e80-ec64-48aa-b7ff-b812acf6c90f
-		summarizeBy: none
-		sourceColumn: Category_ID
 
 		annotation SummarizationSetBy = Automatic
 
 	column Launch_Date
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: d42ebe1b-7d00-4935-b7ea-34f3a27b93e3
+		lineageTag: 6c054a9f-f7c0-4a62-a9b4-2c4570b95410
 		summarizeBy: none
 		sourceColumn: Launch_Date
 
 		variation Variation
 			isDefault
-			relationship: 5cdd31da-52ea-4e05-91ff-6ddf1c210a1d
-			defaultHierarchy: LocalDateTable_be714883-66f5-4c1a-8ffd-18ee6357700f.'Date Hierarchy'
+			relationship: 11ad6f01-0a47-40db-80da-d1001ad6f669
+			defaultHierarchy: LocalDateTable_6b055ecf-1c43-4e5d-8a69-c4353c4c85a2.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column Unit_Price
-		dataType: int64
-		formatString: 0
-		lineageTag: e6f4c0e0-0dfc-4a02-8c56-0f0732e24e3c
-		summarizeBy: sum
-		sourceColumn: Unit_Price
-
-		annotation SummarizationSetBy = Automatic
-
-	column Category_Name
-		dataType: string
-		lineageTag: fd2655d5-cb27-445a-a629-6690b3979a0e
-		summarizeBy: none
-		sourceColumn: Category_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column Sales = sales[Unit_Price] * sales[Quantity]
-		formatString: 0
-		lineageTag: 9f3c922e-7c61-4756-8ae2-c147ec50cfd2
-		summarizeBy: sum
-
-		annotation SummarizationSetBy = Automatic
-
-	column Corrected_Categories
-		dataType: string
-		lineageTag: 56f4feb4-275d-4039-bad9-dda2af118beb
-		summarizeBy: none
-		sourceColumn: Corrected_Categories
-
-		annotation SummarizationSetBy = Automatic
-
 	column Corrected_Category_ID
 		dataType: string
-		lineageTag: e617596f-6cda-4b58-b5d4-4a1ec0f406dd
+		lineageTag: e49a5f16-cdd5-46c5-a007-b8645de3f809
 		summarizeBy: none
 		sourceColumn: Corrected_Category_ID
 
 		annotation SummarizationSetBy = Automatic
 
-	partition sales = m
+	partition Products = m
 		mode: import
 		source =
 				let
@@ -281,7 +138,10 @@ table sales
 				    #"Added Conditional Column" = Table.AddColumn(#"Removed Duplicates", "Corrected_Categories", each if Text.Contains([Product_Name], "HomePod") then "Smart Speakers" else [Category_Name]),
 				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Corrected_Categories", type text}}),
 				    #"Added Conditional Column1" = Table.AddColumn(#"Changed Type1", "Corrected_Category_ID", each if [Corrected_Categories] = "Smart Speakers" then "CAT-9" else [Category_ID]),
-				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Conditional Column1",{{"Corrected_Category_ID", type text}})
+				    #"Removed Other Columns" = Table.SelectColumns(#"Added Conditional Column1",{"Product_ID", "Product_Name", "Launch_Date", "Unit_Price", "Corrected_Category_ID"}),
+				    #"Removed Duplicates1" = Table.Distinct(#"Removed Other Columns"),
+				    #"Removed Columns" = Table.RemoveColumns(#"Removed Duplicates1",{"Unit_Price"}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Removed Columns",{{"Corrected_Category_ID", type text}})
 				in
 				    #"Changed Type2"
 

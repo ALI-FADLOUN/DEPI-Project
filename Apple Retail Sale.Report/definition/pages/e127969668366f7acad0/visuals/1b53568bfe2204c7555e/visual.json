@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "0c1f13cdfaffcd600322",
+  "name": "1b53568bfe2204c7555e",
   "position": {
-    "x": 159.30277781720628,
-    "y": 46.511759946629567,
+    "x": 301.16364565442649,
+    "y": 94.186313891924883,
     "z": 0,
     "height": 160.465571815872,
-    "width": 632.55993527416217,
-    "tabOrder": 1000
+    "width": 794.18830108869986
   },
   "visual": {
     "visualType": "cardVisual",
@@ -32,9 +31,7 @@
                 }
               },
               "queryRef": "Sum(sales.Sales)",
-              "nativeQueryRef": "Total Revenue",
-              "displayName": "Total Revenue",
-              "format": "\\$#,0;(\\$#,0);\\$#,0"
+              "nativeQueryRef": "Sum of Sales"
             },
             {
               "field": {
@@ -53,8 +50,7 @@
                 }
               },
               "queryRef": "Sum(sales.Quantity)",
-              "nativeQueryRef": "Units Sold",
-              "displayName": "Units Sold"
+              "nativeQueryRef": "Sum of Quantity"
             }
           ]
         }
@@ -164,7 +160,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "8L"
+                  "Value": "140L"
                 }
               }
             },
@@ -351,45 +347,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "value": [
-        {
-          "properties": {
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
                 }
               }
             }
