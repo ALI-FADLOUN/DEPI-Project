@@ -44,6 +44,61 @@ table sales
 		formatString: 0
 		lineageTag: 09cb3406-8b36-4656-b665-1931574e29b3
 
+	measure perc80 = [Max Product Sale] * 0.8
+		lineageTag: 2b614fbb-a4d2-4c42-99e3-08b12940ecc4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Top Revenue Product' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(Products[Product_Name]),
+			        [Total Revenue sum],
+			        DESC
+			    )
+			```
+		lineageTag: 59c56f95-e266-41e1-8e0b-853d9be8a699
+
+	measure 'Max Product Sale' =
+			
+			CALCULATE(
+			    [Total Revenue sum],
+			    FILTER(
+			        ALL(Products[Product_Name]),
+			        Products[Product_Name] == [Top Revenue Product]
+			    )
+			)
+		formatString: 0
+		lineageTag: 934794c1-e427-47f0-8e35-98ceed921a7d
+
+	measure 'Total quantity sum' = SUM(sales[Quantity])
+		formatString: 0
+		lineageTag: 001939fc-71c2-4255-8dab-fad85c098157
+
+	measure 'Top sold Product' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(Products[Product_Name]),
+			        [Total quantity sum],
+			        DESC
+			    )
+			```
+		lineageTag: 8bf148a5-838b-443b-9019-8adcb3f7e171
+
+	measure 'Total ordered sum' = DISTINCTCOUNT(sales[Sale_ID])
+		formatString: 0
+		lineageTag: d89431b5-94f7-4e9e-a14d-dfd815218840
+
+	measure 'Top Ordered Product' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(Products[Product_Name]),
+			        [Total ordered sum],
+			        DESC
+			    )
+			```
+		lineageTag: 1a82fd05-86e4-4bdf-ba23-0e694d458981
+
 	column Sale_ID
 		dataType: string
 		lineageTag: c922dda5-b7de-451d-86e7-c7435df57e77

@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "0c1f13cdfaffcd600322",
   "position": {
-    "x": 159.30277781720628,
-    "y": 46.511759946629567,
+    "x": 17.441909979986089,
+    "y": 86.0467559012647,
     "z": 0,
-    "height": 160.465571815872,
-    "width": 632.55993527416217,
-    "tabOrder": 1000
+    "height": 139.53527983988872,
+    "width": 1243.0267845736753
   },
   "visual": {
     "visualType": "cardVisual",
@@ -55,6 +54,70 @@
               "queryRef": "Sum(sales.Quantity)",
               "nativeQueryRef": "Units Sold",
               "displayName": "Units Sold"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sales"
+                        }
+                      },
+                      "Property": "Sale_ID"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "Min(sales.Sale_ID)",
+              "nativeQueryRef": "No. of Orders",
+              "displayName": "No. of Orders"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sales"
+                    }
+                  },
+                  "Property": "Top Revenue Product"
+                }
+              },
+              "queryRef": "sales.Top Sale Product",
+              "nativeQueryRef": "Top  Revenue Product",
+              "displayName": "Top  Revenue Product"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sales"
+                    }
+                  },
+                  "Property": "Top sold Product"
+                }
+              },
+              "queryRef": "sales.Top sold Product",
+              "nativeQueryRef": "Top Selling Product",
+              "displayName": "Top Selling Product"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sales"
+                    }
+                  },
+                  "Property": "Top Ordered Product"
+                }
+              },
+              "queryRef": "sales.Top Ordered Product",
+              "nativeQueryRef": "Top Ordered Product"
             }
           ]
         }
@@ -153,6 +216,20 @@
                   "Value": "false"
                 }
               }
+            },
+            "bottomOuterMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "12L"
+                }
+              }
+            },
+            "topOuterMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "12L"
+                }
+              }
             }
           },
           "selector": {
@@ -164,14 +241,14 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "8L"
+                  "Value": "21L"
                 }
               }
             },
             "maxTiles": {
               "expr": {
                 "Literal": {
-                  "Value": "3L"
+                  "Value": "6L"
                 }
               }
             },
@@ -322,7 +399,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -369,10 +446,66 @@
                   "Value": "false"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "25D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(sales.Sale_ID)"
           }
         }
       ],

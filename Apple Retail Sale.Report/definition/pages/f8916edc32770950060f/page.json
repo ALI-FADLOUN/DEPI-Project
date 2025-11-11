@@ -49,13 +49,6 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Audio'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
                           "Value": "'Smart Speakers'"
                         }
                       }

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "4b8ea84001b8248e4d40",
+  "name": "d271956bfc036db05640",
   "position": {
-    "x": 34.883819959972179,
-    "y": 344.18702360505881,
-    "z": 1000,
-    "height": 341.86143560772734,
-    "width": 279.07055967977743,
-    "tabOrder": 1000
+    "x": 17.441909979986089,
+    "y": 534.88523938624007,
+    "z": 4,
+    "height": 173.25630580119514,
+    "width": 145.34924983321741,
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "slicer",
@@ -20,61 +20,44 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Products"
+                      "Entity": "Running_Date"
                     }
                   },
-                  "Property": "Product_Name"
+                  "Property": "Year"
                 }
               },
-              "queryRef": "Products.Product_Name",
-              "nativeQueryRef": "Product_Name",
+              "queryRef": "Running_Date.Year",
+              "nativeQueryRef": "Year",
               "active": true
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "general": [
-        {
-          "properties": {
-            "orientation": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "singleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "data": [
         {
           "properties": {
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -100,26 +83,24 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "11D"
                 }
               }
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      ],
+      "selection": [
         {
           "properties": {
-            "show": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "singleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -130,8 +111,50 @@
         }
       ]
     },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Year'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "syncGroup": {
-      "groupName": "Product_Name",
+      "groupName": "Year",
       "fieldChanges": true,
       "filterChanges": true
     },
