@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "1af1a35ae7abae2d7b0f",
+  "name": "71595ace00763c611533",
   "position": {
-    "x": 842.54141610412239,
-    "y": 23.327693931221631,
-    "z": 5000,
-    "height": 60.377560763161867,
-    "width": 150.94390190790466,
-    "tabOrder": 4000
+    "x": 827.44702591333191,
+    "y": 32.933214961724651,
+    "z": 5003,
+    "height": 64.494212633377444,
+    "width": 167.410509388767,
+    "tabOrder": 5003
   },
   "visual": {
     "visualType": "shape",
@@ -80,6 +80,13 @@
                 }
               }
             },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -89,13 +96,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
                 }
               }
             },
@@ -114,31 +114,6 @@
       ]
     },
     "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
       "visualLink": [
         {
           "properties": {
@@ -159,7 +134,7 @@
             "navigationSection": {
               "expr": {
                 "Literal": {
-                  "Value": "'9357ff70ee6dd9633e42'"
+                  "Value": "'aeb47032bd784b246b45'"
                 }
               }
             }

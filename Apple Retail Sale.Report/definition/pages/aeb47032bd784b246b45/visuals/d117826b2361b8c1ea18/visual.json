@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "d117826b2361b8c1ea18",
   "position": {
-    "x": 854.75997133986152,
-    "y": 228.66969190351088,
-    "z": 3000,
-    "height": 261.68617148316218,
-    "width": 391.30642464771915,
-    "tabOrder": 3000
+    "x": 942.71327827936818,
+    "y": 229.16028744200071,
+    "z": 1000,
+    "height": 260.72128511365349,
+    "width": 303.26002110588121
   },
   "visual": {
     "visualType": "donutChart",
@@ -23,11 +22,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Product_Name"
+                  "Property": "Category_Name"
                 }
               },
-              "queryRef": "sales.Product_Name",
-              "nativeQueryRef": "Product_Name",
+              "queryRef": "sales.Category_Name",
+              "nativeQueryRef": "Category_Name",
               "active": true
             }
           ]
@@ -36,22 +35,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "sales"
-                        }
-                      },
-                      "Property": "Quantity"
+                    "SourceRef": {
+                      "Entity": "sales"
                     }
                   },
-                  "Function": 0
+                  "Property": "Total Sales.Yara"
                 }
               },
-              "queryRef": "Sum(sales.Quantity)",
-              "nativeQueryRef": "Sum of Quantity"
+              "queryRef": "sales.Total Sales.Yara",
+              "nativeQueryRef": "Total Sales.Yara"
             }
           ]
         }
@@ -60,18 +54,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "sales"
-                      }
-                    },
-                    "Property": "Quantity"
+                  "SourceRef": {
+                    "Entity": "sales"
                   }
                 },
-                "Function": 0
+                "Property": "Total Sales.Yara"
               }
             },
             "direction": "Descending"
@@ -1047,6 +1036,90 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "sales"
+                          }
+                        },
+                        "Property": "Category_Name"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Accessories'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "sales"
+                          }
+                        },
+                        "Property": "Category_Name"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Smartphone'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "labels": [
@@ -1118,7 +1191,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Top Products by Quantity'"
+                  "Value": "'Accessories VS Smartphones'"
                 }
               }
             },
@@ -1171,25 +1244,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "f35f8c7253568c1726c5",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Quantity"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "124eb3efdbdb743527c7",
         "field": {
@@ -1289,7 +1343,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

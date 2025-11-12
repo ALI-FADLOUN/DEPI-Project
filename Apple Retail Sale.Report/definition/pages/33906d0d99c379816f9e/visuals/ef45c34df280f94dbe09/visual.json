@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "0cb921c381853fd8c762",
+  "name": "ef45c34df280f94dbe09",
   "position": {
-    "x": 119.38290423625187,
-    "y": 23.327693931221631,
-    "z": 3000,
-    "height": 60.377560763161867,
-    "width": 370.49866831940238,
-    "tabOrder": 2000
+    "x": 137.22172900718607,
+    "y": 20.58325935107791,
+    "z": 8,
+    "height": 69.9830817936649,
+    "width": 433.62066366270795,
+    "tabOrder": 7
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Sales Overview",
+                    "value": "Accessories Analysis",
                     "textStyle": {
                       "fontFamily": "Arial",
                       "fontSize": "32pt",

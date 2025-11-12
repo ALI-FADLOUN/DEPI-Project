@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "f92b6a0a1273d8cd1126",
+  "name": "39bc71d8052c59cc8435",
   "position": {
-    "x": 31.793647002627178,
-    "y": 100.27227131597803,
+    "x": 28.816563091509071,
+    "y": 119.38290423625187,
     "z": 0,
-    "height": 121.06042512538811,
-    "width": 1214.2727489849535,
-    "tabOrder": 8000
+    "height": 137.22172900718607,
+    "width": 1215.7845190036685
   },
   "visual": {
     "visualType": "cardVisual",
@@ -74,8 +73,7 @@
                 }
               },
               "queryRef": "Min(warranty.Claim_ID)",
-              "nativeQueryRef": "Count of Claim_ID",
-              "format": "0"
+              "nativeQueryRef": "Count of Claim_ID"
             },
             {
               "field": {
@@ -90,7 +88,7 @@
               },
               "queryRef": "sales.Claim Rate",
               "nativeQueryRef": "Claim Rate",
-              "format": "0.0%;-0.0%;0.0%"
+              "format": "0%;-0%;0%"
             }
           ]
         }
@@ -126,20 +124,6 @@
               }
             }
           }
-        },
-        {
-          "properties": {
-            "rectangleRoundedCurve": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
         }
       ],
       "shapeCustomRectangle": [
@@ -149,13 +133,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'rectangleRoundedByPixel'"
-                }
-              }
-            },
-            "rectangleRoundedCurve": {
-              "expr": {
-                "Literal": {
-                  "Value": "20L"
                 }
               }
             }
@@ -186,6 +163,36 @@
           }
         }
       ],
+      "value": [
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Avg Selling Price.Yara"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(warranty.Claim_ID)"
+          }
+        }
+      ],
       "accentBar": [
         {
           "properties": {
@@ -198,67 +205,11 @@
             }
           },
           "selector": {
-            "id": "default"
+            "metadata": "sales.Total Sales.Yara"
           }
         }
       ],
       "label": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Total Claims'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Min(warranty.Claim_ID)"
-          }
-        },
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Claim Rate'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "sales.Claim Rate"
-          }
-        },
         {
           "properties": {
             "text": {
@@ -342,49 +293,61 @@
           "selector": {
             "metadata": "sales.Avg Selling Price.Yara"
           }
-        }
-      ],
-      "value": [
+        },
         {
           "properties": {
-            "labelPrecision": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "1L"
+                  "Value": "'Total Claims'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "sales.Total Sales.Yara"
+            "metadata": "Min(warranty.Claim_ID)"
           }
         },
         {
           "properties": {
-            "labelPrecision": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "1L"
+                  "Value": "'Claim Rate'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "sales.Total Quantity Sold.Yara"
-          }
-        },
-        {
-          "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "sales.Avg Selling Price.Yara"
+            "metadata": "sales.Claim Rate"
           }
         }
       ]
@@ -407,19 +370,6 @@
             }
           }
         }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -427,7 +377,49 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1d92cf2945da5292a49f",
+        "name": "1f56ac4a921a84bf2665",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Total Sales.Yara"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5f4abb2220585d859fdc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Total Quantity Sold.Yara"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6ba695e4141a7023208d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Avg Selling Price.Yara"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bf088f8b55c8175fffd2",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -446,7 +438,7 @@
         "type": "Advanced"
       },
       {
-        "name": "e1eb2e3c03a326f66d14",
+        "name": "0f9d5bc0a6848b5098aa",
         "field": {
           "Measure": {
             "Expression": {
@@ -455,48 +447,6 @@
               }
             },
             "Property": "Claim Rate"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5f077ea19f8435aadbe9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Total Sales.Yara"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "13899877c39d5ffa3db9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Total Quantity Sold.Yara"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4f4ae31db7a7753ace46",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Avg Selling Price.Yara"
           }
         },
         "type": "Advanced"

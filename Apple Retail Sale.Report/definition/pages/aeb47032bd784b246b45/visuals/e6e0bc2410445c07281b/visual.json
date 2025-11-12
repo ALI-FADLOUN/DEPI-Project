@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "f301a660094815940847",
+  "name": "e6e0bc2410445c07281b",
   "position": {
-    "x": 222.55552901839027,
-    "y": 503.80702173393837,
-    "z": 6000,
-    "height": 216.44136613326964,
-    "width": 398.64342010986388,
-    "tabOrder": 6000
+    "x": 31.560997671652792,
+    "y": 503.60374545637285,
+    "z": 9001,
+    "height": 216.81033183135398,
+    "width": 182.50489957955745,
+    "tabOrder": 9001
   },
   "visual": {
     "visualType": "listSlicer",
@@ -23,11 +23,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Store_Name"
+                  "Property": "Price Category.Yara"
                 }
               },
-              "queryRef": "sales.Store_Name",
-              "nativeQueryRef": "Store_Name",
+              "queryRef": "sales.Price Category.Yara",
+              "nativeQueryRef": "Price Category.Yara",
               "active": true
             }
           ]
@@ -41,7 +41,7 @@
             "rowCount": {
               "expr": {
                 "Literal": {
-                  "Value": "5L"
+                  "Value": "3L"
                 }
               }
             }
@@ -55,6 +55,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }
@@ -71,40 +78,6 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Store Name'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "border": [
         {
           "properties": {
@@ -124,6 +97,40 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Price Category'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -131,7 +138,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "7a786932f501ecc18151",
+        "name": "2c254237f0a6aa433920",
         "field": {
           "Column": {
             "Expression": {
@@ -139,7 +146,7 @@
                 "Entity": "sales"
               }
             },
-            "Property": "Store_Name"
+            "Property": "Price Category.Yara"
           }
         },
         "type": "Categorical"

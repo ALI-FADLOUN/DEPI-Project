@@ -1,142 +1,141 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "8ded8486e3f42fb3ad2d",
+  "name": "98f908ed5e4c69d65360",
   "position": {
-    "x": 31.793647002627178,
-    "y": 228.66969190351088,
-    "z": 1000,
-    "height": 261.68617148316218,
-    "width": 525.81800812037261,
-    "tabOrder": 1000
+    "x": 31.560997671652792,
+    "y": 229.16028744200071,
+    "z": 6000,
+    "height": 260.72128511365349,
+    "width": 474.78718236486378,
+    "tabOrder": 5000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "azureMap",
     "query": {
       "queryState": {
         "Category": {
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "sales"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Sale_Date"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "sales"
                     }
                   },
-                  "Level": "Month"
+                  "Property": "Country"
                 }
               },
-              "queryRef": "sales.Sale_Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Sale_Date Month",
+              "queryRef": "sales.Country",
+              "nativeQueryRef": "Country",
               "active": true
             }
           ]
         },
-        "Y": {
+        "Size": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "sales"
-                        }
-                      },
-                      "Property": "Sales"
+                    "SourceRef": {
+                      "Entity": "sales"
                     }
                   },
-                  "Function": 0
+                  "Property": "Total Sales.Yara"
                 }
               },
-              "queryRef": "Sum(sales.Sales)",
-              "nativeQueryRef": "Sum of Sales"
+              "queryRef": "sales.Total Sales.Yara",
+              "nativeQueryRef": "Total Sales.Yara"
             }
           ]
         }
       }
     },
     "objects": {
-      "categoryAxis": [
+      "mapControls": [
         {
           "properties": {
-            "showAxisTitle": {
+            "defaultStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'grayscale_light'"
+                }
+              }
+            },
+            "showStylePicker": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
+            "showNavigationControls": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "fontFamily": {
+            "showSelectionControl": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
+      "bubbleLayer": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "bubbleRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
+            },
+            "minBubbleRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
+            },
+            "maxRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "21L"
+                }
+              }
+            },
+            "bubbleStrokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "autoStrokeColor": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "layerPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
                 }
               }
             }
@@ -158,14 +157,45 @@
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Sum(sales.Sales)"
           }
         }
       ]
     },
     "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Sales by Country'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "border": [
         {
           "properties": {
@@ -180,40 +210,6 @@
               "expr": {
                 "Literal": {
                   "Value": "20D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "' Sales Over Time'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
                 }
               }
             }

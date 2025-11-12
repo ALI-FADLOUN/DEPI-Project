@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "31c9a05f9eddb6ba39d7",
+  "name": "143e69f56cb6675f58d6",
   "position": {
-    "x": 31.793647002627178,
-    "y": 503.80702173393837,
-    "z": 5000,
-    "height": 216.44136613326964,
-    "width": 176.08789109147361,
-    "tabOrder": 5000
+    "x": 522.81478751737893,
+    "y": 229.16028744200071,
+    "z": 8000,
+    "height": 260.72128511365349,
+    "width": 404.80410057119889,
+    "tabOrder": 7000
   },
   "visual": {
-    "visualType": "listSlicer",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
               "field": {
@@ -40,6 +40,24 @@
               "queryRef": "sales.Sale_Date.Variation.Date Hierarchy.Year",
               "nativeQueryRef": "Sale_Date Year",
               "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sales"
+                    }
+                  },
+                  "Property": "Total Sales.Yara"
+                }
+              },
+              "queryRef": "sales.Total Sales.Yara",
+              "nativeQueryRef": "Total Sales.Yara"
             }
           ]
         }
@@ -75,49 +93,116 @@
       }
     },
     "objects": {
-      "general": [
-        {
-          "properties": {}
-        }
-      ],
-      "layout": [
+      "valueAxis": [
         {
           "properties": {
-            "rowCount": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "5L"
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "value": [
+      "categoryAxis": [
         {
           "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
                 }
               }
             }
           },
           "selector": {
-            "id": "default"
+            "metadata": "sales.Total Sales.Yara"
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      ],
+      "labels": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "10D"
                 }
               }
             },
@@ -128,16 +213,18 @@
                 }
               }
             },
-            "alignment": {
+            "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "true"
                 }
               }
             }
           }
         }
-      ],
+      ]
+    },
+    "visualContainerObjects": {
       "border": [
         {
           "properties": {
@@ -157,6 +244,40 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sales Trend'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -164,7 +285,21 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "bb9b5595c13c36ea2844",
+        "name": "e54cb161f97da5604947",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Total Sales.Yara"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bae4800c68e3e4375d28",
         "field": {
           "HierarchyLevel": {
             "Expression": {

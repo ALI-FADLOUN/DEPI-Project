@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "8dd7597737dbffe65691",
+  "name": "e726c5b3bf5141c80e16",
   "position": {
     "x": 53.516474312802565,
-    "y": 8.2333037404311629,
-    "z": 4000,
-    "height": 75.47195095395233,
-    "width": 75.47195095395233,
-    "tabOrder": 3000
+    "y": 12.349955610646745,
+    "z": 9,
+    "height": 86.449689274527216,
+    "width": 83.7052546943835,
+    "tabOrder": 8
   },
   "visual": {
     "visualType": "image",
@@ -20,7 +20,7 @@
                 "ResourcePackageItem": {
                   "PackageName": "RegisteredResources",
                   "PackageType": 1,
-                  "ItemName": "apple-logo-42-1536x153638025760657946417.png"
+                  "ItemName": "apple-logo-42-1536x1536594902971177708.png"
                 }
               }
             }

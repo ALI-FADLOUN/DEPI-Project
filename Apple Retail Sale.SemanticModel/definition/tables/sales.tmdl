@@ -6,6 +6,23 @@ table sales
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Avg Selling Price.Yara' = DIVIDE([Total Sales.Yara],[Total Quantity Sold.Yara])
+		lineageTag: e7f66f3f-da09-4de5-8c89-c92d8f6436e3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Sales.Yara' = ```
+			SUM(sales[Sales]) 
+			```
+		formatString: 0
+		lineageTag: 29d2d664-9741-4520-965a-eae9faac3dd7
+
+	measure 'Total Quantity Sold.Yara' = ```
+			SUM(sales[Quantity]) 
+			```
+		formatString: 0
+		lineageTag: 8645d22d-5f81-4c4a-bffe-7b7cf0c49dd7
+
 	column Sale_ID
 		dataType: string
 		lineageTag: c922dda5-b7de-451d-86e7-c7435df57e77
@@ -132,6 +149,12 @@ table sales
 		formatString: 0
 		lineageTag: 9f3c922e-7c61-4756-8ae2-c147ec50cfd2
 		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Price Category.Yara' = SWITCH(TRUE(),sales[Unit_Price]>=1000, "High Price", sales[Unit_Price]>=500,"Medium Price","Low Price")
+		lineageTag: 1c23949a-202e-455e-9d1e-f45e03277d4d
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
