@@ -1715,12 +1715,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "category": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "corrected classification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1818,6 +1812,26 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Categories": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Category Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3527,28 +3541,38 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.cumulative_revenue": {
+			    "sale.cumulative_revenue_product": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Cumulative Revenue"
+			          "ConceptualProperty": "Cumulative Revenue Product"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "cumulative revenue": {
+			          "cumulative revenue product": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "revenue": {
+			          "revenue product": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "cumulative income": {
+			          "cumulative revenue artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "revenue artifact": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -3558,17 +3582,37 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "income": {
+			          "cumulative revenue item": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "cumulative profit": {
+			          "cumulative revenue merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative revenue produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "revenue item": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -3578,7 +3622,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "cumulative turnover": {
+			          "revenue merchandise": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -3588,7 +3632,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "cumulative yield": {
+			          "revenue produce": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -3598,33 +3642,23 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "profit": {
+			          "cumulative income product": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.609
 			          }
 			        },
 			        {
-			          "turnover": {
+			          "income product": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "yield": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        }
 			      ]
@@ -3745,18 +3779,68 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.pareto_perc_": {
+			    "sale.pareto_perc__product": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Pareto Perc."
+			          "ConceptualProperty": "Pareto Perc. Product"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "pareto perc.": {
+			          "pareto perc. product": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pareto perc. artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "pareto perc. item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Pareto Perc.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4275,25 +4359,58 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.perc_80": {
+			    "sale.perc80_product": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "perc80"
+			          "ConceptualProperty": "perc80 Product"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "perc 80": {
+			          "perc80 product": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "perc80": {
+			          "perc80 artifact": {
 			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "perc80 item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -5001,9 +5118,1006 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "sale.top_sold_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Top sold Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top sold category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "top sold classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "top sold class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top sold group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top sold type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top sold grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top sold kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "best sold category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "first sold category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "leading sold category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "maximum sold category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Top Selling Category": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sale.top_revenue_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Top Revenue Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top revenue category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "top revenue classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "revenue classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "top revenue class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top revenue group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top revenue type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top revenue grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top revenue kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "revenue class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "revenue group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.top_ordered_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Top Ordered Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top ordered category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "top ordered classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "top ordered class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top ordered group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top ordered type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top ordered grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "top ordered kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "best ordered category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "first ordered category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "leading ordered category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "maximum ordered category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "sale.cumulative_revenue_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Cumulative Revenue Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cumulative revenue category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cumulative revenue classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "revenue classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cumulative revenue class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative revenue group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative revenue type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative revenue grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative revenue kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "revenue class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "revenue group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.total_revenue_all_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Total Revenue All Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total revenue all category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total revenue all classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "total revenue all class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total revenue all group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total revenue all type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total revenue all grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total revenue all kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total income all category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "aggregate revenue all category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall revenue all category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total profit all category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "sale.pareto_perc__category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Pareto Perc. Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pareto perc. category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pareto perc. classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "pareto perc. class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "pareto perc. kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Pareto Perc.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sale.max_category_sale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Max Category Sale"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max category sale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category sale": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "max classification sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "classification sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "maximum category sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "max class sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "max group sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "max type sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "max grouping sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "max kind sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "class sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "group sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "sale.perc80_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "perc80 Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "perc80 category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "perc80 classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "perc80 class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "perc80 kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "running_date_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Running_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "running_date.date": {
+			          "Target": {
+			            "Entity": "running_date.date"
+			          }
+			        },
+			        "running_date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "running_date.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "running_date.date"
+			            },
+			            "Object": {
+			              "Role": "running_date.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.day": {
+			          "Target": {
+			            "Entity": "product.launch_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_days"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.month": {
+			          "Target": {
+			            "Entity": "product.launch_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_months"
+			        }
+			      ]
+			    },
 			    "product_launch_date_date_hierarchy_has_product_launch_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Products"
@@ -5297,7 +6411,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_days"
+			          "ID": "launch_date_hierarchies_have_launch_days1"
 			        }
 			      ]
 			    },
@@ -5330,7 +6444,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_months"
+			          "ID": "launch_date_hierarchies_have_launch_months1"
 			        }
 			      ]
 			    },
@@ -5588,6 +6702,270 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "sales_have_warranties"
+			        }
+			      ]
+			    },
+			    "sale_has_perc80_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.perc80_category": {
+			          "Target": {
+			            "Entity": "sale.perc80_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.perc80_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_perc80_category"
+			        }
+			      ]
+			    },
+			    "sale_has_max_category_sale": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.max_category_sale": {
+			          "Target": {
+			            "Entity": "sale.max_category_sale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.max_category_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_max_category_sale"
+			        }
+			      ]
+			    },
+			    "sale_has_pareto_perc__category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.pareto_perc__category": {
+			          "Target": {
+			            "Entity": "sale.pareto_perc__category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.pareto_perc__category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_pareto_perc__category"
+			        }
+			      ]
+			    },
+			    "sale_has_total_revenue_all_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.total_revenue_all_category": {
+			          "Target": {
+			            "Entity": "sale.total_revenue_all_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.total_revenue_all_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_total_revenue_all_category"
+			        }
+			      ]
+			    },
+			    "sale_has_cumulative_revenue_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.cumulative_revenue_category": {
+			          "Target": {
+			            "Entity": "sale.cumulative_revenue_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.cumulative_revenue_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_cumulative_revenue_category"
+			        }
+			      ]
+			    },
+			    "sale_has_top_ordered_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.top_ordered_category": {
+			          "Target": {
+			            "Entity": "sale.top_ordered_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.top_ordered_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_top_ordered_category"
+			        }
+			      ]
+			    },
+			    "sale_has_top_revenue_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.top_revenue_category": {
+			          "Target": {
+			            "Entity": "sale.top_revenue_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.top_revenue_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_top_revenue_category"
+			        }
+			      ]
+			    },
+			    "sale_has_top_sold_category": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.top_sold_category": {
+			          "Target": {
+			            "Entity": "sale.top_sold_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.top_sold_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_top_sold_category"
 			        }
 			      ]
 			    },
@@ -5888,7 +7266,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale_has_perc_80": {
+			    "sale_has_perc80_product": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -5899,9 +7277,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.perc_80": {
+			        "sale.perc80_product": {
 			          "Target": {
-			            "Entity": "sale.perc_80"
+			            "Entity": "sale.perc80_product"
 			          }
 			        }
 			      },
@@ -5912,12 +7290,12 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.perc_80"
+			              "Role": "sale.perc80_product"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_perc_80"
+			          "ID": "sales_have_perc80_product"
 			        }
 			      ]
 			    },
@@ -6053,7 +7431,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale_has_pareto_perc_": {
+			    "sale_has_pareto_perc__product": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6064,9 +7442,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.pareto_perc_": {
+			        "sale.pareto_perc__product": {
 			          "Target": {
-			            "Entity": "sale.pareto_perc_"
+			            "Entity": "sale.pareto_perc__product"
 			          }
 			        }
 			      },
@@ -6077,12 +7455,12 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.pareto_perc_"
+			              "Role": "sale.pareto_perc__product"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_pareto_perc_"
+			          "ID": "sales_have_pareto_perc__product"
 			        }
 			      ]
 			    },
@@ -6119,7 +7497,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale_has_cumulative_revenue": {
+			    "sale_has_cumulative_revenue_product": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6130,9 +7508,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.cumulative_revenue": {
+			        "sale.cumulative_revenue_product": {
 			          "Target": {
-			            "Entity": "sale.cumulative_revenue"
+			            "Entity": "sale.cumulative_revenue_product"
 			          }
 			        }
 			      },
@@ -6143,12 +7521,12 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.cumulative_revenue"
+			              "Role": "sale.cumulative_revenue_product"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_cumulative_revenue"
+			          "ID": "sales_have_cumulative_revenue_product"
 			        }
 			      ]
 			    },
@@ -7223,105 +8601,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "sales_are_launched_on_launch_dates"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.month": {
-			          "Target": {
-			            "Entity": "product.launch_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_months1"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.day": {
-			          "Target": {
-			            "Entity": "product.launch_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_days1"
-			        }
-			      ]
-			    },
-			    "running_date_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "running_date.date": {
-			          "Target": {
-			            "Entity": "running_date.date"
-			          }
-			        },
-			        "running_date.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "running_date.date"
-			            },
-			            "Object": {
-			              "Role": "running_date.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
 			        }
 			      ]
 			    },

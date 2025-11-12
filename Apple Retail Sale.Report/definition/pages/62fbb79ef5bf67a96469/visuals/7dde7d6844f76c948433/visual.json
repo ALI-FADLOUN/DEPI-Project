@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "2b471f86af602facbbdc",
+  "name": "7dde7d6844f76c948433",
   "position": {
     "x": 17.441909979986089,
     "y": 86.0467559012647,
     "z": 0,
     "height": 139.53527983988872,
-    "width": 1243.0267845736753
+    "width": 1243.0267845736753,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -83,12 +84,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Revenue Product"
+                  "Property": "Top Revenue Category"
                 }
               },
-              "queryRef": "sales.Top Sale Product",
-              "nativeQueryRef": "Top  Revenue Product",
-              "displayName": "Top  Revenue Product"
+              "queryRef": "sales.Top Revenue Category",
+              "nativeQueryRef": "Top Revenue Category"
             },
             {
               "field": {
@@ -98,12 +98,12 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top sold Product"
+                  "Property": "Top sold Category"
                 }
               },
-              "queryRef": "sales.Top sold Product",
-              "nativeQueryRef": "Top Selling Product",
-              "displayName": "Top Selling Product"
+              "queryRef": "sales.Top sold Category",
+              "nativeQueryRef": "Top Selling Category",
+              "displayName": "Top Selling Category"
             },
             {
               "field": {
@@ -113,11 +113,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Ordered Product"
+                  "Property": "Top Ordered Category"
                 }
               },
-              "queryRef": "sales.Top Ordered Product",
-              "nativeQueryRef": "Top Ordered Product"
+              "queryRef": "sales.Top Ordered Category",
+              "nativeQueryRef": "Top Ordered Category"
             }
           ]
         }

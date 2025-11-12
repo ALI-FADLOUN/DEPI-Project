@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "95dbcea7096107ade45f",
+  "name": "ac25a6abbf1443ee8aa7",
   "position": {
-    "x": 17.441909979986089,
+    "x": 437.210543498318,
     "y": 225.58203574115342,
-    "z": 2,
+    "z": 3000,
     "height": 295.34967566109776,
-    "width": 405.815105534343,
-    "tabOrder": 5
+    "width": 303.48923365175796
   },
   "visual": {
     "visualType": "lineChart",
@@ -15,6 +14,58 @@
       "queryState": {
         "Category": {
           "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Running_Date"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Year"
+                }
+              },
+              "queryRef": "Running_Date.Date.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "Date Year",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Running_Date"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Quarter"
+                }
+              },
+              "queryRef": "Running_Date.Date.Variation.Date Hierarchy.Quarter",
+              "nativeQueryRef": "Date Quarter",
+              "active": true
+            },
             {
               "field": {
                 "HierarchyLevel": {
@@ -47,23 +98,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "sales"
-                        }
-                      },
-                      "Property": "Sales"
+                    "SourceRef": {
+                      "Entity": "sales"
                     }
                   },
-                  "Function": 0
+                  "Property": "Running Total"
                 }
               },
-              "queryRef": "Sum(sales.Sales)",
-              "nativeQueryRef": "Total Revenue",
-              "displayName": "Total Revenue",
+              "queryRef": "sales.Running Total",
+              "nativeQueryRef": "Running Total",
               "format": "\\$#,0;(\\$#,0);\\$#,0"
             }
           ]
@@ -71,7 +116,7 @@
       }
     },
     "objects": {
-      "valueAxis": [
+      "categoryAxis": [
         {
           "properties": {
             "showAxisTitle": {
@@ -84,7 +129,7 @@
           }
         }
       ],
-      "categoryAxis": [
+      "valueAxis": [
         {
           "properties": {
             "showAxisTitle": {
@@ -94,17 +139,17 @@
                 }
               }
             },
-            "invertAxis": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "1000000D"
                 }
               }
             },
-            "start": {
+            "labelPrecision": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2024-01-01T00:00:00'"
+                  "Value": "0L"
                 }
               }
             }
@@ -116,24 +161,17 @@
       "title": [
         {
           "properties": {
-            "show": {
+            "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'center'"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total Revenue Trend'"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "'Running Total Revenue'"
                 }
               }
             },
@@ -168,31 +206,6 @@
               "expr": {
                 "Literal": {
                   "Value": "9D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
                 }
               }
             }

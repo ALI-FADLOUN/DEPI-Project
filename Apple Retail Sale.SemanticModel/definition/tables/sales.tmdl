@@ -12,7 +12,7 @@ table sales
 		formatString: 0
 		lineageTag: 28ec9166-7a90-4881-8067-df4aa20ca6e0
 
-	measure 'Cumulative Revenue' =
+	measure 'Cumulative Revenue Product' =
 			
 			VAR CuurentTotalRevenue = [Total Revenue sum]
 			RETURN
@@ -35,7 +35,7 @@ table sales
 		formatString: 0
 		lineageTag: 7a780806-38d2-4f02-abe2-7b89f19b03fc
 
-	measure 'Pareto Perc.' = DIVIDE([Cumulative Revenue], [Total Revenue All Products])
+	measure 'Pareto Perc. Product' = DIVIDE([Cumulative Revenue Product], [Total Revenue All Products])
 		lineageTag: 9414e63f-bd81-4fc2-bdb4-46636a3b4fb9
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -44,7 +44,7 @@ table sales
 		formatString: 0
 		lineageTag: 09cb3406-8b36-4656-b665-1931574e29b3
 
-	measure perc80 = [Max Product Sale] * 0.8
+	measure 'perc80 Product' = [Max Product Sale] * 0.8
 		lineageTag: 2b614fbb-a4d2-4c42-99e3-08b12940ecc4
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -98,6 +98,81 @@ table sales
 			    )
 			```
 		lineageTag: 1a82fd05-86e4-4bdf-ba23-0e694d458981
+
+	measure 'Top sold Category' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(sales[Corrected_Categories]),
+			        [Total quantity sum],
+			        DESC
+			    )
+			```
+		lineageTag: feba3875-cb34-4660-8e3b-86414e175b84
+
+	measure 'Top Revenue Category' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(sales[Corrected_Categories]),
+			        [Total Revenue sum],
+			        DESC
+			    )
+			```
+		lineageTag: 6b6290ac-585b-4218-b4bd-57251414b0b1
+
+	measure 'Top Ordered Category' = ```
+			
+			    TOPN(1,
+			        ALLSELECTED(sales[Corrected_Categories]),
+			        [Total ordered sum],
+			        DESC
+			    )
+			```
+		lineageTag: 645428a6-4734-494c-87bb-a15a8e6e1d59
+
+	measure 'Cumulative Revenue Category' =
+			
+			VAR CuurentTotalRevenue = [Total Revenue sum]
+			RETURN
+			    CALCULATE(
+			        [Total Revenue sum],
+			        FILTER(
+			            ALL(sales[Corrected_Categories]),
+			            [Total Revenue sum] >= CuurentTotalRevenue
+			        )
+			    )
+		formatString: 0
+		lineageTag: e47440fc-1cd9-4835-99c8-ca213c8f4c28
+
+	measure 'Total Revenue All Category' =
+			
+			CALCULATE(
+			    SUM(sales[Sales]),
+			    ALL(sales[Corrected_Categories])
+			)
+		formatString: 0
+		lineageTag: a7617b44-d110-4b31-bcb3-d06a1f3b8bf1
+
+	measure 'Pareto Perc. Category' = DIVIDE([Cumulative Revenue Category], [Total Revenue All Category])
+		lineageTag: b90aa0f2-36d3-4911-8f93-9ea7ac601a4b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Max Category Sale' =
+			
+			CALCULATE(
+			    [Total Revenue sum],
+			    FILTER(
+			        ALL(sales[Corrected_Categories]),
+			        sales[Corrected_Categories] == [Top Revenue Category]
+			    )
+			)
+		formatString: 0
+		lineageTag: 64290323-1bc8-45d5-904c-0b9be79774e1
+
+	measure 'perc80 Category' = [Max Category Sale] * 0.8
+		lineageTag: 89bf6484-11e9-4029-941b-426fdb875482
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Sale_ID
 		dataType: string

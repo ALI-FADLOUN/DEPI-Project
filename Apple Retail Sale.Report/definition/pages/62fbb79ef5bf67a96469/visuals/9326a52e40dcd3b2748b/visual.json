@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "62be598511e3ea55a7e2",
+  "name": "9326a52e40dcd3b2748b",
   "position": {
     "x": 755.81609913273053,
     "y": 224.41924174248769,
@@ -20,17 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Products"
+                      "Entity": "sales"
                     }
                   },
-                  "Property": "Product_Name"
+                  "Property": "Corrected_Categories"
                 }
               },
-              "queryRef": "Products.Product_Name",
-              "nativeQueryRef": "Product Name",
+              "queryRef": "sales.Corrected_Categories",
+              "nativeQueryRef": "Category Name",
               "active": true,
-              "displayName": "Product Name",
-              "format": "G"
+              "displayName": "Category Name"
             }
           ]
         },
@@ -69,13 +68,13 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Pareto Perc. Product"
+                  "Property": "Pareto Perc. Category"
                 }
               },
-              "queryRef": "sales.Pareto Perc.",
+              "queryRef": "sales.Pareto Perc. Category",
               "nativeQueryRef": "Pareto Perc.",
               "displayName": "Pareto Perc.",
-              "format": "0%;-0%;0%"
+              "format": "0.00%;-0.00%;0.00%"
             }
           ]
         }
@@ -127,7 +126,7 @@
                                           "Entity": "sales"
                                         }
                                       },
-                                      "Property": "Pareto Perc. Product"
+                                      "Property": "Pareto Perc. Category"
                                     }
                                   },
                                   "Right": {
@@ -147,7 +146,7 @@
                                           "Entity": "sales"
                                         }
                                       },
-                                      "Property": "Pareto Perc. Product"
+                                      "Property": "Pareto Perc. Category"
                                     }
                                   },
                                   "Right": {
@@ -289,7 +288,7 @@
             }
           },
           "selector": {
-            "metadata": "sales.Pareto Perc."
+            "metadata": "sales.Pareto Perc. Category"
           }
         }
       ],
@@ -317,20 +316,6 @@
                 }
               }
             }
-          }
-        },
-        {
-          "properties": {
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "sales.Pareto Perc."
           }
         }
       ],
@@ -364,22 +349,6 @@
                 }
               }
             }
-          }
-        }
-      ],
-      "error": [
-        {
-          "properties": {
-            "enabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "sales.Pareto Perc."
           }
         }
       ],
@@ -441,7 +410,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "perc80 Product"
+                  "Property": "perc80 Category"
                 }
               }
             },

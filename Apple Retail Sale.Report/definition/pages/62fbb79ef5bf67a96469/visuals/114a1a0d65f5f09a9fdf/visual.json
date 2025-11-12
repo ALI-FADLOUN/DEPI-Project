@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "5c723b2334bc14c99d41",
+  "name": "114a1a0d65f5f09a9fdf",
   "position": {
     "x": 179.07027579452384,
     "y": 534.88523938624007,
-    "z": 1,
+    "z": 1000,
     "height": 173.25630580119514,
     "width": 244.18673971980525,
-    "tabOrder": 2
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Products"
+                      "Entity": "sales"
                     }
                   },
-                  "Property": "Product_Name"
+                  "Property": "Corrected_Categories"
                 }
               },
-              "queryRef": "Products.Product_Name",
-              "nativeQueryRef": "Product_Name",
-              "active": true
+              "queryRef": "sales.Corrected_Categories",
+              "nativeQueryRef": "Categories",
+              "active": true,
+              "displayName": "Categories"
             }
           ]
         }
@@ -156,11 +157,6 @@
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "Product_Name",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   },
