@@ -1,0 +1,7 @@
+please after making all the charts from all the contributers do what is written bellow:
+
+1. change every usage of 'Category_Name' into 'Corrected_Category'
+2. change every usage of 'Category_ID' into 'Corrected_Category_ID'
+3. change every usage of 'sales[Product_Name]' into 'Products[Product_Name]' 
+3.5. use all the columns in 'Product' table instead of that equavilant to it in 'Sales' table but 'Corrected_Category_ID' column
+4. change every usage of 'sales[Sale_Date] into 'Running_Date[Sale_Date]'
