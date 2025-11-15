@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "8e6acc11c53006a2a366",
   "position": {
-    "x": 17.777777777777779,
-    "y": 102.22222222222221,
+    "x": 17.838824770934188,
+    "y": 101.54407946531768,
     "z": 0,
-    "height": 423.33333333333331,
-    "width": 823.33333333333326
+    "height": 424.01514263220491,
+    "width": 1241.8566475150337
   },
   "visual": {
     "visualType": "scatterChart",
@@ -77,9 +77,9 @@
                 }
               },
               "queryRef": "Sum(sales.Quantity)",
-              "nativeQueryRef": "Total Quantity",
+              "nativeQueryRef": "Quantity Sold",
               "active": true,
-              "displayName": "Total Quantity",
+              "displayName": "Quantity Sold",
               "format": "#,0"
             }
           ]
@@ -434,8 +434,103 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Product Portfolio Analysis'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5e8d4d8377085e007603",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Products"
+              }
+            },
+            "Property": "Product_Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "339cf47a329612383570",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "sales"
+                  }
+                },
+                "Property": "Sales"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9339c5737753738a6e8a",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "sales"
+                  }
+                },
+                "Property": "Quantity"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1d40e56d89e48b94a275",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "sales"
+                  }
+                },
+                "Property": "Unit_Price"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

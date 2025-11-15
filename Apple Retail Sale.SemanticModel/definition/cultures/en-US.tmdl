@@ -6084,339 +6084,427 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "sale.scatter_xaxis_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Scatter X-Axis Min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "scatter x-axis min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "scatter x axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "x axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "scatter x-axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "scatter x axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "x axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.scatter_xaxis_max": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Scatter X-Axis Max"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "scatter x-axis max": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "scatter x axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "x axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "scatter x-axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "scatter x axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "x axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.scatter_yaxis_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Scatter Y-Axis Min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "scatter y-axis min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "scatter y axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "y axis min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "scatter y-axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "scatter y axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "y axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "axis minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.scatter_yaxis_max": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Scatter Y-Axis Max"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "scatter y-axis max": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "scatter y axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "y axis max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "scatter y-axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "scatter y axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "y axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "axis maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "sale.average_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "Average Price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average price": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "running_date_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "running_date.date": {
-			          "Target": {
-			            "Entity": "running_date.date"
-			          }
-			        },
-			        "running_date.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "running_date.date"
-			            },
-			            "Object": {
-			              "Role": "running_date.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.day": {
-			          "Target": {
-			            "Entity": "product.launch_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_days"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.month": {
-			          "Target": {
-			            "Entity": "product.launch_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_months"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.quarter": {
-			          "Target": {
-			            "Entity": "product.launch_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_quarters"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.year": {
-			          "Target": {
-			            "Entity": "product.launch_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_years"
-			        }
-			      ]
-			    },
-			    "product_launch_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date": {
-			          "Target": {
-			            "Entity": "product.launch_date"
-			          }
-			        },
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_dates_have_launch_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.day": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_days"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.month": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_months"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.quarter": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_quarters"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.year": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_years"
-			        }
-			      ]
-			    },
 			    "warranty_claim_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "warranty"
@@ -6479,7 +6567,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_days1"
+			          "ID": "launch_date_hierarchies_have_launch_days"
 			        }
 			      ]
 			    },
@@ -6512,7 +6600,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_months1"
+			          "ID": "launch_date_hierarchies_have_launch_months"
 			        }
 			      ]
 			    },
@@ -6545,7 +6633,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_quarters1"
+			          "ID": "launch_date_hierarchies_have_launch_quarters"
 			        }
 			      ]
 			    },
@@ -6578,7 +6666,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_years1"
+			          "ID": "launch_date_hierarchies_have_launch_years"
 			        }
 			      ]
 			    },
@@ -6611,7 +6699,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_dates_have_launch_date_hierarchies1"
+			          "ID": "launch_dates_have_launch_date_hierarchies"
 			        }
 			      ]
 			    },
@@ -6770,6 +6858,330 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "sales_have_warranties"
+			        }
+			      ]
+			    },
+			    "sale_has_average_price": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.average_price": {
+			          "Target": {
+			            "Entity": "sale.average_price"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.average_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_average_price"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "sale.average_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "average_price_indicates_how_expensive_sales_are"
+			        }
+			      ]
+			    },
+			    "sale_has_scatter_yaxis_max": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.scatter_yaxis_max": {
+			          "Target": {
+			            "Entity": "sale.scatter_yaxis_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_yaxis_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_scatter_yaxis_max"
+			        }
+			      ]
+			    },
+			    "product_has_sale_scatter_yaxis_max": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product": {
+			          "Target": {
+			            "Entity": "product"
+			          }
+			        },
+			        "sale.scatter_yaxis_max": {
+			          "Target": {
+			            "Entity": "sale.scatter_yaxis_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_yaxis_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "products_have_scatter_yaxis_max"
+			        }
+			      ]
+			    },
+			    "sale_has_scatter_yaxis_min": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.scatter_yaxis_min": {
+			          "Target": {
+			            "Entity": "sale.scatter_yaxis_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_yaxis_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_scatter_yaxis_min"
+			        }
+			      ]
+			    },
+			    "product_has_sale_scatter_yaxis_min": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product": {
+			          "Target": {
+			            "Entity": "product"
+			          }
+			        },
+			        "sale.scatter_yaxis_min": {
+			          "Target": {
+			            "Entity": "sale.scatter_yaxis_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_yaxis_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "products_have_scatter_yaxis_min"
+			        }
+			      ]
+			    },
+			    "sale_has_scatter_xaxis_max": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.scatter_xaxis_max": {
+			          "Target": {
+			            "Entity": "sale.scatter_xaxis_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_xaxis_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_scatter_xaxis_max"
+			        }
+			      ]
+			    },
+			    "product_has_sale_scatter_xaxis_max": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product": {
+			          "Target": {
+			            "Entity": "product"
+			          }
+			        },
+			        "sale.scatter_xaxis_max": {
+			          "Target": {
+			            "Entity": "sale.scatter_xaxis_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_xaxis_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "products_have_scatter_xaxis_max"
+			        }
+			      ]
+			    },
+			    "sale_has_scatter_xaxis_min": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.scatter_xaxis_min": {
+			          "Target": {
+			            "Entity": "sale.scatter_xaxis_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_xaxis_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_scatter_xaxis_min"
+			        }
+			      ]
+			    },
+			    "product_has_sale_scatter_xaxis_min": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product": {
+			          "Target": {
+			            "Entity": "product"
+			          }
+			        },
+			        "sale.scatter_xaxis_min": {
+			          "Target": {
+			            "Entity": "sale.scatter_xaxis_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_xaxis_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "products_have_scatter_xaxis_min"
 			        }
 			      ]
 			    },
@@ -8702,6 +9114,336 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "sales_are_launched_on_launch_dates"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.year": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_years"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.quarter": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_quarters"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.month": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_months"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.day": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_days"
+			        }
+			      ]
+			    },
+			    "product_launch_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date": {
+			          "Target": {
+			            "Entity": "product.launch_date"
+			          }
+			        },
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_dates_have_launch_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.year": {
+			          "Target": {
+			            "Entity": "product.launch_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_years1"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.quarter": {
+			          "Target": {
+			            "Entity": "product.launch_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_quarters1"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.month": {
+			          "Target": {
+			            "Entity": "product.launch_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_months1"
+			        }
+			      ]
+			    },
+			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Products"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "product.launch_date.date_hierarchy"
+			          }
+			        },
+			        "product.launch_date.day": {
+			          "Target": {
+			            "Entity": "product.launch_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "product.launch_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_days1"
+			        }
+			      ]
+			    },
+			    "running_date_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Running_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "running_date.date": {
+			          "Target": {
+			            "Entity": "running_date.date"
+			          }
+			        },
+			        "running_date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "running_date.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "running_date.date"
+			            },
+			            "Object": {
+			              "Role": "running_date.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
 			        }
 			      ]
 			    },
