@@ -1,420 +1,51 @@
-table sales
-	lineageTag: be291d41-3f67-4938-9835-f40e279c1b15
-
-	measure 'YoY Growth %' =
-			
-			DIVIDE(
-			    [TotalSales_NoCategoryFilter]-
-			CALCULATE(
-			  [TotalSales_NoCategoryFilter],
-			    SAMEPERIODLASTYEAR('sales'[Sale_Date])
-			),
-			   CALCULATE( [TotalSales_NoCategoryFilter],
-			    SAMEPERIODLASTYEAR('sales'[Sale_Date])
-			),"hghgh")
-		lineageTag: 11f1b54a-5ada-4090-90d1-d69140a91b95
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure TotalSales_NoCategoryFilter = CALCULATE( SUM(sales[Sales]), ALL( sales[Category_Name]) )
-		formatString: 0
-		lineageTag: 7d98a86f-8c53-406b-9e4e-ba9117909742
-	measure 'Running Total (Abdallah)' =
-			CALCULATE(
-			    SUM(sales[Sales]),
-			    FILTER(
-			        ALL('Running_Date (Abdallah)'[Date]),
-			        'Running_Date (Abdallah)'[Date] <= MAX(sales[Sale_Date])
-			    )
-			)
-		formatString: 0
-		lineageTag: 28ec9166-7a90-4881-8067-df4aa20ca6e0
-
-	measure 'Cumulative Revenue Product (Abdallah)' =
-			
-			VAR CuurentTotalRevenue = [Total Revenue sum (Abdallah)]
-			RETURN
-			    CALCULATE(
-			        [Total Revenue sum (Abdallah)],
-			        FILTER(
-			            ALL('Products (Abdallah)'[Product_Name]),
-			            [Total Revenue sum (Abdallah)] >= CuurentTotalRevenue
-			        )
-			    )
-		formatString: 0
-		lineageTag: 8c8dfc96-07ba-4319-af3b-c99d8165c324
-
-	measure 'Total Revenue All Products (Abdallah)' =
-			
-			CALCULATE(
-			    SUM(sales[Sales]),
-			    ALL('Products (Abdallah)')
-			)
-		formatString: 0
-		lineageTag: 7a780806-38d2-4f02-abe2-7b89f19b03fc
-
-	measure 'Pareto Perc. Product (Abdallah)' = DIVIDE([Cumulative Revenue Product (Abdallah)], [Total Revenue All Products (Abdallah)])
-		lineageTag: 9414e63f-bd81-4fc2-bdb4-46636a3b4fb9
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Total Revenue sum (Abdallah)' = SUM(sales[Sales])
-		formatString: 0
-		lineageTag: 09cb3406-8b36-4656-b665-1931574e29b3
-
-	measure 'perc80 Product (Abdallah)' = [Max Product Sale (Abdallah)] * 0.8
-		lineageTag: 2b614fbb-a4d2-4c42-99e3-08b12940ecc4
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Top Revenue Product (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED('Products (Abdallah)'[Product_Name]),
-			        [Total Revenue sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: 59c56f95-e266-41e1-8e0b-853d9be8a699
-
-	measure 'Max Product Sale (Abdallah)' =
-			
-			CALCULATE(
-			    [Total Revenue sum (Abdallah)],
-			    FILTER(
-			        ALL('Products (Abdallah)'[Product_Name]),
-			        'Products (Abdallah)'[Product_Name] == [Top Revenue Product (Abdallah)]
-			    )
-			)
-		formatString: 0
-		lineageTag: 934794c1-e427-47f0-8e35-98ceed921a7d
-
-	measure 'Total quantity sum (Abdallah)' = SUM(sales[Quantity])
-		formatString: 0
-		lineageTag: 001939fc-71c2-4255-8dab-fad85c098157
-
-	measure 'Top sold Product (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED('Products (Abdallah)'[Product_Name]),
-			        [Total quantity sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: 8bf148a5-838b-443b-9019-8adcb3f7e171
-
-	measure 'Total ordered sum (Abdallah)' = DISTINCTCOUNT(sales[Sale_ID])
-		formatString: 0
-		lineageTag: d89431b5-94f7-4e9e-a14d-dfd815218840
-
-	measure 'Top Ordered Product (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED('Products (Abdallah)'[Product_Name]),
-			        [Total ordered sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: 1a82fd05-86e4-4bdf-ba23-0e694d458981
-
-	measure 'Top sold Category (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED(sales[Corrected_Categories]),
-			        [Total quantity sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: feba3875-cb34-4660-8e3b-86414e175b84
-
-	measure 'Top Revenue Category (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED(sales[Corrected_Categories]),
-			        [Total Revenue sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: 6b6290ac-585b-4218-b4bd-57251414b0b1
-
-	measure 'Top Ordered Category (Abdallah)' = ```
-			
-			    TOPN(1,
-			        ALLSELECTED(sales[Corrected_Categories]),
-			        [Total ordered sum (Abdallah)],
-			        DESC
-			    )
-			```
-		lineageTag: 645428a6-4734-494c-87bb-a15a8e6e1d59
-
-	measure 'Cumulative Revenue Category (Abdallah)' =
-			
-			VAR CuurentTotalRevenue = [Total Revenue sum (Abdallah)]
-			RETURN
-			    CALCULATE(
-			        [Total Revenue sum (Abdallah)],
-			        FILTER(
-			            ALL(sales[Corrected_Categories]),
-			            [Total Revenue sum (Abdallah)] >= CuurentTotalRevenue
-			        )
-			    )
-		formatString: 0
-		lineageTag: e47440fc-1cd9-4835-99c8-ca213c8f4c28
-
-	measure 'Total Revenue All Category (Abdallah)' =
-			
-			CALCULATE(
-			    SUM(sales[Sales]),
-			    ALL(sales[Corrected_Categories])
-			)
-		formatString: 0
-		lineageTag: a7617b44-d110-4b31-bcb3-d06a1f3b8bf1
-
-	measure 'Pareto Perc. Category (Abdallah)' = DIVIDE([Cumulative Revenue Category (Abdallah)], [Total Revenue All Category (Abdallah)])
-		lineageTag: b90aa0f2-36d3-4911-8f93-9ea7ac601a4b
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Max Category Sale (Abdallah)' =
-			
-			CALCULATE(
-			    [Total Revenue sum (Abdallah)],
-			    FILTER(
-			        ALL(sales[Corrected_Categories]),
-			        sales[Corrected_Categories] == [Top Revenue Category (Abdallah)]
-			    )
-			)
-		formatString: 0
-		lineageTag: 64290323-1bc8-45d5-904c-0b9be79774e1
-
-	measure 'perc80 Category (Abdallah)' = [Max Category Sale (Abdallah)] * 0.8
-		lineageTag: 89bf6484-11e9-4029-941b-426fdb875482
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Historical Max Sales (Abdallah)' = ```
-			
-			VAR CurrentYear = MAX('Running_Date (Abdallah)'[Year])
-			
-			VAR AllHistoricalYears = 
-			    FILTER(
-			        ALL('Running_Date (Abdallah)'[Year]),
-			        'Running_Date (Abdallah)'[Year] < CurrentYear
-			    )
-			    
-			RETURN
-			    MAXX(
-			        AllHistoricalYears,
-			        [Total Revenue sum (Abdallah)]
-			    )
-			```
-		formatString: 0
-		lineageTag: c76ac7b7-7be8-4572-a0be-6439a393f693
-
-	measure 'Scatter X-Axis Min (Abdallah)' = ```
-			
-			MINX(
-			    VALUES('Products (Abdallah)'[Product_Name]), 
-			    [Total quantity sum (Abdallah)]
-			) * 0.98
-			```
-		lineageTag: 51632d59-77d0-4f2c-bce9-35f3082a6149
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Scatter X-Axis Max (Abdallah)' = ```
-			
-			MAXX(
-			    VALUES('Products (Abdallah)'[Product_Name]), 
-			    [Total quantity sum (Abdallah)]
-			) * 1.02
-			```
-		lineageTag: bb172407-657e-41aa-a3fe-ba7b83e3d0e3
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Scatter Y-Axis Min (Abdallah)' = ```
-			
-			MINX(
-			    VALUES('Products (Abdallah)'[Product_Name]), 
-			    [Average Price (Abdallah)]
-			) * 0.6
-			```
-		lineageTag: 9b177487-ce58-4077-adf1-575d30b89010
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Scatter Y-Axis Max (Abdallah)' = ```
-			
-			MAXX(
-			    VALUES('Products (Abdallah)'[Product_Name]), 
-			    [Average Price (Abdallah)]
-			) * 1.2
-			```
-		lineageTag: 5086b48a-87d8-4ce6-894f-9a1781990dc5
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Average Price (Abdallah)' = AVERAGE(sales[Unit_Price])
-		lineageTag: 920874de-80d2-4a5c-8e54-467f9de0a802
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column Sale_ID
-		dataType: string
-		lineageTag: c922dda5-b7de-451d-86e7-c7435df57e77
-		summarizeBy: none
-		sourceColumn: Sale_ID
-
-		annotation SummarizationSetBy = Automatic
-
-	column Sale_Date
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: 23441c45-f4f6-4ab7-b06b-adb13f9e014c
-		summarizeBy: none
-		sourceColumn: Sale_Date
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column Store_ID
-		dataType: string
-		lineageTag: e6ca4e80-5068-4863-ace6-0b4e0395675e
-		summarizeBy: none
-		sourceColumn: Store_ID
-
-		annotation SummarizationSetBy = Automatic
+table 'Products (Abdallah)'
+	lineageTag: df795cfc-7b5d-4cb9-8f29-53fcf0bef7c3
 
 	column Product_ID
 		dataType: string
-		lineageTag: 5377c588-7df2-469b-8cc1-20a923aeab5c
+		lineageTag: ed86cbfe-d65a-4b98-9eb8-e93973ae426b
 		summarizeBy: none
 		sourceColumn: Product_ID
 
 		annotation SummarizationSetBy = Automatic
 
-	column Quantity
-		dataType: int64
-		formatString: 0
-		lineageTag: 3bc1da96-faed-444b-851f-43c1cf021919
-		summarizeBy: sum
-		sourceColumn: Quantity
-
-		annotation SummarizationSetBy = Automatic
-
-	column Store_Name
-		dataType: string
-		lineageTag: 331caf8c-536c-43b7-8960-f78b143d17d3
-		summarizeBy: none
-		sourceColumn: Store_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column City
-		dataType: string
-		lineageTag: 6d6e2a40-d734-4a5a-8f12-e7326bbfa682
-		summarizeBy: none
-		sourceColumn: City
-
-		annotation SummarizationSetBy = Automatic
-
-	column Country
-		dataType: string
-		lineageTag: 55b27aa5-7b8e-4c60-b0bb-1ba139bc1e2d
-		summarizeBy: none
-		sourceColumn: Country
-
-		annotation SummarizationSetBy = Automatic
-
 	column Product_Name
 		dataType: string
-		lineageTag: 1f4f6851-86d6-4b00-b25b-3faf64664caf
+		lineageTag: 267d5b1c-b11f-40aa-84fc-f0cb652174fe
 		summarizeBy: none
 		sourceColumn: Product_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column Category_ID
-		dataType: string
-		lineageTag: fd4e6e80-ec64-48aa-b7ff-b812acf6c90f
-		summarizeBy: none
-		sourceColumn: Category_ID
 
 		annotation SummarizationSetBy = Automatic
 
 	column Launch_Date
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: d42ebe1b-7d00-4935-b7ea-34f3a27b93e3
+		lineageTag: 6c054a9f-f7c0-4a62-a9b4-2c4570b95410
 		summarizeBy: none
 		sourceColumn: Launch_Date
 
 		variation Variation
 			isDefault
-			relationship: 5cdd31da-52ea-4e05-91ff-6ddf1c210a1d
-			defaultHierarchy: LocalDateTable_be714883-66f5-4c1a-8ffd-18ee6357700f.'Date Hierarchy'
+			relationship: 11ad6f01-0a47-40db-80da-d1001ad6f669
+			defaultHierarchy: LocalDateTable_6b055ecf-1c43-4e5d-8a69-c4353c4c85a2.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column Unit_Price
-		dataType: int64
-		formatString: 0
-		lineageTag: e6f4c0e0-0dfc-4a02-8c56-0f0732e24e3c
-		summarizeBy: sum
-		sourceColumn: Unit_Price
-
-		annotation SummarizationSetBy = Automatic
-
-	column Category_Name
-		dataType: string
-		lineageTag: fd2655d5-cb27-445a-a629-6690b3979a0e
-		summarizeBy: none
-		sourceColumn: Category_Name
-
-		annotation SummarizationSetBy = Automatic
-
-	column Sales = sales[Unit_Price] * sales[Quantity]
-		formatString: 0
-		lineageTag: 9f3c922e-7c61-4756-8ae2-c147ec50cfd2
-		summarizeBy: sum
-
-		annotation SummarizationSetBy = Automatic
-
-	hierarchy 'Country Hierarchy'
-		lineageTag: fbf26adf-7338-4663-a89d-8c264fa26549
-
-		level Country
-			lineageTag: b7f79e57-35b1-4ca8-9df5-556d4d2e0aac
-			column: Country
-
-		level City
-			lineageTag: eb469ea2-701c-420c-b80a-5ec4f7b5f755
-			column: City
-	column Corrected_Categories
-		dataType: string
-		lineageTag: 56f4feb4-275d-4039-bad9-dda2af118beb
-		summarizeBy: none
-		sourceColumn: Corrected_Categories
-
-		annotation SummarizationSetBy = Automatic
-
 	column Corrected_Category_ID
 		dataType: string
-		lineageTag: e617596f-6cda-4b58-b5d4-4a1ec0f406dd
+		lineageTag: e49a5f16-cdd5-46c5-a007-b8645de3f809
 		summarizeBy: none
 		sourceColumn: Corrected_Category_ID
 
 		annotation SummarizationSetBy = Automatic
 
-	partition sales = m
+	partition 'Products (Abdallah)' = m
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("D:\projects\mygit\DEPI\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("D:\Trainings\DEPI\Project\DEPI-Project\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"sale_id", type text}, {"sale_date", type text}, {"store_id", type text}, {"product_id", type text}, {"quantity", Int64.Type}, {"Store_Name", type text}, {"City", type text}, {"Country", type text}, {"Product_Name", type text}, {"Category_ID", type text}, {"Launch_Date", type date}, {"Price", Int64.Type}, {"category_name", type text}}),
 				    #"Renamed Some Columns" = Table.RenameColumns(#"Changed Type",{{"sale_id", "Sale_ID"}, {"sale_date", "Sale_Date"}, {"store_id", "Store_ID"}, {"product_id", "Product_ID"}, {"quantity", "Quantity"}, {"category_name", "Category_Name"}, {"Price", "Unit_Price"}}),
@@ -507,11 +138,16 @@ table sales
 				    #"Added Conditional Column" = Table.AddColumn(#"Removed Duplicates", "Corrected_Categories", each if Text.Contains([Product_Name], "HomePod") then "Smart Speakers" else [Category_Name]),
 				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Corrected_Categories", type text}}),
 				    #"Added Conditional Column1" = Table.AddColumn(#"Changed Type1", "Corrected_Category_ID", each if [Corrected_Categories] = "Smart Speakers" then "CAT-9" else [Category_ID]),
-				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Conditional Column1",{{"Corrected_Category_ID", type text}})
+				    #"Removed Other Columns" = Table.SelectColumns(#"Added Conditional Column1",{"Product_ID", "Product_Name", "Launch_Date", "Unit_Price", "Corrected_Category_ID"}),
+				    #"Removed Duplicates1" = Table.Distinct(#"Removed Other Columns"),
+				    #"Removed Columns" = Table.RemoveColumns(#"Removed Duplicates1",{"Unit_Price"}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Removed Columns",{{"Corrected_Category_ID", type text}})
 				in
 				    #"Changed Type2"
 
+	changedProperty = Name
+
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
