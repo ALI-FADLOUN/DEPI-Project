@@ -23,7 +23,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Historical Max Sales"
+                  "Property": "Historical Max Sales (Abdallah)"
                 }
               },
               "queryRef": "sales.Historical Max Sales",
@@ -42,7 +42,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Total Revenue sum"
+                  "Property": "Total Revenue sum (Abdallah)"
                 }
               },
               "queryRef": "sales.Total Revenue sum",
@@ -62,7 +62,7 @@
                     "Entity": "sales"
                   }
                 },
-                "Property": "Total Revenue sum"
+                "Property": "Total Revenue sum (Abdallah)"
               }
             },
             "direction": "Descending"

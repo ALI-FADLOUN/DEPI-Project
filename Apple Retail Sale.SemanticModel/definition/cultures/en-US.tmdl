@@ -2739,7 +2739,7 @@ cultureInfo en-US
 			    "product": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products"
+			          "ConceptualEntity": "Products (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -2794,7 +2794,7 @@ cultureInfo en-US
 			    "product.product_ID": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "ConceptualProperty": "Product_ID"
 			        }
 			      },
@@ -2904,7 +2904,7 @@ cultureInfo en-US
 			    "product.product_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "ConceptualProperty": "Product_Name"
 			        }
 			      },
@@ -3014,7 +3014,7 @@ cultureInfo en-US
 			    "product.launch_date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "ConceptualProperty": "Launch_Date"
 			        }
 			      },
@@ -3064,7 +3064,7 @@ cultureInfo en-US
 			    "product.launch_date.date_hierarchy": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "VariationSource": "Launch_Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy"
@@ -3089,7 +3089,7 @@ cultureInfo en-US
 			    "product.launch_date.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "VariationSource": "Launch_Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -3169,7 +3169,7 @@ cultureInfo en-US
 			    "product.launch_date.quarter": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "VariationSource": "Launch_Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -3249,7 +3249,7 @@ cultureInfo en-US
 			    "product.launch_date.month": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "VariationSource": "Launch_Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -3329,7 +3329,7 @@ cultureInfo en-US
 			    "product.launch_date.day": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "VariationSource": "Launch_Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -3379,7 +3379,7 @@ cultureInfo en-US
 			    "product.corrected_category_ID": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Products",
+			          "ConceptualEntity": "Products (Abdallah)",
 			          "ConceptualProperty": "Corrected_Category_ID"
 			        }
 			      },
@@ -3509,7 +3509,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Running Total"
+			          "ConceptualProperty": "Running Total (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -3545,7 +3545,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Cumulative Revenue Product"
+			          "ConceptualProperty": "Cumulative Revenue Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -3667,7 +3667,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Total Revenue All Products"
+			          "ConceptualProperty": "Total Revenue All Products (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -3783,7 +3783,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Pareto Perc. Product"
+			          "ConceptualProperty": "Pareto Perc. Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -3849,7 +3849,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Total Revenue sum"
+			          "ConceptualProperty": "Total Revenue sum (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -3970,7 +3970,7 @@ cultureInfo en-US
 			    "running_date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date"
+			          "ConceptualEntity": "Running_Date (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4012,7 +4012,7 @@ cultureInfo en-US
 			    "running_date.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -4049,7 +4049,7 @@ cultureInfo en-US
 			    "running_date.date.date_hierarchy": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy"
@@ -4069,7 +4069,7 @@ cultureInfo en-US
 			    "running_date.date.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -4134,7 +4134,7 @@ cultureInfo en-US
 			    "running_date.date.quarter": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -4199,7 +4199,7 @@ cultureInfo en-US
 			    "running_date.date.month": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -4264,7 +4264,7 @@ cultureInfo en-US
 			    "running_date.date.day": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
@@ -4309,7 +4309,7 @@ cultureInfo en-US
 			    "running_date.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "ConceptualProperty": "Year"
 			        }
 			      },
@@ -4336,7 +4336,7 @@ cultureInfo en-US
 			    "running_date.month": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Running_Date",
+			          "ConceptualEntity": "Running_Date (Abdallah)",
 			          "ConceptualProperty": "Month"
 			        }
 			      },
@@ -4363,7 +4363,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "perc80 Product"
+			          "ConceptualProperty": "perc80 Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4419,7 +4419,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top Revenue Product"
+			          "ConceptualProperty": "Top Revenue Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4551,7 +4551,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Max Product Sale"
+			          "ConceptualProperty": "Max Product Sale (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4673,7 +4673,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Total quantity sum"
+			          "ConceptualProperty": "Total quantity sum (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4795,7 +4795,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top sold Product"
+			          "ConceptualProperty": "Top sold Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -4921,7 +4921,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Total ordered sum"
+			          "ConceptualProperty": "Total ordered sum (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5007,7 +5007,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top Ordered Product"
+			          "ConceptualProperty": "Top Ordered Product (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5123,7 +5123,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top sold Category"
+			          "ConceptualProperty": "Top sold Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5249,7 +5249,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top Revenue Category"
+			          "ConceptualProperty": "Top Revenue Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5377,7 +5377,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Top Ordered Category"
+			          "ConceptualProperty": "Top Ordered Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5493,7 +5493,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Cumulative Revenue Category"
+			          "ConceptualProperty": "Cumulative Revenue Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5621,7 +5621,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Total Revenue All Category"
+			          "ConceptualProperty": "Total Revenue All Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5737,7 +5737,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Pareto Perc. Category"
+			          "ConceptualProperty": "Pareto Perc. Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5823,7 +5823,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Max Category Sale"
+			          "ConceptualProperty": "Max Category Sale (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -5945,7 +5945,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "perc80 Category"
+			          "ConceptualProperty": "perc80 Category (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6021,7 +6021,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Historical Max Sales"
+			          "ConceptualProperty": "Historical Max Sales (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6089,7 +6089,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Scatter X-Axis Min"
+			          "ConceptualProperty": "Scatter X-Axis Min (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6163,7 +6163,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Scatter X-Axis Max"
+			          "ConceptualProperty": "Scatter X-Axis Max (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6237,7 +6237,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Scatter Y-Axis Min"
+			          "ConceptualProperty": "Scatter Y-Axis Min (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6311,7 +6311,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Scatter Y-Axis Max"
+			          "ConceptualProperty": "Scatter Y-Axis Max (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6385,7 +6385,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
-			          "ConceptualProperty": "Average Price"
+			          "ConceptualProperty": "Average Price (Abdallah)"
 			        }
 			      },
 			      "State": "Generated",
@@ -6956,7 +6956,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_scatter_yaxis_max": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7022,7 +7022,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_scatter_yaxis_min": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7088,7 +7088,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_scatter_xaxis_max": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7154,7 +7154,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_scatter_xaxis_min": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7517,7 +7517,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_top_ordered_product": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7616,7 +7616,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_top_sold_product": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7748,7 +7748,7 @@ cultureInfo en-US
 			    },
 			    "product_has_sale_top_revenue_product": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7814,7 +7814,7 @@ cultureInfo en-US
 			    },
 			    "running_date_has_month": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7847,7 +7847,7 @@ cultureInfo en-US
 			    },
 			    "running_date_has_year": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -7880,7 +7880,7 @@ cultureInfo en-US
 			    },
 			    "running_date_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8078,7 +8078,7 @@ cultureInfo en-US
 			    },
 			    "product_has_corrected_category_ID": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8111,7 +8111,7 @@ cultureInfo en-US
 			    },
 			    "product_has_launch_date": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8144,7 +8144,7 @@ cultureInfo en-US
 			    },
 			    "product_has_product_name": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8190,7 +8190,7 @@ cultureInfo en-US
 			    },
 			    "product_has_product_ID": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -8993,7 +8993,7 @@ cultureInfo en-US
 			    },
 			    "product_is_launched_on_launch_date": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9251,7 +9251,7 @@ cultureInfo en-US
 			    },
 			    "product_launch_date_has_date_hierarchy": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9284,7 +9284,7 @@ cultureInfo en-US
 			    },
 			    "product_launch_date_date_hierarchy_has_product_launch_date_year": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9317,7 +9317,7 @@ cultureInfo en-US
 			    },
 			    "product_launch_date_date_hierarchy_has_product_launch_date_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9350,7 +9350,7 @@ cultureInfo en-US
 			    },
 			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9383,7 +9383,7 @@ cultureInfo en-US
 			    },
 			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Products"
+			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9416,7 +9416,7 @@ cultureInfo en-US
 			    },
 			    "running_date_date_has_date_hierarchy": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9449,7 +9449,7 @@ cultureInfo en-US
 			    },
 			    "running_date_date_date_hierarchy_has_running_date_date_year": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9482,7 +9482,7 @@ cultureInfo en-US
 			    },
 			    "running_date_date_date_hierarchy_has_running_date_date_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9515,7 +9515,7 @@ cultureInfo en-US
 			    },
 			    "running_date_date_date_hierarchy_has_running_date_date_month": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -9548,7 +9548,7 @@ cultureInfo en-US
 			    },
 			    "running_date_date_date_hierarchy_has_running_date_date_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Running_Date"
+			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {

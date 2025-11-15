@@ -84,11 +84,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Revenue Category"
+                  "Property": "Top Revenue Category (Abdallah)"
                 }
               },
               "queryRef": "sales.Top Revenue Category",
-              "nativeQueryRef": "Top Revenue Category"
+              "nativeQueryRef": "Top Revenue Category (Abdallah)"
             },
             {
               "field": {
@@ -98,7 +98,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top sold Category"
+                  "Property": "Top sold Category (Abdallah)"
                 }
               },
               "queryRef": "sales.Top sold Category",
@@ -113,11 +113,11 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Ordered Category"
+                  "Property": "Top Ordered Category (Abdallah)"
                 }
               },
               "queryRef": "sales.Top Ordered Category",
-              "nativeQueryRef": "Top Ordered Category"
+              "nativeQueryRef": "Top Ordered Category (Abdallah)"
             }
           ]
         }

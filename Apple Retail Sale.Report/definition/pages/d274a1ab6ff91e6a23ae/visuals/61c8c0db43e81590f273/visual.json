@@ -24,7 +24,7 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Running_Date"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
@@ -50,7 +50,7 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Running_Date"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
@@ -76,7 +76,7 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Running_Date"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
@@ -105,7 +105,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Running Total"
+                  "Property": "Running Total (Abdallah)"
                 }
               },
               "queryRef": "sales.Running Total",

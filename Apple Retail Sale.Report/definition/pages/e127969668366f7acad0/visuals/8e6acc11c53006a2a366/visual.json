@@ -19,7 +19,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Products"
+                      "Entity": "Products (Abdallah)"
                     }
                   },
                   "Property": "Product_Name"
@@ -171,7 +171,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Scatter X-Axis Max"
+                  "Property": "Scatter X-Axis Max (Abdallah)"
                 }
               }
             },
@@ -183,7 +183,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Scatter X-Axis Min"
+                  "Property": "Scatter X-Axis Min (Abdallah)"
                 }
               }
             }
@@ -368,7 +368,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Scatter Y-Axis Max"
+                  "Property": "Scatter Y-Axis Max (Abdallah)"
                 }
               }
             },
@@ -380,7 +380,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Scatter Y-Axis Min"
+                  "Property": "Scatter Y-Axis Min (Abdallah)"
                 }
               }
             }
@@ -466,7 +466,7 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Products"
+                "Entity": "Products (Abdallah)"
               }
             },
             "Property": "Product_Name"

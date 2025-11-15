@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Running_Date"
+                      "Entity": "Running_Date (Abdallah)"
                     }
                   },
                   "Property": "Year"
@@ -67,7 +67,7 @@
                 "From": [
                   {
                     "Name": "r",
-                    "Entity": "Running_Date",
+                    "Entity": "Running_Date (Abdallah)",
                     "Type": 0
                   }
                 ],

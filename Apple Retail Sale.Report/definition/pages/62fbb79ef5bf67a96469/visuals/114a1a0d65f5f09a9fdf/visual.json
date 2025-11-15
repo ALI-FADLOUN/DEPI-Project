@@ -170,7 +170,7 @@
                 "Entity": "sales"
               }
             },
-            "Property": "Total Revenue sum"
+            "Property": "Total Revenue sum (Abdallah)"
           }
         },
         "type": "Advanced",
@@ -197,7 +197,7 @@
                               "Source": "s"
                             }
                           },
-                          "Property": "Total Revenue sum"
+                          "Property": "Total Revenue sum (Abdallah)"
                         }
                       },
                       "Right": {

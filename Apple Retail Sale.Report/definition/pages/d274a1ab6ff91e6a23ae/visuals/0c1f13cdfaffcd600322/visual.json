@@ -84,7 +84,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Revenue Product"
+                  "Property": "Top Revenue Product (Abdallah)"
                 }
               },
               "queryRef": "sales.Top Sale Product",
@@ -99,7 +99,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top sold Product"
+                  "Property": "Top sold Product (Abdallah)"
                 }
               },
               "queryRef": "sales.Top sold Product",
@@ -114,7 +114,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Top Ordered Product"
+                  "Property": "Top Ordered Product (Abdallah)"
                 }
               },
               "queryRef": "sales.Top Ordered Product",

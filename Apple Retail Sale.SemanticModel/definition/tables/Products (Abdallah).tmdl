@@ -1,4 +1,4 @@
-table Products
+table 'Products (Abdallah)'
 	lineageTag: df795cfc-7b5d-4cb9-8f29-53fcf0bef7c3
 
 	column Product_ID
@@ -41,7 +41,7 @@ table Products
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Products = m
+	partition 'Products (Abdallah)' = m
 		mode: import
 		source =
 				let
@@ -144,6 +144,8 @@ table Products
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Removed Columns",{{"Corrected_Category_ID", type text}})
 				in
 				    #"Changed Type2"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navigation
 

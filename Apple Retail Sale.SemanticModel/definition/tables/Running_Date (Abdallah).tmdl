@@ -1,4 +1,4 @@
-table Running_Date
+table 'Running_Date (Abdallah)'
 	lineageTag: 88f25bfa-02f2-4d2f-8b0d-56dfe20638d8
 
 	column Date
@@ -32,7 +32,7 @@ table Running_Date
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Running_Date = calculated
+	partition 'Running_Date (Abdallah)' = calculated
 		mode: import
 		source = ADDCOLUMNS(CALENDAR(MIN(sales[Sale_Date]), MAX(sales[Sale_Date])),"Year", YEAR([Date]), "Month", MONTH([Date]))
 

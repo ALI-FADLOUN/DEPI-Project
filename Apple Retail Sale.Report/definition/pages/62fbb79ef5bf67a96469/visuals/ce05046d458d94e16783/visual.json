@@ -24,7 +24,7 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Running_Date"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",

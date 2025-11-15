@@ -68,7 +68,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Pareto Perc. Category"
+                  "Property": "Pareto Perc. Category (Abdallah)"
                 }
               },
               "queryRef": "sales.Pareto Perc. Category",
@@ -126,7 +126,7 @@
                                           "Entity": "sales"
                                         }
                                       },
-                                      "Property": "Pareto Perc. Category"
+                                      "Property": "Pareto Perc. Category (Abdallah)"
                                     }
                                   },
                                   "Right": {
@@ -146,7 +146,7 @@
                                           "Entity": "sales"
                                         }
                                       },
-                                      "Property": "Pareto Perc. Category"
+                                      "Property": "Pareto Perc. Category (Abdallah)"
                                     }
                                   },
                                   "Right": {
@@ -377,7 +377,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Pareto Perc. Product"
+                  "Property": "Pareto Perc. Product (Abdallah)"
                 }
               }
             }
@@ -410,7 +410,7 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "perc80 Category"
+                  "Property": "perc80 Category (Abdallah)"
                 }
               }
             },
@@ -576,7 +576,7 @@
                 "Entity": "sales"
               }
             },
-            "Property": "Total Revenue sum"
+            "Property": "Total Revenue sum (Abdallah)"
           }
         },
         "type": "Advanced",
@@ -603,7 +603,7 @@
                               "Source": "s"
                             }
                           },
-                          "Property": "Total Revenue sum"
+                          "Property": "Total Revenue sum (Abdallah)"
                         }
                       },
                       "Right": {
