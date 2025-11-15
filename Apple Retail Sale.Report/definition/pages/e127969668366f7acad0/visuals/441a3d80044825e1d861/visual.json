@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "114a1a0d65f5f09a9fdf",
+  "name": "441a3d80044825e1d861",
   "position": {
     "x": 179.07027579452384,
     "y": 534.88523938624007,
     "z": 1000,
     "height": 173.25630580119514,
-    "width": 244.18673971980525
+    "width": 244.18673971980525,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -19,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sales"
+                      "Entity": "Products"
                     }
                   },
-                  "Property": "Corrected_Categories"
+                  "Property": "Product_Name"
                 }
               },
-              "queryRef": "sales.Corrected_Categories",
-              "nativeQueryRef": "Categories",
-              "active": true,
-              "displayName": "Categories"
+              "queryRef": "Products.Product_Name",
+              "nativeQueryRef": "Product_Name",
+              "active": true
             }
           ]
         }
@@ -129,7 +129,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Category Name'"
+                  "Value": "'Product Name'"
                 }
               }
             }
