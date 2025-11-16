@@ -45,7 +45,7 @@ table warranty
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\DELL\Downloads\DEPI-Project\Raw Data\warranty.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Users\Yara\OneDrive\Documents\imp\DEPI-Project\Raw Data\warranty.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"claim_id", type text}, {"claim_date", type date}, {"sale_id", type text}, {"repair_status", type text}}),
 				    #"Cleaned IDs (Trim)" = Table.TransformColumns(#"Changed Type",{{"sale_id", Text.Trim, type text}, {"claim_id", Text.Trim, type text}}),

@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 476,
-            "y": 70
+            "x": 509,
+            "y": 0
           },
           "nodeIndex": "warranty",
           "nodeLineageTag": "f9eb3308-9b92-4d67-a598-a174efefb435",
@@ -40,6 +40,22 @@
             "y": 50
           },
           "nodeIndex": "Laptop_Desktop_Sales",
+            "x": 353,
+            "y": 376
+          },
+          "nodeIndex": "Products (Abdallah)",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 20.199996948242188,
+            "y": 374
+          },
+          "nodeIndex": "Running_Date (Abdallah)",
           "size": {
             "height": 200,
             "width": 234
@@ -48,7 +64,7 @@
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 96.444444444444443,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
