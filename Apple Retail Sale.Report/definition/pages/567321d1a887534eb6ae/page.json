@@ -23,7 +23,7 @@
         "howCreated": "Drillthrough"
       },
       {
-        "name": "62af25bb65f5f1f0c849",
+        "name": "61cbcc339da2b7b9cf09",
         "field": {
           "Column": {
             "Expression": {
@@ -31,7 +31,22 @@
                 "Entity": "sales"
               }
             },
-            "Property": "Category_Name"
+            "Property": "City"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "0a89f3b74980e74b4d1a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Corrected_Categories"
           }
         },
         "type": "Categorical",
@@ -56,7 +71,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "Category_Name"
+                        "Property": "Corrected_Categories"
                       }
                     }
                   ],
@@ -74,23 +89,7 @@
             }
           ]
         },
-        "howCreated": "Drillthrough",
-        "isLockedInViewMode": true
-      },
-      {
-        "name": "61cbcc339da2b7b9cf09",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "City"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
+        "howCreated": "User"
       }
     ]
   },
@@ -109,20 +108,6 @@
               }
             },
             "Property": "City"
-          }
-        }
-      },
-      {
-        "name": "f89aa2f64ff50a63ba8f",
-        "boundFilter": "62af25bb65f5f1f0c849",
-        "fieldExpr": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Category_Name"
           }
         }
       },

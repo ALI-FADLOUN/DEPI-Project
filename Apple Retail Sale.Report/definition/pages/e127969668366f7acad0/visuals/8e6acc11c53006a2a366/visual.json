@@ -6,7 +6,8 @@
     "y": 101.54407946531768,
     "z": 0,
     "height": 424.01514263220491,
-    "width": 1241.8566475150337
+    "width": 1241.8566475150337,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -457,80 +458,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5e8d4d8377085e007603",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Products (Abdallah)"
-              }
-            },
-            "Property": "Product_Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "339cf47a329612383570",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Sales"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "9339c5737753738a6e8a",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Quantity"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1d40e56d89e48b94a275",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Unit_Price"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

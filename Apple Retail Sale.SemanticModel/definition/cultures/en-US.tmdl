@@ -364,6 +364,12 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "product": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "product identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -394,6 +400,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "product credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -401,6 +417,36 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        },
 			        {
@@ -415,26 +461,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "item id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "merchandise id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -774,6 +800,22 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "product": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "product nickname": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -814,6 +856,36 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
 			          "artifact name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -825,26 +897,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "item name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "merchandise name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2736,7 +2788,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "product": {
+			    "products_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)"
@@ -2745,53 +2797,70 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "product": {
+			          "products (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "artifact": {
+			          "product (abdallah)": {
 			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
+			            "State": "Generated",
+			            "Weight": 0.78
 			          }
 			        },
 			        {
-			          "item": {
+			          "artifact (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.617
 			          }
 			        },
 			        {
-			          "merchandise": {
+			          "item (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "produce": {
+			          "merchandise (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "produce (abdallah)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "goods (abdallah)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
 			          }
 			        }
 			      ]
 			    },
-			    "product.product_ID": {
+			    "products_abdallah.product_ID": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -2806,16 +2875,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "Product_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "product": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -2849,6 +2918,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "product credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2856,6 +2935,36 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        },
 			        {
@@ -2877,31 +2986,10 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "merchandise id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
 			        }
-			      ],
-			      "NameType": "Identifier"
+			      ]
 			    },
-			    "product.product_name": {
+			    "products_abdallah.product_name": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -2916,16 +3004,26 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "name": {
+			          "Product_Name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "product": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "Product_Name": {
+			          "artifact": {
 			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
 			          }
 			        },
 			        {
@@ -2969,6 +3067,36 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
 			          "artifact name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2987,31 +3115,10 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "merchandise name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
 			        }
-			      ],
-			      "NameType": "Name"
+			      ]
 			    },
-			    "product.launch_date": {
+			    "products_abdallah.launch_date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3061,7 +3168,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.launch_date.date_hierarchy": {
+			    "products_abdallah.launch_date.date_hierarchy": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3086,7 +3193,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.launch_date.year": {
+			    "products_abdallah.launch_date.year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3166,7 +3273,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.launch_date.quarter": {
+			    "products_abdallah.launch_date.quarter": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3246,7 +3353,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.launch_date.month": {
+			    "products_abdallah.launch_date.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3326,7 +3433,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.launch_date.day": {
+			    "products_abdallah.launch_date.day": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3376,7 +3483,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "product.corrected_category_ID": {
+			    "products_abdallah.corrected_category_ID": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Products (Abdallah)",
@@ -3505,7 +3612,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.running_total": {
+			    "sale.running_total_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -3515,33 +3622,39 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "running total": {
+			          "running total (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "running aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
+			          "running total": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "running overall": {
+			          "running aggregate (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "running overall (abdallah)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
 			    },
-			    "sale.cumulative_revenue_product": {
+			    "sale.cumulative_revenue_product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -3551,119 +3664,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "cumulative revenue product": {
+			          "cumulative revenue product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "revenue product": {
+			          "cumulative revenue product": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "cumulative revenue artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "revenue artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "cumulative revenue item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "revenue item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "cumulative income product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "income product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
 			          }
 			        }
 			      ]
 			    },
-			    "sale.total_revenue_all_products": {
+			    "sale.total_revenue_all_products_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -3673,113 +3686,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total revenue all products": {
+			          "total revenue all products (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "total revenue all artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "total revenue all item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all goods": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.643
-			          }
-			        },
-			        {
-			          "total income all product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "aggregate revenue all product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "overall revenue all product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "total profit all product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "total turnover all product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
+			          "total revenue all products": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.pareto_perc__product": {
+			    "sale.pareto_perc__product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -3789,48 +3708,14 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "pareto perc. product": {
+			          "pareto perc. product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "pareto perc. artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "pareto perc. item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
+			          "pareto perc. product": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -3845,7 +3730,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.total_revenue_sum": {
+			    "sale.total_revenue_sum_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -3855,119 +3740,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total revenue sum": {
+			          "total revenue sum (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "revenue sum": {
+			          "total revenue sum": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "total revenue summation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "total revenue aggregation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "revenue summation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "revenue aggregation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "total revenue total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total revenue aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total revenue amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "revenue total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "running_date": {
+			    "Running_Date_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)"
@@ -3976,40 +3761,13 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "running date": {
+			          "Running_Date (abdallah)": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Running_Date": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "running moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "running period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "running_date.date": {
+			    "Running_Date_abdallah.date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4046,7 +3804,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.date.date_hierarchy": {
+			    "Running_Date_abdallah.date.date_hierarchy": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4066,7 +3824,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.date.year": {
+			    "Running_Date_abdallah.date.year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4131,7 +3889,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.date.quarter": {
+			    "Running_Date_abdallah.date.quarter": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4196,7 +3954,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.date.month": {
+			    "Running_Date_abdallah.date.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4261,7 +4019,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.date.day": {
+			    "Running_Date_abdallah.date.day": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4306,7 +4064,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.year": {
+			    "Running_Date_abdallah.year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4333,7 +4091,7 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "running_date.month": {
+			    "Running_Date_abdallah.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Running_Date (Abdallah)",
@@ -4359,7 +4117,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.perc80_product": {
+			    "sale.perc80_product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4369,53 +4127,59 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "perc80 product": {
+			          "perc80 product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "perc80 artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
+			          "perc80 product": {
+			            "State": "Generated",
 			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "perc80 item": {
+			          "perc80 artifact (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "perc80 merchandise": {
+			          "perc80 item (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "perc80 produce": {
+			          "perc80 merchandise (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "perc80 produce (abdallah)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
 			    },
-			    "sale.top_revenue_product": {
+			    "sale.top_revenue_product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4425,114 +4189,14 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top revenue product": {
+			          "top revenue product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "revenue product": {
+			          "top revenue product": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "top revenue artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "revenue artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "top revenue item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "revenue item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "top income product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "income product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
 			          }
 			        },
 			        {
@@ -4547,7 +4211,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.max_product_sale": {
+			    "sale.max_product_sale_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4557,119 +4221,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "max product sale": {
+			          "max product sale (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "product sale": {
+			          "max product sale": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "max artifact sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "artifact sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "maximum product sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max item sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max merchandise sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max produce sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "item sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "merchandise sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "max product auction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.total_quantity_sum": {
+			    "sale.total_quantity_sum_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4679,119 +4243,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total quantity sum": {
+			          "total quantity sum (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "quantity sum": {
+			          "total quantity sum": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "total quantity summation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "total quantity aggregation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "quantity summation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "quantity aggregation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "total quantity total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total quantity aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total quantity amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "quantity total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "quantity aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "quantity amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.top_sold_product": {
+			    "sale.top_sold_product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4801,108 +4265,14 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top sold product": {
+			          "top sold product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "top sold artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "top sold item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "best sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "first sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "leading sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "maximum sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "peak sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "upper sold product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "top sold product": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -4917,7 +4287,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.total_ordered_sum": {
+			    "sale.total_ordered_sum_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -4927,83 +4297,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total ordered sum": {
+			          "total ordered sum (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "total ordered summation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "total ordered aggregation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "total ordered total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total ordered aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "total ordered amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "aggregate ordered sum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "overall ordered sum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "total ordered sum": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.top_ordered_product": {
+			    "sale.top_ordered_product_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5013,113 +4319,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top ordered product": {
+			          "top ordered product (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "top ordered artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "top ordered item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "best ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "first ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "leading ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "maximum ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "peak ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "upper ordered product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "top ordered product": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.top_sold_category": {
+			    "sale.top_sold_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5129,108 +4341,14 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top sold category": {
+			          "top sold category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "top sold classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "top sold class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top sold kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "best sold category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "first sold category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "leading sold category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "maximum sold category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "top sold category": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -5245,7 +4363,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.top_revenue_category": {
+			    "sale.top_revenue_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5255,125 +4373,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top revenue category": {
+			          "top revenue category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "category": {
+			          "top revenue category": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "revenue category": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "top revenue classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "revenue classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "top revenue class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top revenue kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "revenue class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.top_ordered_category": {
+			    "sale.top_ordered_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5383,113 +4395,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "top ordered category": {
+			          "top ordered category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "top ordered classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "top ordered class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "top ordered kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "best ordered category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "first ordered category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "leading ordered category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "maximum ordered category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "top ordered category": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.cumulative_revenue_category": {
+			    "sale.cumulative_revenue_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5499,125 +4417,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "cumulative revenue category": {
+			          "cumulative revenue category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "category": {
+			          "cumulative revenue category": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "revenue category": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "cumulative revenue classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "revenue classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
 			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "cumulative revenue class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "cumulative revenue kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "revenue class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "revenue group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.total_revenue_all_category": {
+			    "sale.total_revenue_all_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5627,113 +4439,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total revenue all category": {
+			          "total revenue all category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "total revenue all classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "total revenue all class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total revenue all kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "total income all category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "aggregate revenue all category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "overall revenue all category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "total profit all category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
+			          "total revenue all category": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.pareto_perc__category": {
+			    "sale.pareto_perc__category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5743,68 +4461,14 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "pareto perc. category": {
+			          "pareto perc. category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "pareto perc. classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "pareto perc. class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "pareto perc. kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
+			          "pareto perc. category": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -5819,7 +4483,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale.max_category_sale": {
+			    "sale.max_category_sale_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5829,119 +4493,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "max category sale": {
+			          "max category sale (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "category sale": {
+			          "max category sale": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "max classification sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "classification sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "maximum category sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max class sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max group sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max type sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max grouping sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "max kind sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "class sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "group sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.perc80_category": {
+			    "sale.perc80_category_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -5951,73 +4515,79 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "perc80 category": {
+			          "perc80 category (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "perc80 classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
+			          "perc80 category": {
+			            "State": "Generated",
 			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "perc80 class": {
+			          "perc80 classification (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "perc80 group": {
+			          "perc80 class (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "perc80 type": {
+			          "perc80 group (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "perc80 grouping": {
+			          "perc80 type (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "perc80 kind": {
+			          "perc80 grouping (abdallah)": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "perc80 kind (abdallah)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
 			    },
-			    "sale.historical_max_sales": {
+			    "sale.historical_max_sales_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6027,65 +4597,19 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "historical max sales": {
+			          "historical max sales (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "sales": {
+			          "historical max sales": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "max sales": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "historical max sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "max sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "historical maximum sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "maximum sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
 			    },
-			    "sale.scatter_xaxis_min": {
+			    "sale.scatter_xaxis_min_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6095,71 +4619,25 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "scatter x-axis min": {
+			          "scatter x-axis min (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "scatter x axis min": {
+			          "scatter x-axis min": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "scatter x axis min (abdallah)": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "axis min": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "x axis min": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "scatter x-axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.757
-			          }
-			        },
-			        {
-			          "scatter x axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "x axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.scatter_xaxis_max": {
+			    "sale.scatter_xaxis_max_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6169,71 +4647,25 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "scatter x-axis max": {
+			          "scatter x-axis max (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "scatter x axis max": {
+			          "scatter x-axis max": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "scatter x axis max (abdallah)": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "axis max": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "x axis max": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "scatter x-axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.757
-			          }
-			        },
-			        {
-			          "scatter x axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "x axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.scatter_yaxis_min": {
+			    "sale.scatter_yaxis_min_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6243,71 +4675,25 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "scatter y-axis min": {
+			          "scatter y-axis min (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "scatter y axis min": {
+			          "scatter y-axis min": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "scatter y axis min (abdallah)": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "axis min": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "y axis min": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "scatter y-axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.757
-			          }
-			        },
-			        {
-			          "scatter y axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "y axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "axis minimum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.scatter_yaxis_max": {
+			    "sale.scatter_yaxis_max_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6317,71 +4703,25 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "scatter y-axis max": {
+			          "scatter y-axis max (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "scatter y axis max": {
+			          "scatter y-axis max": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "scatter y axis max (abdallah)": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "axis max": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "y axis max": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "scatter y-axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.757
-			          }
-			        },
-			        {
-			          "scatter y axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "y axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "axis maximum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "sale.average_price": {
+			    "sale.average_price_abdallah": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "sales",
@@ -6391,18 +4731,243 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "average price": {
+			          "average price (abdallah)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "price": {
+			          "average price": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "sale.YoY_growth_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "YoY Growth %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY growth %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy growth percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yoy growth pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "sale.total_sales_no_category_filter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "ConceptualProperty": "TotalSales_NoCategoryFilter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales no category filter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalSales_NoCategoryFilter": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "filter": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "average value": {
+			          "category filter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "no category filter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales no category filter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale no classification filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "sale no classification filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "no classification filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "aggregate sale no category filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall sale no category filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale no category filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale number category filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale no class filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale no group filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale no type filter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "sale.country_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "Hierarchy": "Country Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nation hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "location hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "country ladder": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6412,7 +4977,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "average worth": {
+			          "country grading": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6422,7 +4987,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "average fee": {
+			          "country order": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6432,7 +4997,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "average charge": {
+			          "country pyramid": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6442,69 +5007,351 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "average amount": {
+			          "ladder": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "average bill": {
+			          "grading": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "average rate": {
+			          "order": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "average expense": {
+			          "pyramid": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sale.country_hierarchy.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "Hierarchy": "Country Hierarchy",
+			          "HierarchyLevel": "Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "average cost": {
+			          "nation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "average outlay": {
+			          "location": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "sale.country_hierarchy.city": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sales",
+			          "Hierarchy": "Country Hierarchy",
+			          "HierarchyLevel": "City"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "city": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "products_abdallah_launch_date_date_hierarchy_has_products_abdallah_launch_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Products (Abdallah)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "products_abdallah.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "products_abdallah.launch_date.date_hierarchy"
+			          }
+			        },
+			        "products_abdallah.launch_date.year": {
+			          "Target": {
+			            "Entity": "products_abdallah.launch_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "products_abdallah.launch_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "products_abdallah.launch_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_date_hierarchies_have_launch_years"
+			        }
+			      ]
+			    },
+			    "products_abdallah_launch_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Products (Abdallah)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "products_abdallah.launch_date": {
+			          "Target": {
+			            "Entity": "products_abdallah.launch_date"
+			          }
+			        },
+			        "products_abdallah.launch_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "products_abdallah.launch_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "products_abdallah.launch_date"
+			            },
+			            "Object": {
+			              "Role": "products_abdallah.launch_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "launch_dates_have_launch_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.day": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_days"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.month": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_months"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.quarter": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_quarters"
+			        }
+			      ]
+			    },
+			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "warranty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warranty.claim_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.date_hierarchy"
+			          }
+			        },
+			        "warranty.claim_date.year": {
+			          "Target": {
+			            "Entity": "warranty.claim_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warranty.claim_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warranty.claim_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "claim_date_hierarchies_have_claim_years"
+			        }
+			      ]
+			    },
 			    "warranty_claim_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "warranty"
@@ -6666,7 +5513,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_years"
+			          "ID": "launch_date_hierarchies_have_launch_years1"
 			        }
 			      ]
 			    },
@@ -6699,7 +5546,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "launch_dates_have_launch_date_hierarchies"
+			          "ID": "launch_dates_have_launch_date_hierarchies1"
 			        }
 			      ]
 			    },
@@ -6736,7 +5583,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale_has_running_date": {
+			    "sale_has_Running_Date_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6747,9 +5594,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "running_date": {
+			        "Running_Date_abdallah": {
 			          "Target": {
-			            "Entity": "running_date"
+			            "Entity": "Running_Date_abdallah"
 			          }
 			        }
 			      },
@@ -6760,17 +5607,17 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "running_date"
+			              "Role": "Running_Date_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_running_dates"
+			          "ID": "sales_have_Running_Date_abdallah"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date"
+			              "Role": "Running_Date_abdallah"
 			            },
 			            "Object": {
 			              "Role": "sale"
@@ -6778,11 +5625,11 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "running_dates_have_sales"
+			          "ID": "Running_Date_abdallah_have_sales"
 			        }
 			      ]
 			    },
-			    "sale_has_product": {
+			    "sale_has_products_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6793,10 +5640,17 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
-			          }
+			            "Entity": "products_abdallah"
+			          },
+			          "Nouns": [
+			            {
+			              "product": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
 			        }
 			      },
 			      "Phrasings": [
@@ -6806,17 +5660,17 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_products"
+			          "ID": "sales_have_products_abdallah"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
 			              "Role": "sale"
@@ -6824,7 +5678,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_sales"
+			          "ID": "products_abdallah_have_sales"
 			        }
 			      ]
 			    },
@@ -6861,7 +5715,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sale_has_average_price": {
+			    "sale_has_country_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6872,9 +5726,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.average_price": {
+			        "sale.country_hierarchy": {
 			          "Target": {
-			            "Entity": "sale.average_price"
+			            "Entity": "sale.country_hierarchy"
 			          }
 			        }
 			      },
@@ -6885,43 +5739,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.average_price"
+			              "Role": "sale.country_hierarchy"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_average_price"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "sale.average_price"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "average_price_indicates_how_expensive_sales_are"
+			          "ID": "sales_have_country_hierarchies"
 			        }
 			      ]
 			    },
-			    "sale_has_scatter_yaxis_max": {
+			    "sale_has_total_sales_no_category_filter": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6932,9 +5759,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.scatter_yaxis_max": {
+			        "sale.total_sales_no_category_filter": {
 			          "Target": {
-			            "Entity": "sale.scatter_yaxis_max"
+			            "Entity": "sale.total_sales_no_category_filter"
 			          }
 			        }
 			      },
@@ -6945,29 +5772,128 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_yaxis_max"
+			              "Role": "sale.total_sales_no_category_filter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_scatter_yaxis_max"
+			          "ID": "sales_have_total_sales_no_category_filter"
 			        }
 			      ]
 			    },
-			    "product_has_sale_scatter_yaxis_max": {
+			    "sale_has_YoY_growth_": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.YoY_growth_": {
+			          "Target": {
+			            "Entity": "sale.YoY_growth_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.YoY_growth_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_YoY_growth_"
+			        }
+			      ]
+			    },
+			    "sale_has_average_price_abdallah": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.average_price_abdallah": {
+			          "Target": {
+			            "Entity": "sale.average_price_abdallah"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.average_price_abdallah"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_average_price_abdallah"
+			        }
+			      ]
+			    },
+			    "sale_has_scatter_yaxis_max_abdallah": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.scatter_yaxis_max_abdallah": {
+			          "Target": {
+			            "Entity": "sale.scatter_yaxis_max_abdallah"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.scatter_yaxis_max_abdallah"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_scatter_yaxis_max_abdallah"
+			        }
+			      ]
+			    },
+			    "products_abdallah_has_sale_scatter_yaxis_max_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.scatter_yaxis_max": {
+			        "sale.scatter_yaxis_max_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_yaxis_max"
+			            "Entity": "sale.scatter_yaxis_max_abdallah"
 			          }
 			        }
 			      },
@@ -6975,19 +5901,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_yaxis_max"
+			              "Role": "sale.scatter_yaxis_max_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_scatter_yaxis_max"
+			          "ID": "products_abdallah_have_scatter_yaxis_max_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_scatter_yaxis_min": {
+			    "sale_has_scatter_yaxis_min_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -6998,9 +5924,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.scatter_yaxis_min": {
+			        "sale.scatter_yaxis_min_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_yaxis_min"
+			            "Entity": "sale.scatter_yaxis_min_abdallah"
 			          }
 			        }
 			      },
@@ -7011,29 +5937,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_yaxis_min"
+			              "Role": "sale.scatter_yaxis_min_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_scatter_yaxis_min"
+			          "ID": "sales_have_scatter_yaxis_min_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_scatter_yaxis_min": {
+			    "products_abdallah_has_sale_scatter_yaxis_min_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.scatter_yaxis_min": {
+			        "sale.scatter_yaxis_min_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_yaxis_min"
+			            "Entity": "sale.scatter_yaxis_min_abdallah"
 			          }
 			        }
 			      },
@@ -7041,19 +5967,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_yaxis_min"
+			              "Role": "sale.scatter_yaxis_min_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_scatter_yaxis_min"
+			          "ID": "products_abdallah_have_scatter_yaxis_min_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_scatter_xaxis_max": {
+			    "sale_has_scatter_xaxis_max_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7064,9 +5990,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.scatter_xaxis_max": {
+			        "sale.scatter_xaxis_max_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_xaxis_max"
+			            "Entity": "sale.scatter_xaxis_max_abdallah"
 			          }
 			        }
 			      },
@@ -7077,29 +6003,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_xaxis_max"
+			              "Role": "sale.scatter_xaxis_max_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_scatter_xaxis_max"
+			          "ID": "sales_have_scatter_xaxis_max_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_scatter_xaxis_max": {
+			    "products_abdallah_has_sale_scatter_xaxis_max_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.scatter_xaxis_max": {
+			        "sale.scatter_xaxis_max_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_xaxis_max"
+			            "Entity": "sale.scatter_xaxis_max_abdallah"
 			          }
 			        }
 			      },
@@ -7107,19 +6033,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_xaxis_max"
+			              "Role": "sale.scatter_xaxis_max_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_scatter_xaxis_max"
+			          "ID": "products_abdallah_have_scatter_xaxis_max_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_scatter_xaxis_min": {
+			    "sale_has_scatter_xaxis_min_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7130,9 +6056,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.scatter_xaxis_min": {
+			        "sale.scatter_xaxis_min_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_xaxis_min"
+			            "Entity": "sale.scatter_xaxis_min_abdallah"
 			          }
 			        }
 			      },
@@ -7143,29 +6069,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_xaxis_min"
+			              "Role": "sale.scatter_xaxis_min_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_scatter_xaxis_min"
+			          "ID": "sales_have_scatter_xaxis_min_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_scatter_xaxis_min": {
+			    "products_abdallah_has_sale_scatter_xaxis_min_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.scatter_xaxis_min": {
+			        "sale.scatter_xaxis_min_abdallah": {
 			          "Target": {
-			            "Entity": "sale.scatter_xaxis_min"
+			            "Entity": "sale.scatter_xaxis_min_abdallah"
 			          }
 			        }
 			      },
@@ -7173,19 +6099,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.scatter_xaxis_min"
+			              "Role": "sale.scatter_xaxis_min_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_scatter_xaxis_min"
+			          "ID": "products_abdallah_have_scatter_xaxis_min_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_historical_max_sales": {
+			    "sale_has_historical_max_sales_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7196,9 +6122,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.historical_max_sales": {
+			        "sale.historical_max_sales_abdallah": {
 			          "Target": {
-			            "Entity": "sale.historical_max_sales"
+			            "Entity": "sale.historical_max_sales_abdallah"
 			          }
 			        }
 			      },
@@ -7209,16 +6135,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.historical_max_sales"
+			              "Role": "sale.historical_max_sales_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_historical_max_sales"
+			          "ID": "sales_have_historical_max_sales_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_perc80_category": {
+			    "sale_has_perc80_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7229,9 +6155,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.perc80_category": {
+			        "sale.perc80_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.perc80_category"
+			            "Entity": "sale.perc80_category_abdallah"
 			          }
 			        }
 			      },
@@ -7242,16 +6168,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.perc80_category"
+			              "Role": "sale.perc80_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_perc80_category"
+			          "ID": "sales_have_perc80_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_max_category_sale": {
+			    "sale_has_max_category_sale_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7262,9 +6188,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.max_category_sale": {
+			        "sale.max_category_sale_abdallah": {
 			          "Target": {
-			            "Entity": "sale.max_category_sale"
+			            "Entity": "sale.max_category_sale_abdallah"
 			          }
 			        }
 			      },
@@ -7275,16 +6201,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.max_category_sale"
+			              "Role": "sale.max_category_sale_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_max_category_sale"
+			          "ID": "sales_have_max_category_sale_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_pareto_perc__category": {
+			    "sale_has_pareto_perc__category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7295,9 +6221,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.pareto_perc__category": {
+			        "sale.pareto_perc__category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.pareto_perc__category"
+			            "Entity": "sale.pareto_perc__category_abdallah"
 			          }
 			        }
 			      },
@@ -7308,16 +6234,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.pareto_perc__category"
+			              "Role": "sale.pareto_perc__category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_pareto_perc__category"
+			          "ID": "sales_have_pareto_perc__category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_total_revenue_all_category": {
+			    "sale_has_total_revenue_all_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7328,9 +6254,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.total_revenue_all_category": {
+			        "sale.total_revenue_all_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.total_revenue_all_category"
+			            "Entity": "sale.total_revenue_all_category_abdallah"
 			          }
 			        }
 			      },
@@ -7341,16 +6267,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.total_revenue_all_category"
+			              "Role": "sale.total_revenue_all_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_total_revenue_all_category"
+			          "ID": "sales_have_total_revenue_all_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_cumulative_revenue_category": {
+			    "sale_has_cumulative_revenue_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7361,9 +6287,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.cumulative_revenue_category": {
+			        "sale.cumulative_revenue_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.cumulative_revenue_category"
+			            "Entity": "sale.cumulative_revenue_category_abdallah"
 			          }
 			        }
 			      },
@@ -7374,16 +6300,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.cumulative_revenue_category"
+			              "Role": "sale.cumulative_revenue_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_cumulative_revenue_category"
+			          "ID": "sales_have_cumulative_revenue_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_ordered_category": {
+			    "sale_has_top_ordered_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7394,9 +6320,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_ordered_category": {
+			        "sale.top_ordered_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_ordered_category"
+			            "Entity": "sale.top_ordered_category_abdallah"
 			          }
 			        }
 			      },
@@ -7407,16 +6333,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_ordered_category"
+			              "Role": "sale.top_ordered_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_ordered_category"
+			          "ID": "sales_have_top_ordered_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_revenue_category": {
+			    "sale_has_top_revenue_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7427,9 +6353,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_revenue_category": {
+			        "sale.top_revenue_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_revenue_category"
+			            "Entity": "sale.top_revenue_category_abdallah"
 			          }
 			        }
 			      },
@@ -7440,16 +6366,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_revenue_category"
+			              "Role": "sale.top_revenue_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_revenue_category"
+			          "ID": "sales_have_top_revenue_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_sold_category": {
+			    "sale_has_top_sold_category_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7460,9 +6386,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_sold_category": {
+			        "sale.top_sold_category_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_sold_category"
+			            "Entity": "sale.top_sold_category_abdallah"
 			          }
 			        }
 			      },
@@ -7473,16 +6399,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_sold_category"
+			              "Role": "sale.top_sold_category_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_sold_category"
+			          "ID": "sales_have_top_sold_category_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_ordered_product": {
+			    "sale_has_top_ordered_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7493,9 +6419,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_ordered_product": {
+			        "sale.top_ordered_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_ordered_product"
+			            "Entity": "sale.top_ordered_product_abdallah"
 			          }
 			        }
 			      },
@@ -7506,29 +6432,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_ordered_product"
+			              "Role": "sale.top_ordered_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_ordered_product"
+			          "ID": "sales_have_top_ordered_product_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_top_ordered_product": {
+			    "products_abdallah_has_sale_top_ordered_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.top_ordered_product": {
+			        "sale.top_ordered_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_ordered_product"
+			            "Entity": "sale.top_ordered_product_abdallah"
 			          }
 			        }
 			      },
@@ -7536,19 +6462,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.top_ordered_product"
+			              "Role": "sale.top_ordered_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_top_ordered_product"
+			          "ID": "products_abdallah_have_top_ordered_product_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_total_ordered_sum": {
+			    "sale_has_total_ordered_sum_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7559,9 +6485,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.total_ordered_sum": {
+			        "sale.total_ordered_sum_abdallah": {
 			          "Target": {
-			            "Entity": "sale.total_ordered_sum"
+			            "Entity": "sale.total_ordered_sum_abdallah"
 			          }
 			        }
 			      },
@@ -7572,16 +6498,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.total_ordered_sum"
+			              "Role": "sale.total_ordered_sum_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_total_ordered_sum"
+			          "ID": "sales_have_total_ordered_sum_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_sold_product": {
+			    "sale_has_top_sold_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7592,9 +6518,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_sold_product": {
+			        "sale.top_sold_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_sold_product"
+			            "Entity": "sale.top_sold_product_abdallah"
 			          }
 			        }
 			      },
@@ -7605,29 +6531,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_sold_product"
+			              "Role": "sale.top_sold_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_sold_product"
+			          "ID": "sales_have_top_sold_product_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_top_sold_product": {
+			    "products_abdallah_has_sale_top_sold_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.top_sold_product": {
+			        "sale.top_sold_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_sold_product"
+			            "Entity": "sale.top_sold_product_abdallah"
 			          }
 			        }
 			      },
@@ -7635,19 +6561,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.top_sold_product"
+			              "Role": "sale.top_sold_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_top_sold_product"
+			          "ID": "products_abdallah_have_top_sold_product_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_total_quantity_sum": {
+			    "sale_has_total_quantity_sum_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7658,9 +6584,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.total_quantity_sum": {
+			        "sale.total_quantity_sum_abdallah": {
 			          "Target": {
-			            "Entity": "sale.total_quantity_sum"
+			            "Entity": "sale.total_quantity_sum_abdallah"
 			          }
 			        }
 			      },
@@ -7671,16 +6597,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.total_quantity_sum"
+			              "Role": "sale.total_quantity_sum_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_total_quantity_sum"
+			          "ID": "sales_have_total_quantity_sum_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_max_product_sale": {
+			    "sale_has_max_product_sale_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7691,9 +6617,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.max_product_sale": {
+			        "sale.max_product_sale_abdallah": {
 			          "Target": {
-			            "Entity": "sale.max_product_sale"
+			            "Entity": "sale.max_product_sale_abdallah"
 			          }
 			        }
 			      },
@@ -7704,16 +6630,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.max_product_sale"
+			              "Role": "sale.max_product_sale_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_max_product_sale"
+			          "ID": "sales_have_max_product_sale_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_top_revenue_product": {
+			    "sale_has_top_revenue_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7724,9 +6650,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.top_revenue_product": {
+			        "sale.top_revenue_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_revenue_product"
+			            "Entity": "sale.top_revenue_product_abdallah"
 			          }
 			        }
 			      },
@@ -7737,29 +6663,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.top_revenue_product"
+			              "Role": "sale.top_revenue_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_top_revenue_product"
+			          "ID": "sales_have_top_revenue_product_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_sale_top_revenue_product": {
+			    "products_abdallah_has_sale_top_revenue_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "sale.top_revenue_product": {
+			        "sale.top_revenue_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.top_revenue_product"
+			            "Entity": "sale.top_revenue_product_abdallah"
 			          }
 			        }
 			      },
@@ -7767,19 +6693,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "sale.top_revenue_product"
+			              "Role": "sale.top_revenue_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_top_revenue_product"
+			          "ID": "products_abdallah_have_top_revenue_product_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_perc80_product": {
+			    "sale_has_perc80_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7790,9 +6716,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.perc80_product": {
+			        "sale.perc80_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.perc80_product"
+			            "Entity": "sale.perc80_product_abdallah"
 			          }
 			        }
 			      },
@@ -7803,29 +6729,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.perc80_product"
+			              "Role": "sale.perc80_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_perc80_product"
+			          "ID": "sales_have_perc80_product_abdallah"
 			        }
 			      ]
 			    },
-			    "running_date_has_month": {
+			    "Running_Date_abdallah_has_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date": {
+			        "Running_Date_abdallah": {
 			          "Target": {
-			            "Entity": "running_date"
+			            "Entity": "Running_Date_abdallah"
 			          }
 			        },
-			        "running_date.month": {
+			        "Running_Date_abdallah.month": {
 			          "Target": {
-			            "Entity": "running_date.month"
+			            "Entity": "Running_Date_abdallah.month"
 			          }
 			        }
 			      },
@@ -7833,32 +6759,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date"
+			              "Role": "Running_Date_abdallah"
 			            },
 			            "Object": {
-			              "Role": "running_date.month"
+			              "Role": "Running_Date_abdallah.month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "running_dates_have_months"
+			          "ID": "Running_Date_abdallah_have_months"
 			        }
 			      ]
 			    },
-			    "running_date_has_year": {
+			    "Running_Date_abdallah_has_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date": {
+			        "Running_Date_abdallah": {
 			          "Target": {
-			            "Entity": "running_date"
+			            "Entity": "Running_Date_abdallah"
 			          }
 			        },
-			        "running_date.year": {
+			        "Running_Date_abdallah.year": {
 			          "Target": {
-			            "Entity": "running_date.year"
+			            "Entity": "Running_Date_abdallah.year"
 			          }
 			        }
 			      },
@@ -7866,32 +6792,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date"
+			              "Role": "Running_Date_abdallah"
 			            },
 			            "Object": {
-			              "Role": "running_date.year"
+			              "Role": "Running_Date_abdallah.year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "running_dates_have_years"
+			          "ID": "Running_Date_abdallah_have_years"
 			        }
 			      ]
 			    },
-			    "running_date_has_date": {
+			    "Running_Date_abdallah_has_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date": {
+			        "Running_Date_abdallah": {
 			          "Target": {
-			            "Entity": "running_date"
+			            "Entity": "Running_Date_abdallah"
 			          }
 			        },
-			        "running_date.date": {
+			        "Running_Date_abdallah.date": {
 			          "Target": {
-			            "Entity": "running_date.date"
+			            "Entity": "Running_Date_abdallah.date"
 			          }
 			        }
 			      },
@@ -7899,19 +6825,19 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date"
+			              "Role": "Running_Date_abdallah"
 			            },
 			            "Object": {
-			              "Role": "running_date.date"
+			              "Role": "Running_Date_abdallah.date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "running_dates_have_dates"
+			          "ID": "Running_Date_abdallah_have_dates"
 			        }
 			      ]
 			    },
-			    "sale_has_total_revenue_sum": {
+			    "sale_has_total_revenue_sum_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7922,9 +6848,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.total_revenue_sum": {
+			        "sale.total_revenue_sum_abdallah": {
 			          "Target": {
-			            "Entity": "sale.total_revenue_sum"
+			            "Entity": "sale.total_revenue_sum_abdallah"
 			          }
 			        }
 			      },
@@ -7935,16 +6861,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.total_revenue_sum"
+			              "Role": "sale.total_revenue_sum_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_total_revenue_sum"
+			          "ID": "sales_have_total_revenue_sum_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_pareto_perc__product": {
+			    "sale_has_pareto_perc__product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7955,9 +6881,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.pareto_perc__product": {
+			        "sale.pareto_perc__product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.pareto_perc__product"
+			            "Entity": "sale.pareto_perc__product_abdallah"
 			          }
 			        }
 			      },
@@ -7968,16 +6894,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.pareto_perc__product"
+			              "Role": "sale.pareto_perc__product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_pareto_perc__product"
+			          "ID": "sales_have_pareto_perc__product_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_total_revenue_all_products": {
+			    "sale_has_total_revenue_all_products_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -7988,9 +6914,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.total_revenue_all_products": {
+			        "sale.total_revenue_all_products_abdallah": {
 			          "Target": {
-			            "Entity": "sale.total_revenue_all_products"
+			            "Entity": "sale.total_revenue_all_products_abdallah"
 			          }
 			        }
 			      },
@@ -8001,16 +6927,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.total_revenue_all_products"
+			              "Role": "sale.total_revenue_all_products_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_total_revenue_all_products"
+			          "ID": "sales_have_total_revenue_all_products_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_cumulative_revenue_product": {
+			    "sale_has_cumulative_revenue_product_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -8021,9 +6947,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.cumulative_revenue_product": {
+			        "sale.cumulative_revenue_product_abdallah": {
 			          "Target": {
-			            "Entity": "sale.cumulative_revenue_product"
+			            "Entity": "sale.cumulative_revenue_product_abdallah"
 			          }
 			        }
 			      },
@@ -8034,16 +6960,16 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.cumulative_revenue_product"
+			              "Role": "sale.cumulative_revenue_product_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_cumulative_revenue_product"
+			          "ID": "sales_have_cumulative_revenue_product_abdallah"
 			        }
 			      ]
 			    },
-			    "sale_has_running_total": {
+			    "sale_has_running_total_abdallah": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
 			      },
@@ -8054,9 +6980,9 @@ cultureInfo en-US
 			            "Entity": "sale"
 			          }
 			        },
-			        "sale.running_total": {
+			        "sale.running_total_abdallah": {
 			          "Target": {
-			            "Entity": "sale.running_total"
+			            "Entity": "sale.running_total_abdallah"
 			          }
 			        }
 			      },
@@ -8067,29 +6993,29 @@ cultureInfo en-US
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.running_total"
+			              "Role": "sale.running_total_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_running_total"
+			          "ID": "sales_have_running_total_abdallah"
 			        }
 			      ]
 			    },
-			    "product_has_corrected_category_ID": {
+			    "products_abdallah_has_corrected_category_ID": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "product.corrected_category_ID": {
+			        "products_abdallah.corrected_category_ID": {
 			          "Target": {
-			            "Entity": "product.corrected_category_ID"
+			            "Entity": "products_abdallah.corrected_category_ID"
 			          }
 			        }
 			      },
@@ -8097,32 +7023,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "product.corrected_category_ID"
+			              "Role": "products_abdallah.corrected_category_ID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_corrected_category_ID"
+			          "ID": "products_abdallah_have_corrected_category_ID"
 			        }
 			      ]
 			    },
-			    "product_has_launch_date": {
+			    "products_abdallah_has_launch_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "product.launch_date": {
+			        "products_abdallah.launch_date": {
 			          "Target": {
-			            "Entity": "product.launch_date"
+			            "Entity": "products_abdallah.launch_date"
 			          }
 			        }
 			      },
@@ -8130,32 +7056,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "product.launch_date"
+			              "Role": "products_abdallah.launch_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_launch_dates"
+			          "ID": "products_abdallah_have_launch_dates"
 			        }
 			      ]
 			    },
-			    "product_has_product_name": {
+			    "products_abdallah_has_product_name": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "product.product_name": {
+			        "products_abdallah.product_name": {
 			          "Target": {
-			            "Entity": "product.product_name"
+			            "Entity": "products_abdallah.product_name"
 			          }
 			        }
 			      },
@@ -8163,45 +7089,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "product.product_name"
+			              "Role": "products_abdallah.product_name"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_product_names"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Name": {
-			              "Role": "product.product_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "product_names_are_names_IDs_of_products"
+			          "ID": "products_abdallah_have_product_names"
 			        }
 			      ]
 			    },
-			    "product_has_product_ID": {
+			    "products_abdallah_has_product_ID": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "product.product_ID": {
+			        "products_abdallah.product_ID": {
 			          "Target": {
-			            "Entity": "product.product_ID"
+			            "Entity": "products_abdallah.product_ID"
 			          }
 			        }
 			      },
@@ -8209,28 +7122,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            },
 			            "Object": {
-			              "Role": "product.product_ID"
+			              "Role": "products_abdallah.product_ID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "products_have_product_ID"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Name": {
-			              "Role": "product.product_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "product_ID_are_names_IDs_of_products"
+			          "ID": "products_abdallah_have_product_ID"
 			        }
 			      ]
 			    },
@@ -8901,6 +7801,141 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "sale_in_country_hierarchy_city": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.country_hierarchy.city": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.city"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "sale.country_hierarchy.city"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "sale.country_hierarchy.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_are_in_cities"
+			        }
+			      ]
+			    },
+			    "sale_in_country_hierarchy_country": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.country_hierarchy.country": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "sale.country_hierarchy.country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "sale.country_hierarchy.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_are_in_countries"
+			        }
+			      ]
+			    },
+			    "sale_in_country_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.country_hierarchy": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "sale.country_hierarchy"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "sale.country_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_are_in_country_hierarchies"
+			        }
+			      ]
+			    },
 			    "sale_in_country": {
 			      "Binding": {
 			        "ConceptualEntity": "sales"
@@ -8942,7 +7977,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_are_in_countries"
+			          "ID": "sales_are_in_countries1"
 			        }
 			      ]
 			    },
@@ -8987,30 +8022,30 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_are_in_cities"
+			          "ID": "sales_are_in_cities1"
 			        }
 			      ]
 			    },
-			    "product_is_launched_on_launch_date": {
+			    "products_abdallah_is_launched_on_launch_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product": {
+			        "products_abdallah": {
 			          "Target": {
-			            "Entity": "product"
+			            "Entity": "products_abdallah"
 			          }
 			        },
-			        "product.launch_date": {
+			        "products_abdallah.launch_date": {
 			          "Target": {
-			            "Entity": "product.launch_date"
+			            "Entity": "products_abdallah.launch_date"
 			          }
 			        }
 			      },
 			      "SemanticSlots": {
 			        "When": {
-			          "Role": "product.launch_date"
+			          "Role": "products_abdallah.launch_date"
 			        }
 			      },
 			      "Phrasings": [
@@ -9024,12 +8059,12 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Object": {
-			              "Role": "product"
+			              "Role": "products_abdallah"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.9,
-			          "ID": "products_are_launched_on_launch_dates"
+			          "ID": "products_abdallah_are_launched_on_launch_dates"
 			        }
 			      ]
 			    },
@@ -9117,152 +8152,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.year": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_years"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.quarter": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_quarters"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.month": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_months"
-			        }
-			      ]
-			    },
-			    "warranty_claim_date_date_hierarchy_has_warranty_claim_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "warranty"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "warranty.claim_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.date_hierarchy"
-			          }
-			        },
-			        "warranty.claim_date.day": {
-			          "Target": {
-			            "Entity": "warranty.claim_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "warranty.claim_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "warranty.claim_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "claim_date_hierarchies_have_claim_days"
-			        }
-			      ]
-			    },
-			    "product_launch_date_has_date_hierarchy": {
+			    "products_abdallah_launch_date_date_hierarchy_has_products_abdallah_launch_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product.launch_date": {
+			        "products_abdallah.launch_date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "product.launch_date"
+			            "Entity": "products_abdallah.launch_date.date_hierarchy"
 			          }
 			        },
-			        "product.launch_date.date_hierarchy": {
+			        "products_abdallah.launch_date.quarter": {
 			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
+			            "Entity": "products_abdallah.launch_date.quarter"
 			          }
 			        }
 			      },
@@ -9270,76 +8173,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product.launch_date"
+			              "Role": "products_abdallah.launch_date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_dates_have_launch_date_hierarchies1"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Products (Abdallah)"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.year": {
-			          "Target": {
-			            "Entity": "product.launch_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "launch_date_hierarchies_have_launch_years1"
-			        }
-			      ]
-			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Products (Abdallah)"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
-			          }
-			        },
-			        "product.launch_date.quarter": {
-			          "Target": {
-			            "Entity": "product.launch_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "product.launch_date.quarter"
+			              "Role": "products_abdallah.launch_date.quarter"
 			            }
 			          },
 			          "State": "Generated",
@@ -9348,20 +8185,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_month": {
+			    "products_abdallah_launch_date_date_hierarchy_has_products_abdallah_launch_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
+			        "products_abdallah.launch_date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
+			            "Entity": "products_abdallah.launch_date.date_hierarchy"
 			          }
 			        },
-			        "product.launch_date.month": {
+			        "products_abdallah.launch_date.month": {
 			          "Target": {
-			            "Entity": "product.launch_date.month"
+			            "Entity": "products_abdallah.launch_date.month"
 			          }
 			        }
 			      },
@@ -9369,10 +8206,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
+			              "Role": "products_abdallah.launch_date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "product.launch_date.month"
+			              "Role": "products_abdallah.launch_date.month"
 			            }
 			          },
 			          "State": "Generated",
@@ -9381,20 +8218,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "product_launch_date_date_hierarchy_has_product_launch_date_day": {
+			    "products_abdallah_launch_date_date_hierarchy_has_products_abdallah_launch_date_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Products (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "product.launch_date.date_hierarchy": {
+			        "products_abdallah.launch_date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "product.launch_date.date_hierarchy"
+			            "Entity": "products_abdallah.launch_date.date_hierarchy"
 			          }
 			        },
-			        "product.launch_date.day": {
+			        "products_abdallah.launch_date.day": {
 			          "Target": {
-			            "Entity": "product.launch_date.day"
+			            "Entity": "products_abdallah.launch_date.day"
 			          }
 			        }
 			      },
@@ -9402,10 +8239,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "product.launch_date.date_hierarchy"
+			              "Role": "products_abdallah.launch_date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "product.launch_date.day"
+			              "Role": "products_abdallah.launch_date.day"
 			            }
 			          },
 			          "State": "Generated",
@@ -9414,20 +8251,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "running_date_date_has_date_hierarchy": {
+			    "Running_Date_abdallah_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date.date": {
+			        "Running_Date_abdallah.date": {
 			          "Target": {
-			            "Entity": "running_date.date"
+			            "Entity": "Running_Date_abdallah.date"
 			          }
 			        },
-			        "running_date.date.date_hierarchy": {
+			        "Running_Date_abdallah.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
+			            "Entity": "Running_Date_abdallah.date.date_hierarchy"
 			          }
 			        }
 			      },
@@ -9435,10 +8272,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date.date"
+			              "Role": "Running_Date_abdallah.date"
 			            },
 			            "Object": {
-			              "Role": "running_date.date.date_hierarchy"
+			              "Role": "Running_Date_abdallah.date.date_hierarchy"
 			            }
 			          },
 			          "State": "Generated",
@@ -9447,20 +8284,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "running_date_date_date_hierarchy_has_running_date_date_year": {
+			    "Running_Date_abdallah_date_date_hierarchy_has_Running_Date_abdallah_date_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date.date.date_hierarchy": {
+			        "Running_Date_abdallah.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
+			            "Entity": "Running_Date_abdallah.date.date_hierarchy"
 			          }
 			        },
-			        "running_date.date.year": {
+			        "Running_Date_abdallah.date.year": {
 			          "Target": {
-			            "Entity": "running_date.date.year"
+			            "Entity": "Running_Date_abdallah.date.year"
 			          }
 			        }
 			      },
@@ -9468,10 +8305,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date.date.date_hierarchy"
+			              "Role": "Running_Date_abdallah.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "running_date.date.year"
+			              "Role": "Running_Date_abdallah.date.year"
 			            }
 			          },
 			          "State": "Generated",
@@ -9480,20 +8317,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "running_date_date_date_hierarchy_has_running_date_date_quarter": {
+			    "Running_Date_abdallah_date_date_hierarchy_has_Running_Date_abdallah_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date.date.date_hierarchy": {
+			        "Running_Date_abdallah.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
+			            "Entity": "Running_Date_abdallah.date.date_hierarchy"
 			          }
 			        },
-			        "running_date.date.quarter": {
+			        "Running_Date_abdallah.date.quarter": {
 			          "Target": {
-			            "Entity": "running_date.date.quarter"
+			            "Entity": "Running_Date_abdallah.date.quarter"
 			          }
 			        }
 			      },
@@ -9501,10 +8338,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date.date.date_hierarchy"
+			              "Role": "Running_Date_abdallah.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "running_date.date.quarter"
+			              "Role": "Running_Date_abdallah.date.quarter"
 			            }
 			          },
 			          "State": "Generated",
@@ -9513,20 +8350,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "running_date_date_date_hierarchy_has_running_date_date_month": {
+			    "Running_Date_abdallah_date_date_hierarchy_has_Running_Date_abdallah_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date.date.date_hierarchy": {
+			        "Running_Date_abdallah.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
+			            "Entity": "Running_Date_abdallah.date.date_hierarchy"
 			          }
 			        },
-			        "running_date.date.month": {
+			        "Running_Date_abdallah.date.month": {
 			          "Target": {
-			            "Entity": "running_date.date.month"
+			            "Entity": "Running_Date_abdallah.date.month"
 			          }
 			        }
 			      },
@@ -9534,10 +8371,10 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date.date.date_hierarchy"
+			              "Role": "Running_Date_abdallah.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "running_date.date.month"
+			              "Role": "Running_Date_abdallah.date.month"
 			            }
 			          },
 			          "State": "Generated",
@@ -9546,20 +8383,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "running_date_date_date_hierarchy_has_running_date_date_day": {
+			    "Running_Date_abdallah_date_date_hierarchy_has_Running_Date_abdallah_date_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Running_Date (Abdallah)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "running_date.date.date_hierarchy": {
+			        "Running_Date_abdallah.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "running_date.date.date_hierarchy"
+			            "Entity": "Running_Date_abdallah.date.date_hierarchy"
 			          }
 			        },
-			        "running_date.date.day": {
+			        "Running_Date_abdallah.date.day": {
 			          "Target": {
-			            "Entity": "running_date.date.day"
+			            "Entity": "Running_Date_abdallah.date.day"
 			          }
 			        }
 			      },
@@ -9567,15 +8404,147 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "running_date.date.date_hierarchy"
+			              "Role": "Running_Date_abdallah.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "running_date.date.day"
+			              "Role": "Running_Date_abdallah.date.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "sale_country_hierarchy_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale.country_hierarchy": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy"
+			          }
+			        },
+			        "sale.country_hierarchy.country": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale.country_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "sale.country_hierarchy.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "country_hierarchies_have_countries"
+			        }
+			      ]
+			    },
+			    "sale_country_hierarchy_has_city": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale.country_hierarchy": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy"
+			          }
+			        },
+			        "sale.country_hierarchy.city": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale.country_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "sale.country_hierarchy.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "country_hierarchies_have_cities"
+			        }
+			      ]
+			    },
+			    "sale_country_hierarchy_country_has_sale_country_hierarchy_city": {
+			      "Binding": {
+			        "ConceptualEntity": "sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale.country_hierarchy.country": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.country"
+			          }
+			        },
+			        "sale.country_hierarchy.city": {
+			          "Target": {
+			            "Entity": "sale.country_hierarchy.city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale.country_hierarchy.country"
+			            },
+			            "Object": {
+			              "Role": "sale.country_hierarchy.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "countries_have_cities"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale.country_hierarchy.city"
+			            },
+			            "Object": {
+			              "Role": "sale.country_hierarchy.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cities_have_countries"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "sale.country_hierarchy.city"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "sale.country_hierarchy.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cities_are_in_countries"
 			        }
 			      ]
 			    }

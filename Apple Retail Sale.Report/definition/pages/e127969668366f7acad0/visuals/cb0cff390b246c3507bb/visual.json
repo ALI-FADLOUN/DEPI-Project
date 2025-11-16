@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 173.33333333333334,
     "width": 830,
-    "tabOrder": 3000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "columnChart",
@@ -242,25 +242,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "0a39bb6cc859e30a39da",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Sales"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "41e7885ca0bbf14b2849",
+  "name": "bf4bf0908720b44779ac",
   "position": {
-    "x": 354.65216959305047,
-    "y": 536.04803338490581,
-    "z": 1000,
-    "height": 172.09351180252941,
-    "width": 243.02394572113951
+    "x": 177.9074817958581,
+    "y": 534.88523938624007,
+    "z": 3000,
+    "height": 173.25630580119514,
+    "width": 162.79115981320351,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -22,19 +23,23 @@
                       "Entity": "sales"
                     }
                   },
-                  "Property": "Corrected_Categories"
+                  "Property": "Country"
                 }
               },
-              "queryRef": "sales.Corrected_Categories",
-              "nativeQueryRef": "Category Name",
-              "active": true,
-              "displayName": "Category Name"
+              "queryRef": "sales.Country",
+              "nativeQueryRef": "Country",
+              "active": true
             }
           ]
         }
       }
     },
     "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ],
       "data": [
         {
           "properties": {
@@ -51,6 +56,13 @@
       "selection": [
         {
           "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
@@ -59,13 +71,6 @@
               }
             },
             "singleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -80,37 +85,10 @@
       "title": [
         {
           "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "alignment": {
               "expr": {
                 "Literal": {
                   "Value": "'center'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -131,13 +109,6 @@
               "expr": {
                 "Literal": {
                   "Value": "9D"
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
                 }
               }
             }
