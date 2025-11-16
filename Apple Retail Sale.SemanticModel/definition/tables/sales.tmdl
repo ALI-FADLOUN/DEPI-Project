@@ -1,6 +1,90 @@
 table sales
 	lineageTag: be291d41-3f67-4938-9835-f40e279c1b15
 
+	measure 'Total Sales Amount' = ```
+			SUMX(Sales, Sales[Quantity] * Sales[Unit_Price])
+			
+			```
+		formatString: 0
+		lineageTag: 438e6b45-6afe-488b-b18d-3431b1f622af
+
+	measure 'Laptop Sales' = ```
+			
+			CALCULATE(
+			    [Total Sales Amount],
+			    Sales[Category_Name] = "Laptop"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 73f48feb-06f2-4ee3-854c-8923b8000012
+
+	measure 'Desktop Sales' = ```
+			
+			CALCULATE(
+			    [Total Sales Amount],
+			    Sales[Category_Name] = "Desktop"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: e341483d-230f-4ed7-a421-0fd80bf3ca38
+
+	measure 'Sales Difference (Laptop - Desktop)' = ```
+			
+			[Laptop Sales] - [Desktop Sales]
+			
+			```
+		formatString: 0
+		lineageTag: fd0a0642-8bca-46c9-a245-49acf3a02930
+
+	measure 'Laptop Sales %' = ```
+			
+			DIVIDE([Laptop Sales], [Laptop Sales] + [Desktop Sales])
+			
+			
+			
+			```
+		lineageTag: a93e608b-784b-46f2-ac1e-2ca9317f6280
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Desktop Sales %' = DIVIDE([Desktop Sales],[Laptop Sales]+[Desktop Sales])
+		lineageTag: d934e804-ea84-4682-8917-0fcfcc3ed76c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Laptop Sales Growth %' = ```
+			
+			VAR CurrentYearSales = [Laptop Sales]
+			VAR PreviousYearSales =
+			    CALCULATE(
+			        [Laptop Sales],
+			        DATEADD('sales'[Sale_Date], -1, YEAR)
+			    )
+			RETURN
+			DIVIDE(CurrentYearSales - PreviousYearSales, PreviousYearSales)
+			
+			```
+		lineageTag: 9f2437dd-95ff-4d3d-b6e9-c907ee310395
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Desktop Sales Growth %' = ```
+			
+			VAR CurrentYearSales = [Desktop Sales]
+			VAR PreviousYearSales = CALCULATE(
+			   [Desktop Sales],
+			    DATEADD('sales'[Sale_Date], -1, YEAR)
+			)
+			RETURN
+			DIVIDE(CurrentYearSales - PreviousYearSales, PreviousYearSales)
+			
+			```
+		lineageTag: ea089d69-0349-4a43-93b1-1dcb4ec0ad7d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	measure 'Claim Rate' = DIVIDE(COUNT(warranty[Claim_ID]),SUM(sales[Quantity]),0)*100
 		lineageTag: e2da21b9-b039-4e6d-a24a-cd9690ac8751
 

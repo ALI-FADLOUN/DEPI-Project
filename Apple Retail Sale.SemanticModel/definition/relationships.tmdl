@@ -14,6 +14,15 @@ relationship 5b0eb44e-371d-f54c-3d46-582296f72936
 	fromColumn: sales.Sale_ID
 	toColumn: warranty.Sale_ID
 
+relationship 39f1305f-c701-4ec5-bd24-a80dc3ee7717
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Laptop_Desktop_Sales.Sale_Date
+	toColumn: LocalDateTable_09eaf5b1-8607-48a9-b922-f5353fd73f48.Date
+
+relationship 9e6d3cd0-f9de-440b-b60a-9f47a7cd05ad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Laptop_Desktop_Sales.Launch_Date
+	toColumn: LocalDateTable_d6b996eb-5db8-4944-b8b8-edf79f8f066d.Date
 relationship 11ad6f01-0a47-40db-80da-d1001ad6f669
 	joinOnDateBehavior: datePartOnly
 	fromColumn: 'Products (Abdallah)'.Launch_Date

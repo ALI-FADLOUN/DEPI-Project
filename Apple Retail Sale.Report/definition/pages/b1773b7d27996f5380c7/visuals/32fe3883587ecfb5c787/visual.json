@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "32fe3883587ecfb5c787",
+  "position": {
+    "x": 422.25422175677443,
+    "y": 8.4450844351354881,
+    "z": 2,
+    "height": 50.670506610812929,
+    "width": 349.8677837413274,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": " Desktop  Sales",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Times New Roman",
+                      "fontSize": "24pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
