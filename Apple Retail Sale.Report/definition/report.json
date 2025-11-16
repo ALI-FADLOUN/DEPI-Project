@@ -40,7 +40,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -68,6 +68,21 @@
           "name": "Custom4337596829817254.json",
           "path": "Custom4337596829817254.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "apple-logo-42-1536x153638025760657946417.png",
+          "path": "apple-logo-42-1536x153638025760657946417.png",
+          "type": "Image"
+        },
+        {
+          "name": "apple-logo-42-1536x15361450437317604566.png",
+          "path": "apple-logo-42-1536x15361450437317604566.png",
+          "type": "Image"
+        },
+        {
+          "name": "apple-logo-42-1536x1536594902971177708.png",
+          "path": "apple-logo-42-1536x1536594902971177708.png",
+          "type": "Image"
         },
         {
           "name": "Apple_logo_white.svg7507041519145423.png",
