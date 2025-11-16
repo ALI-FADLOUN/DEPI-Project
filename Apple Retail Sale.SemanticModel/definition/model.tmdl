@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_QueryOrder = ["sales","warranty","Products (Abdallah)"]
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","DaxQueryView_Desktop"]
 
 ref table sales
 ref table DateTableTemplate_c82e7a73-b6df-492d-b2fb-77a6b457b562

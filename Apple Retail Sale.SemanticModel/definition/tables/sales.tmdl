@@ -1,6 +1,24 @@
 table sales
 	lineageTag: be291d41-3f67-4938-9835-f40e279c1b15
 
+	measure 'YoY Growth %' =
+			
+			DIVIDE(
+			    [TotalSales_NoCategoryFilter]-
+			CALCULATE(
+			  [TotalSales_NoCategoryFilter],
+			    SAMEPERIODLASTYEAR('sales'[Sale_Date])
+			),
+			   CALCULATE( [TotalSales_NoCategoryFilter],
+			    SAMEPERIODLASTYEAR('sales'[Sale_Date])
+			),"hghgh")
+		lineageTag: 11f1b54a-5ada-4090-90d1-d69140a91b95
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure TotalSales_NoCategoryFilter = CALCULATE( SUM(sales[Sales]), ALL( sales[Category_Name]) )
+		formatString: 0
+		lineageTag: 7d98a86f-8c53-406b-9e4e-ba9117909742
 	measure 'Running Total (Abdallah)' =
 			CALCULATE(
 			    SUM(sales[Sales]),
@@ -366,6 +384,16 @@ table sales
 
 		annotation SummarizationSetBy = Automatic
 
+	hierarchy 'Country Hierarchy'
+		lineageTag: fbf26adf-7338-4663-a89d-8c264fa26549
+
+		level Country
+			lineageTag: b7f79e57-35b1-4ca8-9df5-556d4d2e0aac
+			column: Country
+
+		level City
+			lineageTag: eb469ea2-701c-420c-b80a-5ec4f7b5f755
+			column: City
 	column Corrected_Categories
 		dataType: string
 		lineageTag: 56f4feb4-275d-4039-bad9-dda2af118beb
@@ -386,7 +414,7 @@ table sales
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("D:\Trainings\DEPI\Project\DEPI-Project\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("D:\projects\mygit\DEPI\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"sale_id", type text}, {"sale_date", type text}, {"store_id", type text}, {"product_id", type text}, {"quantity", Int64.Type}, {"Store_Name", type text}, {"City", type text}, {"Country", type text}, {"Product_Name", type text}, {"Category_ID", type text}, {"Launch_Date", type date}, {"Price", Int64.Type}, {"category_name", type text}}),
 				    #"Renamed Some Columns" = Table.RenameColumns(#"Changed Type",{{"sale_id", "Sale_ID"}, {"sale_date", "Sale_Date"}, {"store_id", "Store_ID"}, {"product_id", "Product_ID"}, {"quantity", "Quantity"}, {"category_name", "Category_Name"}, {"Price", "Unit_Price"}}),
@@ -485,5 +513,5 @@ table sales
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
