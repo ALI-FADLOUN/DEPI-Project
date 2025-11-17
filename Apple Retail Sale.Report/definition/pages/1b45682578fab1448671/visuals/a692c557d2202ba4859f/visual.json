@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "a692c557d2202ba4859f",
   "position": {
-    "x": 712.18077354729564,
-    "y": 264.8379369838691,
-    "z": 5000,
-    "height": 244.25467763279119,
-    "width": 532.42030854788186,
-    "tabOrder": 5000
+    "x": 527.90847539424567,
+    "y": 225.58203574115342,
+    "z": 4000,
+    "height": 300.0008516557607,
+    "width": 732.56021915941574,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "azureMap",
@@ -209,7 +209,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
                 }
               }
             }
@@ -218,37 +218,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "70310851c7f5632453bb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Total Sales.Yara"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b39d6c60f49462a2fba6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Country"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

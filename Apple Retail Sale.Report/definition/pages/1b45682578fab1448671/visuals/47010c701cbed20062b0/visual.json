@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "47010c701cbed20062b0",
   "position": {
-    "x": 28.816563091509071,
-    "y": 264.8379369838691,
-    "z": 5005,
-    "height": 244.25467763279119,
-    "width": 153.68833648804838,
-    "tabOrder": 5005
+    "x": 176.74468779719237,
+    "y": 534.88523938624007,
+    "z": 8000,
+    "height": 173.25630580119514,
+    "width": 145.34924983321741,
+    "tabOrder": 7000
   },
   "visual": {
-    "visualType": "listSlicer",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
@@ -35,39 +35,75 @@
       }
     },
     "objects": {
-      "layout": [
+      "selection": [
         {
           "properties": {
-            "rowCount": {
+            "singleSelect": {
               "expr": {
                 "Literal": {
-                  "Value": "3L"
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "value": [
+      "data": [
         {
           "properties": {
-            "fontFamily": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
+                  "Value": "'Basic'"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
           }
         }
       ]
@@ -86,7 +122,14 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -103,24 +146,37 @@
                 }
               }
             },
-            "fontFamily": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
+                  "Value": "true"
                 }
               }
             },
-            "fontSize": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
-            "alignment": {
+            "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "0D"
                 }
               }
             }
@@ -129,23 +185,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c74f3c2c72b5bc5833ea",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Price Category.Yara"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

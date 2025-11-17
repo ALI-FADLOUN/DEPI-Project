@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "0768d2e17e95ac8bc827",
   "position": {
-    "x": 229.16028744200071,
-    "y": 503.60374545637285,
+    "x": 174.41909979986087,
+    "y": 532.55965138890861,
     "z": 2000,
-    "height": 216.81033183135398,
-    "width": 613.38112866212168,
-    "tabOrder": 1000
+    "height": 173.25630580119514,
+    "width": 613.95523129551032
   },
   "visual": {
     "visualType": "columnChart",
@@ -24,11 +23,11 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "sales"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
-                          "Property": "Sale_Date"
+                          "Property": "Date"
                         }
                       },
                       "Hierarchy": "Date Hierarchy"
@@ -37,8 +36,8 @@
                   "Level": "Month"
                 }
               },
-              "queryRef": "sales.Sale_Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Sale_Date Month",
+              "queryRef": "Running_Date (Abdallah).Date.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "Date Month",
               "active": true
             }
           ]
@@ -965,7 +964,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
                 }
               }
             }
@@ -1078,64 +1077,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "95d79d937c7fde7ee1e7",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
-                  }
-                },
-                "Property": "Sales"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "53f5397931e1f6973c9b",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "sales"
-                      }
-                    },
-                    "Name": "Variation",
-                    "Property": "Sale_Date"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Month"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1585f8fe33140bfedf30",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Category_Name"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

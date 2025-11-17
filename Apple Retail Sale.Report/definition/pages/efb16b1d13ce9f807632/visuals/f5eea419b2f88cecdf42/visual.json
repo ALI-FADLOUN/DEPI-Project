@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "f5eea419b2f88cecdf42",
   "position": {
-    "x": 118.01068694618002,
-    "y": 299.1433692356656,
-    "z": 4,
-    "height": 222.29920099164141,
-    "width": 498.11487629608541,
-    "tabOrder": 4
+    "x": 360.46613958637914,
+    "y": 534.88523938624007,
+    "z": 4000,
+    "height": 173.25630580119514,
+    "width": 900.00255496728221,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -206,20 +206,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "273bd151880ce2de3691",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Laptop Sales"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

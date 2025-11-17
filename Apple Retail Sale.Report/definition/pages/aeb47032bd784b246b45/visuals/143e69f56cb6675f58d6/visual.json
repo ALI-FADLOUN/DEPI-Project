@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "143e69f56cb6675f58d6",
   "position": {
-    "x": 522.81478751737893,
-    "y": 229.16028744200071,
-    "z": 8000,
-    "height": 260.72128511365349,
-    "width": 404.80410057119889,
-    "tabOrder": 7000
+    "x": 504.65259542093082,
+    "y": 225.58203574115342,
+    "z": 7000,
+    "height": 296.5124696597635,
+    "width": 423.25701551432911,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "lineChart",
@@ -24,11 +24,11 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "sales"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
-                          "Property": "Sale_Date"
+                          "Property": "Date"
                         }
                       },
                       "Hierarchy": "Date Hierarchy"
@@ -37,8 +37,8 @@
                   "Level": "Year"
                 }
               },
-              "queryRef": "sales.Sale_Date.Variation.Date Hierarchy.Year",
-              "nativeQueryRef": "Sale_Date Year",
+              "queryRef": "Running_Date (Abdallah).Date.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "Date Year",
               "active": true
             }
           ]
@@ -73,11 +73,11 @@
                       "PropertyVariationSource": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "sales"
+                            "Entity": "Running_Date (Abdallah)"
                           }
                         },
                         "Name": "Variation",
-                        "Property": "Sale_Date"
+                        "Property": "Date"
                       }
                     },
                     "Hierarchy": "Date Hierarchy"
@@ -96,7 +96,7 @@
       "valueAxis": [
         {
           "properties": {
-            "showAxisTitle": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -113,7 +113,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "11D"
                 }
               }
             },
@@ -124,7 +124,7 @@
                 }
               }
             },
-            "show": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -137,13 +137,6 @@
       "categoryAxis": [
         {
           "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
             "fontFamily": {
               "expr": {
                 "Literal": {
@@ -158,10 +151,17 @@
                 }
               }
             },
-            "show": {
+            "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -177,7 +177,7 @@
                   "expr": {
                     "ThemeDataColor": {
                       "ColorId": 1,
-                      "Percent": 0.4
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -199,10 +199,17 @@
                 }
               }
             },
-            "fontSize": {
+            "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "'Auto'"
+                }
+              }
+            },
+            "minimumOffset": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
                 }
               }
             },
@@ -238,7 +245,14 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -255,17 +269,10 @@
                 }
               }
             },
-            "fontFamily": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
+                  "Value": "true"
                 }
               }
             },
@@ -275,54 +282,45 @@
                   "Value": "'center'"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
             }
           }
         }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e54cb161f97da5604947",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Total Sales.Yara"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "bae4800c68e3e4375d28",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "sales"
-                      }
-                    },
-                    "Name": "Variation",
-                    "Property": "Sale_Date"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

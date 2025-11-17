@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "98f62aef370d4dd12f4b",
   "position": {
-    "x": 819.21372217290082,
-    "y": 551.63135060888794,
-    "z": 11,
-    "height": 150.94390190790466,
-    "width": 448.71505385349843,
-    "tabOrder": 11
+    "x": 354.65216959305047,
+    "y": 240.69835772380802,
+    "z": 5000,
+    "height": 236.04718172914508,
+    "width": 905.81652496061088,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "azureMap",
@@ -166,37 +166,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "02d5be0c84fea2e84299",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Country"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "10240ed2ed928e0e6587",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Desktop Sales"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

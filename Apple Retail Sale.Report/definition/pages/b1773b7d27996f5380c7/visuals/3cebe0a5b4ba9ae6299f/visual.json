@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "3cebe0a5b4ba9ae6299f",
   "position": {
-    "x": 50.77203973265884,
-    "y": 264.8379369838691,
+    "x": 17.441909979986089,
+    "y": 225.58203574115342,
     "z": 0,
-    "height": 266.21015427394093,
-    "width": 296.39893465552188
+    "height": 304.65202765042369,
+    "width": 322.09393763040976,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -189,20 +190,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "51a3037726884df16327",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Desktop Sales"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "b65786bae2a55ee57325",
         "field": {

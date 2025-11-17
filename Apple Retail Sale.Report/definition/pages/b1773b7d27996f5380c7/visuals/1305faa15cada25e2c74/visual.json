@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "1305faa15cada25e2c74",
   "position": {
-    "x": 817.84150488282887,
-    "y": 264.8379369838691,
-    "z": 8,
-    "height": 271.69902343422842,
-    "width": 448.71505385349843,
-    "tabOrder": 8
+    "x": 910.46770095527381,
+    "y": 484.88509744361329,
+    "z": 3000,
+    "height": 217.44247775049325,
+    "width": 358.14055158904767,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "pieChart",
@@ -88,37 +88,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "7ec39a143d51ea7f0a15",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Laptop Sales %"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c9d54e2ad3b65ec4d725",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Desktop Sales %"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "f7ad45ae389a1f313b4a",
   "position": {
-    "x": 639.453257173487,
-    "y": 521.442570227307,
+    "x": 711.62992718343241,
+    "y": 534.88523938624007,
     "z": 1000,
-    "height": 198.97150706041978,
-    "width": 605.14782492169047,
-    "tabOrder": 1000
+    "height": 173.25630580119514,
+    "width": 548.83876737022888
   },
   "visual": {
     "visualType": "lineChart",
@@ -24,11 +23,11 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "sales"
+                              "Entity": "Running_Date (Abdallah)"
                             }
                           },
                           "Name": "Variation",
-                          "Property": "Sale_Date"
+                          "Property": "Date"
                         }
                       },
                       "Hierarchy": "Date Hierarchy"
@@ -37,8 +36,8 @@
                   "Level": "Month"
                 }
               },
-              "queryRef": "sales.Sale_Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Sale_Date Month",
+              "queryRef": "Running_Date (Abdallah).Date.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "Date Month",
               "active": true
             }
           ]
@@ -250,7 +249,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
                 }
               }
             }
@@ -259,48 +258,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0e7936cfd4d1390fd673",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Total Sales.Yara"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "45abf7dfe198f72c312b",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "sales"
-                      }
-                    },
-                    "Name": "Variation",
-                    "Property": "Sale_Date"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Month"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

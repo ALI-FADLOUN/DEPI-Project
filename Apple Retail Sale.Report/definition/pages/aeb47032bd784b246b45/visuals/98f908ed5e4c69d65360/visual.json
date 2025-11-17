@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "98f908ed5e4c69d65360",
   "position": {
-    "x": 31.560997671652792,
-    "y": 229.16028744200071,
-    "z": 6000,
-    "height": 260.72128511365349,
-    "width": 474.78718236486378,
-    "tabOrder": 5000
+    "x": 17.441909979986089,
+    "y": 225.58203574115342,
+    "z": 5000,
+    "height": 296.5124696597635,
+    "width": 474.41995145562163,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "azureMap",
@@ -172,17 +172,10 @@
                 }
               }
             },
-            "fontFamily": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "16D"
+                  "Value": "true"
                 }
               }
             },
@@ -190,6 +183,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
                 }
               }
             }
@@ -209,7 +216,34 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

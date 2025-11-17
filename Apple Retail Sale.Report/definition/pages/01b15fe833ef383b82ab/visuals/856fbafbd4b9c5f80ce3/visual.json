@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "856fbafbd4b9c5f80ce3",
   "position": {
-    "x": 65.8664299234493,
-    "y": 417.15405618184559,
-    "z": 2,
-    "height": 289.53784820516256,
-    "width": 532.42030854788186,
-    "tabOrder": 2
+    "x": 17.441909979986089,
+    "y": 403.48951753701152,
+    "z": 2000,
+    "height": 303.48923365175796,
+    "width": 706.97875118876948,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "funnel",
@@ -96,20 +96,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "3156d41ae681a109cbb8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sales"
-              }
-            },
-            "Property": "Laptop Sales"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "849906ae28757a800ccf",
         "field": {

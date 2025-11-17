@@ -128,6 +128,21 @@ table Laptop_Desktop_Sales
 
 		annotation SummarizationSetBy = Automatic
 
+	column Corrected_Categories
+		lineageTag: be1457f0-0e38-4270-83e7-db0dfa9538cc
+		isNameInferred
+		sourceColumn: sales[Corrected_Categories]
+
+	column Corrected_Category_ID
+		lineageTag: 59d4fb53-2b48-4921-989f-41f1d66c53d8
+		isNameInferred
+		sourceColumn: sales[Corrected_Category_ID]
+
+	column 'Price Category.Yara'
+		lineageTag: 77d0ef8b-66d3-47f1-a10e-22939b4e0fba
+		isNameInferred
+		sourceColumn: sales[Price Category.Yara]
+
 	partition Laptop_Desktop_Sales = calculated
 		mode: import
 		source = ```
