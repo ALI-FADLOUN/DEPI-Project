@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 201.48847926267274,
         "y": 0
       },
       "nodes": [
@@ -19,12 +19,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
-            "x": 476,
-            "y": 70
+            "x": 509,
+            "y": 0
           },
           "nodeIndex": "warranty",
           "nodeLineageTag": "f9eb3308-9b92-4d67-a598-a174efefb435",
@@ -32,11 +32,48 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 785.92165898617509,
+            "y": 123.61751152073732
+          },
+          "nodeIndex": "Laptop_Desktop_Sales",
+          "nodeLineageTag": "be29c6fb-3e2f-44b6-8a94-6fb4b3d80fda",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 353,
+            "y": 376
+          },
+          "nodeIndex": "Products (Abdallah)",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 20.199996948242188,
+            "y": 374
+          },
+          "nodeIndex": "Running_Date (Abdallah)",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 96.444444444444443,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
