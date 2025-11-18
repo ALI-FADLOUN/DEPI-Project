@@ -4,5 +4,85 @@
   "displayName": "Page 18",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d69eb49db3b29c1a220d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sales"
+              }
+            },
+            "Property": "Category_Name"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "sales",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "Category_Name"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Streaming Device'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "dc1a92b5155c5057b471",
+      "target": "44db7f6fc8d04a0ee552",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dc1a92b5155c5057b471",
+      "target": "aab3061de25756182452",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dc1a92b5155c5057b471",
+      "target": "5e9cb60b3716237052a2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dc1a92b5155c5057b471",
+      "target": "a2b39f2e124784d8c3ca",
+      "type": "NoFilter"
+    }
+  ]
 }
