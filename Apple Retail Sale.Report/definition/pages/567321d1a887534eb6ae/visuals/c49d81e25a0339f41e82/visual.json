@@ -6,7 +6,8 @@
     "y": 86.0467559012647,
     "z": 2000,
     "height": 138.37248584122298,
-    "width": 1088
+    "width": 1088,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -521,6 +522,13 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

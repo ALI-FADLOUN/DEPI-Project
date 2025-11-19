@@ -143,6 +143,26 @@ table Laptop_Desktop_Sales
 		isNameInferred
 		sourceColumn: sales[Price Category.Yara]
 
+	column 'Sale Month_ALI_FADLOUN'
+		lineageTag: 20e2d440-cb1d-4a4b-a4d7-41cd81dc33ec
+		isNameInferred
+		sourceColumn: sales[Sale Month_ALI_FADLOUN]
+
+	column 'Sale Year_ALI_FADLOUN'
+		lineageTag: 9091f93b-afeb-4362-a41a-2f026ecd1d8f
+		isNameInferred
+		sourceColumn: sales[Sale Year_ALI_FADLOUN]
+
+	column 'Sale MonthName_ALI_FADLOUN'
+		lineageTag: 4de138e3-fa56-454f-98c9-c0cd62c43f59
+		isNameInferred
+		sourceColumn: sales[Sale MonthName_ALI_FADLOUN]
+
+	column 'Sale day_ALI_FADLOUN'
+		lineageTag: 4ab91c36-f9fe-4c23-8c12-aa991e42543b
+		isNameInferred
+		sourceColumn: sales[Sale day_ALI_FADLOUN]
+
 	partition Laptop_Desktop_Sales = calculated
 		mode: import
 		source = ```

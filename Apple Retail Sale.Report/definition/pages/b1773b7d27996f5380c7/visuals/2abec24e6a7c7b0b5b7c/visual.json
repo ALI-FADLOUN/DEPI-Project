@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 86.0467559012647,
     "width": 83.721167903933221,
-    "tabOrder": 6000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "image",
@@ -21,6 +21,21 @@
                   "PackageName": "RegisteredResources",
                   "PackageType": 1,
                   "ItemName": "apple-logo-42-1536x1536594902971177708.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

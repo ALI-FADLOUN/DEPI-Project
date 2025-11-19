@@ -4,5 +4,27 @@
   "displayName": "Page 2",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "a4f8d74117a13b37ae64",
+      "target": "5c375424230e0cbeae13",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a4f8d74117a13b37ae64",
+      "target": "95e88988a06a580cb2cd",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a4f8d74117a13b37ae64",
+      "target": "7a43297c21a25e06656a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a4f8d74117a13b37ae64",
+      "target": "e950a0a169a144438be5",
+      "type": "NoFilter"
+    }
+  ]
 }

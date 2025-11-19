@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 68.610864503593035,
     "width": 175.64381312919815,
-    "tabOrder": 6000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "shape",
@@ -135,6 +135,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'567321d1a887534eb6ae'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
