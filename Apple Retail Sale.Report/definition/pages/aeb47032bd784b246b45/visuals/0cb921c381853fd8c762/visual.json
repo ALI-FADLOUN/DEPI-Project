@@ -6,8 +6,7 @@
     "y": 23.327693931221631,
     "z": 3000,
     "height": 60.377560763161867,
-    "width": 370.49866831940238,
-    "tabOrder": 1000
+    "width": 370.49866831940238
   },
   "visual": {
     "visualType": "textbox",
@@ -47,6 +46,19 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
