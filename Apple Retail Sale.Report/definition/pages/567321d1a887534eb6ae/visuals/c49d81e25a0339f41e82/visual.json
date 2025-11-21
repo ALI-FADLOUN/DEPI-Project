@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c49d81e25a0339f41e82",
   "position": {
-    "x": 93,
-    "y": 86.0467559012647,
+    "x": 8.4507042253521139,
+    "y": 85.91549295774648,
     "z": 2000,
-    "height": 138.37248584122298,
-    "width": 1088,
-    "tabOrder": 9000
+    "height": 138.02816901408451,
+    "width": 1267.605633802817,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -108,7 +108,7 @@
             "rectangleRoundedCurve": {
               "expr": {
                 "Literal": {
-                  "Value": "9L"
+                  "Value": "10L"
                 }
               }
             },
@@ -188,7 +188,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "275L"
+                  "Value": "10L"
                 }
               }
             }
@@ -225,7 +225,7 @@
             "rectangleRoundedCurve": {
               "expr": {
                 "Literal": {
-                  "Value": "9L"
+                  "Value": "10L"
                 }
               }
             },
@@ -283,7 +283,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -430,6 +430,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Narrow'"
+                }
+              }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
                 }
               }
             }

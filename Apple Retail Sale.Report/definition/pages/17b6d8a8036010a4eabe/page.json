@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "17b6d8a8036010a4eabe",
-  "displayName": "Page 16",
+  "displayName": "Subscription Service_2_Ali",
   "displayOption": "ActualSize",
   "height": 720,
   "width": 1280,
@@ -69,27 +69,5 @@
         }
       }
     ]
-  },
-  "visualInteractions": [
-    {
-      "source": "ffdb1cc73769a3043571",
-      "target": "2c59b85bd8c450926d67",
-      "type": "NoFilter"
-    },
-    {
-      "source": "ffdb1cc73769a3043571",
-      "target": "773d0ef47be0b0981d06",
-      "type": "NoFilter"
-    },
-    {
-      "source": "ffdb1cc73769a3043571",
-      "target": "f1d46050186a1e8e0468",
-      "type": "NoFilter"
-    },
-    {
-      "source": "ffdb1cc73769a3043571",
-      "target": "772dddeb00ac076ea360",
-      "type": "NoFilter"
-    }
-  ]
+  }
 }

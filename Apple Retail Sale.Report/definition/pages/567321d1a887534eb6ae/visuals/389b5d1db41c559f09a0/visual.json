@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "389b5d1db41c559f09a0",
   "position": {
-    "x": 361.62893358504493,
-    "y": 224.41924174248769,
+    "x": 356.33802816901408,
+    "y": 223.943661971831,
     "z": 3000,
-    "height": 208.14012576116733,
-    "width": 338.37305361173014
+    "height": 208.45070422535213,
+    "width": 345.07042253521126,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "columnChart",
@@ -162,6 +163,24 @@
               "expr": {
                 "Literal": {
                   "Value": "'Tablet sales'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

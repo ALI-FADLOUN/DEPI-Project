@@ -11,9 +11,9 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Custom7014791356187844.json",
+      "name": "Custom05386085733760393.json",
       "reportVersionAtImport": {
-        "visual": "2.1.0",
+        "visual": "2.4.0",
         "report": "3.0.0",
         "page": "2.3.0"
       },
@@ -43,6 +43,13 @@
                 "Value": "false"
               }
             }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
           }
         }
       }
@@ -65,19 +72,14 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "74708011306520349037.png",
-          "path": "74708011306520349037.png",
-          "type": "Image"
-        },
-        {
-          "name": "Custom7014791356187844.json",
-          "path": "Custom7014791356187844.json",
-          "type": "CustomTheme"
-        },
-        {
           "name": "apple-logo-42-1536x1536594902971177708.png",
           "path": "apple-logo-42-1536x1536594902971177708.png",
           "type": "Image"
+        },
+        {
+          "name": "Custom05386085733760393.json",
+          "path": "Custom05386085733760393.json",
+          "type": "CustomTheme"
         }
       ]
     }

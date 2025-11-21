@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "a692c557d2202ba4859f",
   "position": {
-    "x": 527.90847539424567,
-    "y": 225.58203574115342,
+    "x": 515.49295774647885,
+    "y": 225.35211267605635,
     "z": 4000,
-    "height": 300.0008516557607,
-    "width": 732.56021915941574,
-    "tabOrder": 2000
+    "height": 300,
+    "width": 754.92957746478874,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "azureMap",
@@ -210,6 +210,24 @@
               "expr": {
                 "Literal": {
                   "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

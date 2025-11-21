@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "9f7674d4e84200695934",
   "position": {
-    "x": 17.441909979986089,
-    "y": 86,
-    "z": 5000,
-    "height": 139.53527983988872,
-    "width": 1243,
-    "tabOrder": 5000
+    "x": 5.6338028169014089,
+    "y": 77.464788732394368,
+    "z": 4000,
+    "height": 152.11267605633805,
+    "width": 1270.4225352112676,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -222,7 +222,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "130L"
+                  "Value": "10L"
                 }
               }
             }
@@ -297,6 +297,13 @@
                   "Value": "12L"
                 }
               }
+            },
+            "paddingIndividual": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           },
           "selector": {
@@ -327,6 +334,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Narrow'"
+                }
+              }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
                 }
               }
             }
@@ -377,7 +391,7 @@
             "rectangleRoundedCurve": {
               "expr": {
                 "Literal": {
-                  "Value": "9L"
+                  "Value": "10L"
                 }
               }
             },
@@ -420,7 +434,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -521,6 +535,13 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

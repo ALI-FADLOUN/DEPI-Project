@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "7dde7d6844f76c948433",
   "position": {
-    "x": 17.5,
-    "y": 86.25,
+    "x": 0,
+    "y": 85.714285714285722,
     "z": 0,
-    "height": 138.75,
-    "width": 1242.5,
-    "tabOrder": 1000
+    "height": 140,
+    "width": 1280,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "cardVisual",
@@ -88,7 +88,8 @@
                 }
               },
               "queryRef": "sales.Top Revenue Category",
-              "nativeQueryRef": "Top Revenue Category (Abdallah)"
+              "nativeQueryRef": "Top Revenue Category",
+              "displayName": "Top Revenue Category"
             },
             {
               "field": {
@@ -117,7 +118,8 @@
                 }
               },
               "queryRef": "sales.Top Ordered Category",
-              "nativeQueryRef": "Top Ordered Category (Abdallah)"
+              "nativeQueryRef": "Top Ordered Category",
+              "displayName": "Top Ordered Category"
             }
           ]
         }
@@ -166,7 +168,7 @@
             "backgroundShow": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -241,7 +243,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "21L"
+                  "Value": "10L"
                 }
               }
             },
@@ -258,6 +260,13 @@
                   "Value": "'middle'"
                 }
               }
+            },
+            "columnCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
             }
           }
         }
@@ -268,7 +277,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -386,6 +395,13 @@
                   "Value": "'Narrow'"
                 }
               }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
             }
           },
           "selector": {
@@ -443,7 +459,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -507,6 +523,17 @@
           "selector": {
             "metadata": "Min(sales.Sale_ID)"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ],
       "label": [
@@ -523,6 +550,13 @@
               "expr": {
                 "Literal": {
                   "Value": "12D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

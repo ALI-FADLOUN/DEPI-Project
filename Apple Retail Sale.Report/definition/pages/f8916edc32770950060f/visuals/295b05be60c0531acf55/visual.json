@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "295b05be60c0531acf55",
   "position": {
-    "x": 17.441909979986089,
-    "y": 86.0467559012647,
+    "x": 9.8591549295774659,
+    "y": 85.91549295774648,
     "z": 5000,
-    "height": 139.53527983988872,
-    "width": 1243.0267845736753,
-    "tabOrder": 1000
+    "height": 139.43661971830986,
+    "width": 1260.5633802816901,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "cardVisual",
@@ -118,7 +118,8 @@
                 }
               },
               "queryRef": "sales.Top Ordered Product",
-              "nativeQueryRef": "Top Ordered Product"
+              "nativeQueryRef": "Top Ordered Product",
+              "displayName": "Top Ordered Product"
             }
           ]
         }
@@ -242,7 +243,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "21L"
+                  "Value": "10L"
                 }
               }
             },
@@ -257,6 +258,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'middle'"
+                }
+              }
+            },
+            "columnCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
                 }
               }
             }
@@ -387,6 +395,13 @@
                   "Value": "'Narrow'"
                 }
               }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
             }
           },
           "selector": {
@@ -444,7 +459,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "24fd9cebc74805c70166",
   "position": {
-    "x": 393.33333333333331,
-    "y": 426.66666666666669,
-    "z": 13000,
-    "height": 293.33333333333331,
-    "width": 474.66666666666669,
-    "tabOrder": 6000
+    "x": 407.04225352112678,
+    "y": 476.056338028169,
+    "z": 7000,
+    "height": 238.02816901408451,
+    "width": 460.56338028169017,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "areaChart",
@@ -259,8 +259,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.6
+                      "ColorId": 1,
+                      "Percent": 0
                     }
                   }
                 }
@@ -282,7 +282,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "25D"
+                  "Value": "9D"
                 }
               }
             },
@@ -290,6 +290,24 @@
               "expr": {
                 "Literal": {
                   "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

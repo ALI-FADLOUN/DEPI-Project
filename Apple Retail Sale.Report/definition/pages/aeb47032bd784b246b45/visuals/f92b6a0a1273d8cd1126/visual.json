@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "f92b6a0a1273d8cd1126",
   "position": {
-    "x": 17,
-    "y": 86,
+    "x": 4.2253521126760569,
+    "y": 77.464788732394368,
     "z": 0,
-    "height": 139,
-    "width": 1243,
-    "tabOrder": 5000
+    "height": 138.02816901408451,
+    "width": 1271.8309859154931,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "sales.Total Sales.Yara",
-              "nativeQueryRef": "Total Sales.Yara",
+              "nativeQueryRef": "Total Sales",
+              "displayName": "Total Sales",
               "format": "0.0"
             },
             {
@@ -42,7 +43,8 @@
                 }
               },
               "queryRef": "sales.Total Quantity Sold.Yara",
-              "nativeQueryRef": "Total Quantity Sold.Yara",
+              "nativeQueryRef": "Total Quantity Sold",
+              "displayName": "Total Quantity Sold",
               "format": "0.0"
             },
             {
@@ -57,7 +59,8 @@
                 }
               },
               "queryRef": "sales.Avg Selling Price.Yara",
-              "nativeQueryRef": "Avg Selling Price.Yara",
+              "nativeQueryRef": "Avg Selling Price",
+              "displayName": "Avg Selling Price",
               "format": "0"
             },
             {
@@ -138,7 +141,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "60L"
+                  "Value": "10L"
                 }
               }
             }
@@ -313,7 +316,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -453,6 +456,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Narrow'"
+                }
+              }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
                 }
               }
             }

@@ -45,7 +45,7 @@ table 'Products (Abdallah)'
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("D:\Trainings\DEPI\Project\DEPI-Project\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("F:\My Project\DEPI-Project\Raw Data\sales.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"sale_id", type text}, {"sale_date", type text}, {"store_id", type text}, {"product_id", type text}, {"quantity", Int64.Type}, {"Store_Name", type text}, {"City", type text}, {"Country", type text}, {"Product_Name", type text}, {"Category_ID", type text}, {"Launch_Date", type date}, {"Price", Int64.Type}, {"category_name", type text}}),
 				    #"Renamed Some Columns" = Table.RenameColumns(#"Changed Type",{{"sale_id", "Sale_ID"}, {"sale_date", "Sale_Date"}, {"store_id", "Store_ID"}, {"product_id", "Product_ID"}, {"quantity", "Quantity"}, {"category_name", "Category_Name"}, {"Price", "Unit_Price"}}),
@@ -144,8 +144,6 @@ table 'Products (Abdallah)'
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Removed Columns",{{"Corrected_Category_ID", type text}})
 				in
 				    #"Changed Type2"
-
-	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navigation
 

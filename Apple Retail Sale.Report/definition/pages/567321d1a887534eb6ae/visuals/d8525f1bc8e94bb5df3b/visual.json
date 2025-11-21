@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "d8525f1bc8e94bb5df3b",
   "position": {
     "x": 711.62992718343241,
@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 208.14012576116733,
     "width": 284.8845296731061,
-    "tabOrder": 1000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "columnChart",
@@ -143,6 +143,24 @@
               "expr": {
                 "Literal": {
                   "Value": "'Top 5 Store'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

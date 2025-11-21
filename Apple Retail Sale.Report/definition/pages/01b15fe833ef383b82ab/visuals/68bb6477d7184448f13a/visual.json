@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "68bb6477d7184448f13a",
   "position": {
-    "x": 739.53698315141014,
-    "y": 403.48951753701152,
-    "z": 4000,
-    "height": 303.48923365175796,
-    "width": 520.93171140225115,
-    "tabOrder": 2000
+    "x": 732.3943661971831,
+    "y": 404.22535211267609,
+    "z": 3000,
+    "height": 302.81690140845075,
+    "width": 538.02816901408448,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "donutChart",
@@ -85,6 +85,24 @@
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
