@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "2c59b85bd8c450926d67",
   "position": {
-    "x": 205.33333333333334,
-    "y": 158.66666666666666,
-    "z": 8000,
-    "height": 170.66666666666666,
-    "width": 1074.6666666666667,
-    "tabOrder": 2000
+    "x": 9.8591549295774659,
+    "y": 271.830985915493,
+    "z": 4000,
+    "height": 316.90140845070425,
+    "width": 1254.9295774647887,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "pivotTable",
@@ -144,7 +144,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "148D"
+                  "Value": "195.77622980145236D"
                 }
               }
             }
@@ -210,6 +210,35 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "109.68117365563545D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sales"
+                        }
+                      },
+                      "Property": "Sale MonthName_ALI_FADLOUN"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "values": [
@@ -266,7 +295,7 @@
             "gridVerticalWeight": {
               "expr": {
                 "Literal": {
-                  "Value": "0.43D"
+                  "Value": "10D"
                 }
               }
             },
@@ -295,7 +324,7 @@
                   "expr": {
                     "ThemeDataColor": {
                       "ColorId": 1,
-                      "Percent": 0.2
+                      "Percent": 0
                     }
                   }
                 }
@@ -306,8 +335,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.2
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
                 }
@@ -345,8 +374,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.5
+                      "ColorId": 1,
+                      "Percent": 0
                     }
                   }
                 }
@@ -409,7 +438,14 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "25D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -423,6 +459,24 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4180e2f463c7b57f3f7a",
   "position": {
-    "x": 17.441909979986089,
-    "y": 224.41924174248769,
+    "x": 12.67605633802817,
+    "y": 223.943661971831,
     "z": 1000,
-    "height": 302.32643965309222,
-    "width": 333.72187761706715,
-    "tabOrder": 7000
+    "height": 302.81690140845075,
+    "width": 333.80281690140845,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "areaChart",
@@ -147,6 +147,24 @@
               "expr": {
                 "Literal": {
                   "Value": "'Years sales'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

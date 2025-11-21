@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "62be598511e3ea55a7e2",
   "position": {
-    "x": 755.81609913273053,
-    "y": 224.41924174248769,
+    "x": 761.97183098591552,
+    "y": 223.943661971831,
     "z": 5000,
-    "height": 483.7223034449475,
-    "width": 504.65259542093082,
-    "tabOrder": 7000
+    "height": 484.50704225352115,
+    "width": 504.22535211267609,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -587,6 +587,24 @@
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

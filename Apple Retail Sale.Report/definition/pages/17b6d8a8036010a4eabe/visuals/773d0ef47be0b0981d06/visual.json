@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "773d0ef47be0b0981d06",
   "position": {
-    "x": 648.61111111111109,
-    "y": 0,
-    "z": 3000,
-    "height": 152.77777777777777,
-    "width": 275,
-    "tabOrder": 11000
+    "x": 574.64788732394368,
+    "y": 105.63380281690141,
+    "z": 1000,
+    "height": 150.70422535211267,
+    "width": 353.52112676056339,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -54,6 +54,19 @@
             }
           }
         }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -70,7 +83,25 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "25D"
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

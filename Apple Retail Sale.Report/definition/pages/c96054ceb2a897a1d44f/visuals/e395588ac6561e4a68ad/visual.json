@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "e395588ac6561e4a68ad",
   "position": {
-    "x": 393.33333333333331,
-    "y": 154.66666666666666,
-    "z": 7000,
-    "height": 268,
-    "width": 474.66666666666669,
-    "tabOrder": 18000
+    "x": 404.96894409937886,
+    "y": 219.25465838509317,
+    "z": 4000,
+    "height": 248.44720496894408,
+    "width": 462.73291925465838,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "stackedAreaChart",
@@ -392,8 +392,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.6
+                      "ColorId": 1,
+                      "Percent": 0
                     }
                   }
                 }
@@ -415,7 +415,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "25D"
+                  "Value": "9D"
                 }
               }
             },
@@ -423,6 +423,37 @@
               "expr": {
                 "Literal": {
                   "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

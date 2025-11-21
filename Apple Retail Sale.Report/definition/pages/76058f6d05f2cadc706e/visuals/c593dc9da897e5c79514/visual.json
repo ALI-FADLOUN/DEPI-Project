@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c593dc9da897e5c79514",
   "position": {
-    "x": 17.441909979986089,
-    "y": 534.88523938624007,
-    "z": 4000,
-    "height": 173.25630580119514,
-    "width": 145.34924983321741,
-    "tabOrder": 2000
+    "x": 8.4507042253521139,
+    "y": 525.35211267605632,
+    "z": 3000,
+    "height": 183.09859154929578,
+    "width": 156.33802816901408,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -59,47 +59,6 @@
                 "Literal": {
                   "Value": "0D"
                 }
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "r",
-                    "Entity": "Running_Date (Abdallah)",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "r"
-                                }
-                              },
-                              "Property": "Year"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "2024L"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
               }
             }
           }
@@ -187,6 +146,24 @@
               "expr": {
                 "Literal": {
                   "Value": "'Year'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
