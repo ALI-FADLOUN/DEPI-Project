@@ -1,7 +1,7 @@
 # Apple Retail Sales Analysis (DEPI Project)
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-0066CC?style=for-the-badge&logo=Tableau&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
@@ -111,3 +111,4 @@ The final delivery was a collaborative effort to present our findings to stakeho
 * We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Apple Inc., or any of its subsidiaries or its affiliates. The official Apple website can be found at [https://www.apple.com](https://www.apple.com).
 * The names Apple, iPhone, Mac, and related marks, emblems, and images are registered trademarks of their respective owners.
 * Dataset source [Link Here](https://www.kaggle.com/datasets/amangarg08/apple-retail-sales-dataset).
+  *(Note: The original dataset was processed, and 4 tables were merged into a unified structure for this analysis.)*
