@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sales"
+                      "Entity": "Laptop_Desktop_Sales"
                     }
                   },
-                  "Property": "Category_Name"
+                  "Property": "Product_Name"
                 }
               },
-              "queryRef": "sales.Category_Name",
-              "nativeQueryRef": "Category_Name",
+              "queryRef": "Laptop_Desktop_Sales.Product_Name",
+              "nativeQueryRef": "Product_Name",
               "active": true
             }
           ]
@@ -36,17 +36,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "sales"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Laptop_Desktop_Sales"
+                        }
+                      },
+                      "Property": "Sales"
                     }
                   },
-                  "Property": "Laptop Sales"
+                  "Function": 0
                 }
               },
-              "queryRef": "sales.Laptop Sales",
-              "nativeQueryRef": "Laptop Sales"
+              "queryRef": "Sum(Laptop_Desktop_Sales.Sales)",
+              "nativeQueryRef": "Sum of Sales"
             }
           ]
         }
@@ -55,13 +60,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "sales"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Laptop_Desktop_Sales"
+                      }
+                    },
+                    "Property": "Sales"
                   }
                 },
-                "Property": "Laptop Sales"
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -74,10 +84,57 @@
       "labels": [
         {
           "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -96,10 +153,28 @@
                 }
               }
             },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
             "radius": {
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -109,6 +184,13 @@
       "background": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "color": {
               "solid": {
                 "color": {
@@ -118,6 +200,40 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -130,15 +246,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1c5fa8b5279456a6c03c",
+        "name": "49219d9876e269745aa2",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "sales"
+                "Entity": "Laptop_Desktop_Sales"
               }
             },
-            "Property": "Category_Name"
+            "Property": "Product_Name"
           }
         },
         "type": "TopN",
@@ -153,8 +269,8 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "s",
-                        "Entity": "sales",
+                        "Name": "l",
+                        "Entity": "Laptop_Desktop_Sales",
                         "Type": 0
                       }
                     ],
@@ -163,10 +279,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "s"
+                              "Source": "l"
                             }
                           },
-                          "Property": "Category_Name"
+                          "Property": "Product_Name"
                         },
                         "Name": "field"
                       }
@@ -180,13 +296,13 @@
                               "Column": {
                                 "Expression": {
                                   "SourceRef": {
-                                    "Source": "s"
+                                    "Source": "l"
                                   }
                                 },
-                                "Property": "Category_Name"
+                                "Property": "Sales"
                               }
                             },
-                            "Function": 3
+                            "Function": 0
                           }
                         }
                       }
@@ -198,8 +314,8 @@
               "Type": 2
             },
             {
-              "Name": "s",
-              "Entity": "sales",
+              "Name": "l",
+              "Entity": "Laptop_Desktop_Sales",
               "Type": 0
             }
           ],
@@ -212,10 +328,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "s"
+                            "Source": "l"
                           }
                         },
-                        "Property": "Category_Name"
+                        "Property": "Product_Name"
                       }
                     }
                   ],
@@ -228,7 +344,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

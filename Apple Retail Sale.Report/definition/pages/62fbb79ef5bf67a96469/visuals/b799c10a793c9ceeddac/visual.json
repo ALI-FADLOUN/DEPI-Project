@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "b799c10a793c9ceeddac",
   "position": {
-    "x": 437,
-    "y": 535,
+    "x": 436.73150935986382,
+    "y": 534.45320068071737,
     "z": 6000,
-    "height": 173,
-    "width": 303,
+    "height": 173.7274512370729,
+    "width": 318.500327267967,
     "tabOrder": 2000
   },
   "visual": {
@@ -28,7 +28,7 @@
               },
               "queryRef": "sales.Historical Max Sales",
               "nativeQueryRef": "Historical Max Sales",
-              "format": "\\$#,0;(\\$#,0);\\$#,0"
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             }
           ]
         },
@@ -70,6 +70,61 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "target": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "calloutValue": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
