@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.2.0/schema.json",
+  "position": {
+    "x": 0,
+    "y": 488,
+    "z": 4000,
+    "height": 328,
+    "width": 324,
+    "tabOrder": 0
+  },
+  "objects": {
+    "subTotals": [],
+    "blankRows": [],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "201.5730354289663D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "sales.Store_Name"
+        }
+      }
+    ],
+    "values": [],
+    "grid": [],
+    "columnHeaders": [],
+    "rowHeaders": []
+  }
+}
