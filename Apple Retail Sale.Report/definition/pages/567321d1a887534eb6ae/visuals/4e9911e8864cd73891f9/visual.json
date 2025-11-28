@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4e9911e8864cd73891f9",
   "position": {
-    "x": 1005.6338028169015,
-    "y": 223.943661971831,
+    "x": 866.25,
+    "y": 441.25,
     "z": 5000,
-    "height": 208.45070422535213,
-    "width": 261.97183098591552,
+    "height": 267.5,
+    "width": 401.25,
     "tabOrder": 1000
   },
   "visual": {
@@ -103,6 +103,47 @@
                   "Value": "false"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -143,6 +184,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Top 5 cities'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

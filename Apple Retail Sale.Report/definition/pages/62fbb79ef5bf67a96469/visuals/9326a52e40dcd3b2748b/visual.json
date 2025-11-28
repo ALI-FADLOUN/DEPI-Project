@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "9326a52e40dcd3b2748b",
   "position": {
-    "x": 755.71428571428578,
-    "y": 224.28571428571431,
+    "x": 767.29624296373868,
+    "y": 224.39795784788583,
     "z": 5000,
-    "height": 484.28571428571433,
-    "width": 518.57142857142856,
+    "height": 483.78269406990444,
+    "width": 506.7050661081293,
     "tabOrder": 6000
   },
   "visual": {
@@ -234,6 +234,13 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -534,7 +541,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto Analysis of Product Revenue'"
+                  "Value": "'Pareto Analysis of Category Revenue'"
                 }
               }
             },

@@ -29,20 +29,14 @@ table sales
 
 	measure 'Top Selling Product_ALI_FADLOUN' = ```
 			
-			CALCULATE(
-			    SELECTEDVALUE(Sales[Product_Name]),
-			    TOPN(1, VALUES(Sales[Product_Name]),[Total Revenue_ALI_FADLOUN], DESC)
-			)
+			CALCULATE(SELECTEDVALUE(Sales[Product_Name]),TOPN(1, VALUES(Sales[Product_Name]),[Total Revenue_ALI_FADLOUN], DESC))
 			
 			```
 		lineageTag: 0a34ad60-b08c-4a35-b386-2d5340ada743
 
 	measure 'Most Ordered Product_ALI_FADLOUN' = ```
 			
-			CALCULATE(
-			    SELECTEDVALUE(Sales[Product_Name]),
-			    TOPN(1, VALUES(Sales[Product_Name]), [Total Sales Quantity_ALI_FADLOUN], DESC)
-			)
+			CALCULATE(SELECTEDVALUE(Sales[Product_Name]),TOPN(1, VALUES(Sales[Product_Name]), [Total Sales Quantity_ALI_FADLOUN], DESC))
 			
 			```
 		lineageTag: 16ea68cd-93e1-4763-bf8b-24f10bab9cd8

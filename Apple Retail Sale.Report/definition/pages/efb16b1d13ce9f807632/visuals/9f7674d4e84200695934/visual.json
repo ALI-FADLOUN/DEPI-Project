@@ -491,6 +491,48 @@
           "selector": {
             "metadata": "Min(sales.Sale_ID)"
           }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "-1D"
+                }
+              }
+            },
+            "customFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "'00.00%'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Laptop Sales %"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "-1D"
+                }
+              }
+            },
+            "customFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "'00.00%'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Laptop Sales Growth %"
+          }
         }
       ]
     },

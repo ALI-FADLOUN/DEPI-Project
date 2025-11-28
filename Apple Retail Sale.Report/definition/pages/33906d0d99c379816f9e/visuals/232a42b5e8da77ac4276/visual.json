@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "232a42b5e8da77ac4276",
   "position": {
-    "x": 4.2253521126760569,
-    "y": 85.91549295774648,
+    "x": 3.75,
+    "y": 86.25,
     "z": 0,
-    "height": 138.02816901408451,
-    "width": 1271.8309859154931,
+    "height": 121.25,
+    "width": 1272.5,
     "tabOrder": 2000
   },
   "visual": {
@@ -508,6 +508,38 @@
           },
           "selector": {
             "metadata": "Min(sales.Sale_ID)"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Claim Rate"
           }
         }
       ]

@@ -96,7 +96,7 @@
               },
               "queryRef": "sales.Claim Rate",
               "nativeQueryRef": "Claim Rate",
-              "format": "0.0%;-0.0%;0.0%"
+              "format": "0.00%;-0.00%;0.00%"
             }
           ]
         }
@@ -301,6 +301,20 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Claim Rate"
+          }
         }
       ],
       "value": [
@@ -372,6 +386,73 @@
           },
           "selector": {
             "metadata": "Min(sales.Sale_ID)"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Avg Selling Price.Yara"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(warranty.Claim_ID)"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Total Quantity Sold.Yara"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.Total Sales.Yara"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
           }
         }
       ],

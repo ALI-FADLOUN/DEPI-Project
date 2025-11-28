@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "d8525f1bc8e94bb5df3b",
   "position": {
-    "x": 711.62992718343241,
-    "y": 224.41924174248769,
+    "x": 766.25,
+    "y": 225,
     "z": 4000,
-    "height": 208.14012576116733,
-    "width": 284.8845296731061,
+    "height": 207.5,
+    "width": 501.25,
     "tabOrder": 0
   },
   "visual": {
@@ -103,6 +103,47 @@
                   "Value": "false"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -143,6 +184,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Top 5 Store'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

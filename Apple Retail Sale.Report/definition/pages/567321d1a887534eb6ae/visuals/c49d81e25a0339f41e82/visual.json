@@ -65,7 +65,8 @@
                 }
               },
               "queryRef": "sales.YoY Growth %",
-              "nativeQueryRef": "YoY Growth %"
+              "nativeQueryRef": "YoY Growth %",
+              "format": "0.00%;-0.00%;0.00%"
             }
           ]
         }
@@ -339,6 +340,20 @@
           },
           "selector": {
             "metadata": "Min(sales.Sale_ID)"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales.YoY Growth %"
           }
         }
       ],

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "389b5d1db41c559f09a0",
   "position": {
-    "x": 356.33802816901408,
-    "y": 223.943661971831,
+    "x": 356.25,
+    "y": 223.75,
     "z": 3000,
-    "height": 208.45070422535213,
-    "width": 345.07042253521126,
+    "height": 208.75,
+    "width": 400,
     "tabOrder": 9000
   },
   "visual": {
@@ -90,6 +90,20 @@
                   "Value": "true"
                 }
               }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -118,6 +132,20 @@
         {
           "properties": {
             "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -163,6 +191,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Tablet sales'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
