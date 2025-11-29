@@ -9,7 +9,7 @@
 
 **This is what we did.**
 
-## Meet the Team
+## 👥 Meet the Team
 
 * **Ali Fadloun (Leader):** Lead Data Visualization, UX/UI Designer & BI Developer
 * **Abdallah Abukhalil:** Lead Data Architect, DevOps Engineer & BI Developer
@@ -41,7 +41,7 @@ Our goal was not merely to report revenue, but to construct a complete ecosystem
 ---
 
 ## 🛠️ The Architecture
-The project is built upon a robust star-schema foundation, integrating two core datasets:
+The project is built upon a robust star-schema foundation, integrating core datasets:
 1.  **Sales Table:** The heartbeat of revenue, capturing product movement.
 2.  **Warranty Table:** The post-purchase tracking, analyzing service attachment rates.
 3.  **Products Table:** a created dim products table.
