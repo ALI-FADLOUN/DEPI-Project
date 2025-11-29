@@ -1,0 +1,16 @@
+This repository uses Git Large File Storage (LFS) to manage datasets that exceed GitHub's standard size limits.
+Please follow the instructions below based on your role:
+
+For General Users (Non-Developers): If you only need the data files or the final report without running the Git project:
+- Navigate to the "Releases" section (located on the right sidebar under "About").
+- Download the required files (e.g., Apple Retail Sale.xlsx) directly from the latest release assets.
+
+For Developers & Contributors: To clone this repository and run the Power BI project locally, you must have Git LFS installed.
+- Install LFS: Run git lfs install in your terminal.
+- Clone/Pull: When you clone the repo, LFS files will be downloaded automatically. If you have already cloned it, run git lfs pull to fetch the actual data.
+
+
+Tracked LFS Files:
+- Apple Retail Sale.xlsx
+- Cleaned sales.csv (Dev Only)
+- sales.csv (Dev Only)
