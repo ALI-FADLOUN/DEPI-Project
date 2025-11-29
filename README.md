@@ -66,8 +66,8 @@ To ensure depth, we divided the Apple ecosystem into specialized domains. Each a
 | Analyst | Focus Area | Responsibility |
 | :--- | :--- | :--- |
 | **Abdallah Abukhalil** | **Overview & Audio** | Dashboard Overview, Audio Devices & Smart Speakers Analysis |
-| **Ali Fadloun** | **Overview & Services** | Overview, Subscription Services & Streaming Devices Analytics |
-| **Moaaz Ali** | **Overview & Portables** | Overview, Tablets (iPad) & Wearables (Apple Watch) Insights |
+| **Ali Fadloun** | **Overview & Services** | Dashboard Overview, Subscription Services & Streaming Devices Analytics |
+| **Moaaz Ali** | **Overview & Portables** | Dashboard Overview, Tablets (iPad) & Wearables (Apple Watch) Insights |
 | **Yara Mohammed** | **Mobile** | Smartphones (iPhone) & Accessories Performance |
 | **Youmna Helal** | **Computers** | Laptops (MacBook) & Desktops (iMac/Mac Pro) Trends |
 
