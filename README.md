@@ -73,8 +73,8 @@ To ensure depth, we divided the Apple ecosystem into specialized domains. Each a
 
 ### 3️⃣ The Look & Feel: UI/UX Strategy
 We believe that insights are only as good as their presentation.
-* **Themes & Visual Identity:** `Ali Fadloun` crafted the color palette and visual consistency.
-* **Layout Structure:** `Abdallah Abukhalil` designed the grid and navigation experience.
+* **Themes & Visual Identity:** `Ali Fadloun` crafted the color palette, visual consistency, and navigation experience.
+* **Layout Structure:** `Abdallah Abukhalil` standardized the grid system and unified the layout.
 * **Design Concept & Inspiration:** `Yara Mohammed` provided the creative spark and conceptual direction.
 
 ### 4️⃣ Expansion: Multi-Platform Analytics
